@@ -65,7 +65,7 @@ if __name__ == "__main__":
    # TODO: not sure if this is useful yet
    alphabet_set = set('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 
-   # Read through the pangrams file. Just echo lines that don't split into six elements.
+   # Read through the pangrams file. Just ignore lines that don't split into six elements.
    # Any line with six elements should be a pangram, but if it fails the pangram test
    # we're just going to echo it with a leading '!' so it's obvious for later pruning.
    #
@@ -80,9 +80,7 @@ if __name__ == "__main__":
       with open(PANGRAM_LIST_FILE, 'r') as f:
          for line in f:
             line_list = line.split()
-            if len(line_list) != 6:
-               print(line, end='')
-            else:
+            if len(line_list) == 6:
                # OK, we have a line of six strings separated by whitespace.
                all_six_are_words = True
                letter_set = set()
@@ -105,7 +103,7 @@ if __name__ == "__main__":
                      # Validate pangram is not a duplicate and print if not.
                      pgram_str = is_new_pangram(line_list, mutable=False)
                      if not pgram_str is None:
-                        print(line, end='')
+                        #print(line, end='')
                         pgrams_list.append(pgram_str)
                      else:
                         print("!DUPLICATE:", line, end='', file=sys.stderr, flush=True)
@@ -118,7 +116,7 @@ if __name__ == "__main__":
    #
    # But any word in any of those pangram lists might have anagrams.
    #
-   print('------------------------------------------------------------')
+   #print('------------------------------------------------------------')
    
    n_total = 0
    for canon_str in pgrams_list:
