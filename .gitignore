@@ -1,0 +1,16 @@
+*~
+__*
+*ignore*
+saved*/*
+test*
+*[Dd][Ee][Zz]*
+*.bak*
+bak/*
+ALL*
+*PANGRAM*
+*ANSWER*
+PU-*
+POST-*
+wordgames.py
+*[Nn][Yy][Tt]*
+H*.txt
