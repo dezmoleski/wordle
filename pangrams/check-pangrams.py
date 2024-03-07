@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 #
+# Copyright (C) Dez Moleski dez@moleski.com
+# MIT License: All uses allowed with attribution.
+#
 from wordgames import Word, WordList, AnagramsDict, LetterSetBitmask
 import sys
 from copy import deepcopy
