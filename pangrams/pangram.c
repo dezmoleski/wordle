@@ -1,3 +1,5 @@
+// Copyright (C) Dez Moleski dez@moleski.com
+// MIT License: All uses allowed with attribution.
 #include <stdlib.h>
 #include <stdio.h>
 #include <signal.h>
