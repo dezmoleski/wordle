@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <signal.h>
 #include <string.h>
+#include <unistd.h> // sleep
 
 #include "all_words.inl"
 #include "wordle.c" // yes, weird, but that's how it's meant to be done
@@ -44,6 +45,12 @@ void sigusr1_handler(int sig)
   sigusr1_received = 1;
 }
 
+volatile sig_atomic_t sigusr2_received = 0;
+void sigusr2_handler(int sig)
+{
+  sigusr2_received = 1;
+}
+
 void print_anagrams(int w)
 {
   // The given int w is an index into the WORDS array, which contains ALL_WORDS indices.
@@ -73,6 +80,9 @@ void main(int argc, char **argv)
 
   // Handle SIGUSR1 to print some information.
   signal(SIGUSR1, sigusr1_handler);
+  
+  // Handle SIGUSR2 to pause and restart the search.
+  signal(SIGUSR2, sigusr2_handler);
   
   // Set up the anagrams_index for each WordleWord in ALL_WORDS.
   init_anagrams_indices();
@@ -136,8 +146,8 @@ void main(int argc, char **argv)
       if (strcmp(pw1->word, skip1) < 0) {
 	continue;
       } else {
-	printf("SKIP-TO(1): %s\n", pw1->word);
-	fflush(stdout);
+	fprintf(stderr, "SKIP-TO(1): %s\n", pw1->word);
+	fflush(stderr);
 	skip1 = NULL;
       }
     }
@@ -152,8 +162,8 @@ void main(int argc, char **argv)
 	if (strcmp(pw2->word, skip2) < 0) {
 	  continue;
 	} else {
-	  printf("SKIP-TO(2): %s\n", pw2->word);
-	  fflush(stdout);
+	  fprintf(stderr, "SKIP-TO(2): %s\n", pw2->word);
+	  fflush(stderr);
 	  skip2 = NULL;
 	}
       }
@@ -173,9 +183,10 @@ void main(int argc, char **argv)
 	if (v2 < 4) continue;
       }
       /*
-      printf("%s %s %08x %d\n",
+	fprintf(stderr, "%s %s %08x %d\n",
 	     pw1->word,
 	     pw2->word, a2, r2);
+	fflush(stderr);
       */
       for(int w3 = w2+1; w3 < N; ++w3,++n3) {
 	pw3 = ALL_WORDS + WORDS[w3];
@@ -185,8 +196,8 @@ void main(int argc, char **argv)
 	  if (strcmp(pw3->word, skip3) < 0) {
 	    continue;
 	  } else {
-	    printf("SKIP-TO(3): %s\n", pw3->word);
-	    fflush(stdout);
+	    fprintf(stderr, "SKIP-TO(3): %s\n", pw3->word);
+	    fflush(stderr);
 	    skip3 = NULL;
 	  }
 	}
@@ -208,8 +219,8 @@ void main(int argc, char **argv)
 	    if (strcmp(pw4->word, skip4) < 0) {
 	      continue;
 	    } else {
-	      printf("SKIP-TO(4): %s\n", pw4->word);
-	      fflush(stdout);
+	      fprintf(stderr, "SKIP-TO(4): %s\n", pw4->word);
+	      fflush(stderr);
 	      skip4 = NULL;
 	    }
 	  }
@@ -231,8 +242,8 @@ void main(int argc, char **argv)
 	      if (strcmp(pw5->word, skip5) < 0) {
 		continue;
 	      } else {
-		printf("SKIP-TO(5): %s\n", pw5->word);
-		fflush(stdout);
+		fprintf(stderr, "SKIP-TO(5): %s\n", pw5->word);
+		fflush(stderr);
 		skip5 = NULL;
 	      }
 	    }
@@ -254,13 +265,14 @@ void main(int argc, char **argv)
 		if (strcmp(pw6->word, skip6) < 0) {
 		  continue;
 		} else {
-		  printf("SKIP-TO(6): %s\n", pw6->word);
-		  fflush(stdout);
+		  fprintf(stderr, "SKIP-TO(6): %s\n", pw6->word);
+		  fflush(stderr);
 		  skip6 = NULL;
 		}
 	      }
 	      
 	      // Check for signal to exit gracefully.
+	      // Print this to both stderr and stdout?
 	      if (sighup_received) {
 		printf("LAST: %s %s %s %s %s %s\n",
 		       pw1->word,
@@ -272,18 +284,30 @@ void main(int argc, char **argv)
 		exit(0);
 	      }
 	      
-	      // Check for signal to print some information and continue.
-	      if (sigusr1_received) {
+	      // Check for signal to print some information and continue,
+	      // or to pause the search here (SIGUSR2) until signaled again.
+	      if (sigusr1_received || sigusr2_received) {
 		sigusr1_received = 0;
-		printf("STACK: %d %s %d %s %d %s %d %s %d %s %d %s\n",
+		fprintf(stderr, "STACK: %d %s %d %s %d %s %d %s %d %s %d %s\n",
 		       w1, pw1->word,
 		       w2, pw2->word,
 		       w3, pw3->word,
 		       w4, pw4->word,
 		       w5, pw5->word,
 		       w6, pw6->word);
-		printf("COUNTS: %lu %lu %lu %lu %lu %lu\n", n1, n2, n3, n4, n5, n6);
-		fflush(stdout);
+		fprintf(stderr, "COUNTS: %lu %lu %lu %lu %lu %lu\n", n1, n2, n3, n4, n5, n6);
+		fflush(stderr);
+		if (sigusr2_received) {
+		  sigusr2_received = 0;
+		  fprintf(stderr, "PAUSED ... ");
+		  fflush(stderr);
+		  while (sigusr2_received == 0) {
+		    sleep(60); // signal should wake me up so it shouldn't matter how long I sleep
+		  }
+		  sigusr2_received = 0;
+		  fprintf(stderr, "RESUMING!\n");
+		  fflush(stderr);
+		}
 	      }
 	      
 	      if ((a5 & pw6->letters_mask) == 0) continue;
