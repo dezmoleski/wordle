@@ -81,10 +81,9 @@ Step 6: Solve and collect your pangram win, or hope for better luck tomorrow!
 Finally, if you do win Wordle with a pangram by any method, be sure to get a screen capture of your completed game showing ALL the letters of the keyboard have changed color. This is half the fun of winning with a pangram, so save that screen capture to share later with other Wordle players.
 
 **Known Pangram Wins:**
-1. Wordle `0939 DOING`
-  - https://nyti.ms/3Hf10eR#permid=130444396 @WT
-1. Wordle `0944 THING`
-  - https://nyti.ms/3U0EDkS#permid=130556623 @Wordler
+1. Wordle `0939 DOING` - https://nyti.ms/3Hf10eR#permid=130444396 @WT
+1. Wordle `0944 THING` - https://nyti.ms/3U0EDkS#permid=130556623 @Wordler
+1. Wordle `0995 GRASP` - https://nyti.ms/49Gjwt0#permid=131749118 @Dez
 
 ##### Total Number of Pangrams Generated from Heterograms
 There is:
