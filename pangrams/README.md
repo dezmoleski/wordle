@@ -115,7 +115,9 @@ That program is now running on nine computers: one searching forward from A and 
 
 Results and code are published under the MIT License, available via the URL above.
 
-Current search status: M-Z are complete. A, E, G, I, J, K, and L are in progress. Over 186,000 "base" pangrams (without expanding anagrams) have been found. About 62,000 of those contain at least one anagram, so the lower bound of Wordleable pangrams including anagram expansion is currently about 248,000 and growing larger every day!
+Current search status: L-Z are complete. A, E, G, I, J, and K are in progress. 260,990 "base" pangrams (without expanding anagrams) have been found. With anagrams expanded, the total known pangrams is 386,973.
+
+6,057 of 14,855 valid guesses appear in the known pangrams (41%), and 1002 of 2313 known solutions (43%).
 
 #### Pangrams Comprised of Solutions Only
 See https://rentry.co/wordle-pangrams-solutions-only
