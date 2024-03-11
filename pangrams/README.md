@@ -110,13 +110,11 @@ The first implementation of the exhaustive search in Python was agonizingly slow
 
 I have implemented a basic version of the exhaustive search in C that already runs about 60 times faster than the Python searcher. This program does not yet include optimizations based on previous work with heterograms.
 
-That program is now running on nine computers: one searching forward from A and the others searching a variety of letters back towards A. 
-
 Results and code are published under the MIT License, available via the URL above.
 
-Current search status: L-Z are complete. A, E, G, I, J, and K are in progress. 260,990 "base" pangrams (without expanding anagrams) have been found. With anagrams expanded, the total known pangrams is 386,973.
+The search program is now running on eleven computers. Current search status is: L-Z are complete. A, B, E, G, I, J, and K are in progress. 282,919 "base" pangrams (without expanding anagrams) have been found. With anagrams expanded, the total known pangrams is 418,444.
 
-6,057 of 14,855 valid guesses appear in the known pangrams (41%), and 1002 of 2313 known solutions (43%).
+6,232 of 14,855 valid guesses appear in the known pangrams (42%), and 1024 of 2313 known solutions (44%).
 
 #### Pangrams Comprised of Solutions Only
 See https://rentry.co/wordle-pangrams-solutions-only
