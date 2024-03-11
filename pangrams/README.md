@@ -64,13 +64,13 @@ one of those letters, then continue with the decisions shown inside [..] below.
 
        [Decide: Do you think the solution contains a V?]
             |                                    |
-       no V = G or J path                  yes V = V path
+          G or J (No V)                        Yes V
             |                                    |
 Step 4: Play KLUTZ                           Play GLITZ or JUKED (i.e. commit to V path or solve).
             |                                Then on step 5 play the other one, or solve if the
    [Does the solution contain a J?]          solution doesn't turn out to contain a V.
             |                   |
-       no J = G path      yes J = J path
+          G (No J)           Yes J 
             |                   |
 Step 5: Play JIVED          Play GIVED
           or solve (if solution doesn't contain G or J)
