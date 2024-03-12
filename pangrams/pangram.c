@@ -2,6 +2,7 @@
 // MIT License: All uses allowed with attribution.
 #include <stdlib.h>
 #include <stdio.h>
+#include <stdbool.h>
 #include <signal.h>
 #include <string.h>
 #include <unistd.h> // sleep
@@ -95,6 +96,8 @@ void main(int argc, char **argv)
   uint32_t a0 = CHARMASK_A_Z;
   // a1, a2, etc. are the alphabet letters remaining at each level.
   uint32_t a1, a2, a3, a4, a5, a6;
+  uint32_t n_pangrams_found; // count of pangrams found per word
+  bool b_print_n_found; // can we trust & print n_pangrams_found?
   uint64_t n1=0, n2=0, n3=0, n4=0, n5=0, n6=0; // iteration counter at each level.
   WordleWord *pw1,*pw2,*pw3,*pw4,*pw5,*pw6;
   int r2, r3, r4, r5;
@@ -154,11 +157,18 @@ void main(int argc, char **argv)
     
     a1 = a0 & ~(pw1->letters_mask);
     
+    // Reset the count of pangrams found for this word.
+    // Note that if there are SKIPS below level 0, then
+    // we can't rely on this counter and won't print it
+    // for this word.
+    n_pangrams_found = 0;
+    b_print_n_found = true;
     for(int w2 = w1+1; w2 < N; ++w2,++n2) {
       pw2 = ALL_WORDS + WORDS[w2];
       
       // Check for a skip-to at this level
       if (skip2 != NULL) {
+	b_print_n_found = false;
 	if (strcmp(pw2->word, skip2) < 0) {
 	  continue;
 	} else {
@@ -193,6 +203,7 @@ void main(int argc, char **argv)
 	
 	// Check for a skip-to at this level
 	if (skip3 != NULL) {
+	  b_print_n_found = false;
 	  if (strcmp(pw3->word, skip3) < 0) {
 	    continue;
 	  } else {
@@ -216,6 +227,7 @@ void main(int argc, char **argv)
 	  
 	  // Check for a skip-to at this level
 	  if (skip4 != NULL) {
+	    b_print_n_found = false;
 	    if (strcmp(pw4->word, skip4) < 0) {
 	      continue;
 	    } else {
@@ -239,6 +251,7 @@ void main(int argc, char **argv)
 	    
 	    // Check for a skip-to at this level
 	    if (skip5 != NULL) {
+	      b_print_n_found = false;
 	      if (strcmp(pw5->word, skip5) < 0) {
 		continue;
 	      } else {
@@ -262,6 +275,7 @@ void main(int argc, char **argv)
 	      
 	      // Check for a skip-to at this level
 	      if (skip6 != NULL) {
+		b_print_n_found = false;
 		if (strcmp(pw6->word, skip6) < 0) {
 		  continue;
 		} else {
@@ -315,6 +329,7 @@ void main(int argc, char **argv)
 
 	      if (a6 == 0) {
 		// We found a pangram.
+		++n_pangrams_found;
 		printf("%s %s %s %s %s %s\n",
 		       pw1->word,
 		       pw2->word,
@@ -331,11 +346,19 @@ void main(int argc, char **argv)
 		print_anagrams(w5);
 		print_anagrams(w6);
 		*/
-	      }
-	    }
-	  }
-	}
-      }
+	      }  // end if
+	    } // for w6
+	  } // for w5
+	} // for w4
+      } // for w3
+    } // for w2
+
+    // If none of the nested loops had SKIPs, then print
+    // the number of pangrams found for this word.
+    if (b_print_n_found) {
+      printf("# %s = %u\n", pw1->word, n_pangrams_found);
+      fflush(stdout);
     }
-  }
+    
+  } // for w1
 }
