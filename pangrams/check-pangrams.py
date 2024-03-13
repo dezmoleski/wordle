@@ -1,8 +1,5 @@
 #!/usr/bin/python3
 #
-# Copyright (C) Dez Moleski dez@moleski.com
-# MIT License: All uses allowed with attribution.
-#
 from wordgames import Word, WordList, AnagramsDict, LetterSetBitmask
 import sys
 from copy import deepcopy
@@ -41,6 +38,17 @@ def is_new_pangram(pgram: list, mutable: bool) -> str:
       KNOWN_PGRAMS.add(canon_str)
       return canon_str
 
+def format_anagrams(anagrams_dict, word_str) -> (str,int):
+   word_anagrams = anagrams_dict.anagrams_of_str(word_str)
+   if word_anagrams is None:
+      return (word_str,1)
+   else:
+      a = f'[{word_str}'
+      for w in word_anagrams:
+         a += f'|{w}'
+      a += ']'
+      return (a, 1+len(word_anagrams))
+
 if __name__ == "__main__":
    if len(sys.argv) != 3:
       exit("Usage: check-pangrams word-list pangrams-list")
@@ -65,25 +73,26 @@ if __name__ == "__main__":
    print("Anagrams dict entries:", len(anagrams_dict), file=sys.stderr, flush=True)
    print("Anagrams total count:", anagrams_dict.total_words(), file=sys.stderr, flush=True)
    
-   # TODO: not sure if this is useful yet
    alphabet_set = set('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
 
-   # Read through the pangrams file. Just ignore lines that don't split into six elements.
-   # Any line with six elements should be a pangram, but if it fails the pangram test
-   # we're just going to echo it with a leading '!' so it's obvious for later pruning.
+   # Read through the pangrams file. There are two kinds of lines we need
+   # to process and keep: pangrams and counts.
    #
-   # Read any lines already in the OUTPUT_FILE to look for
-   # a list of words to skip ahead to. Any line with six words
-   # in the WORD_LIST_FILE at the end of it is considered to
-   # mean this run should skip ahead to those words (presumably
-   # to resume where the last run left off, got it?).
+   # Any line with six elements should be a pangram, but if it fails any
+   # of the pangram integrity tests we print to stderr with a leading '!'.
+   #
+   # Counts lines look like "# WORD = <integer>\n" and also need to be
+   # preserved for the output phase below.
    PANGRAM_LIST_FILE = sys.argv[2]
-   pgrams_list = list()
+   kept_lines = list()
    if os.path.isfile(PANGRAM_LIST_FILE):
       with open(PANGRAM_LIST_FILE, 'r') as f:
          for line in f:
             line_list = line.split()
-            if len(line_list) == 6:
+            if len(line_list) == 4 and line_list[0] == '#':
+               # This looks like a counts line, just keep it (minus the newline)
+               kept_lines.append(line.rstrip())
+            elif len(line_list) == 6:
                # OK, we have a line of six strings separated by whitespace.
                all_six_are_words = True
                letter_set = set()
@@ -107,34 +116,43 @@ if __name__ == "__main__":
                      pgram_str = is_new_pangram(line_list, mutable=False)
                      if not pgram_str is None:
                         #print(line, end='')
-                        pgrams_list.append(pgram_str)
+                        kept_lines.append(pgram_str)
                      else:
                         print("!DUPLICATE:", line, end='', file=sys.stderr, flush=True)
                else:
                   print("!SOME WORDS NOT FOUND:", line, end='', file=sys.stderr, flush=True)
    
    # PRINT OUT PANGRAMS WITH ANAGRAMS!
-   # pgrams_list at this point contains all the found solutions,
+   #
+   # kept_lines at this point contains all the found solutions,
    # as strings of space-separated words in canonical (sorted) order.
    #
-   # But any word in any of those pangram lists might have anagrams.
+   # But any word in any of those pangram lists might have anagrams,
+   # so look for those and print them like [VIGOR|VIRGO]
    #
-   #print('------------------------------------------------------------')
-   
+   # We may also have kept lines that start with '#', which for now
+   # are expected to always be counts lines like "# WORD = <integer>"
+   # For those, we want to format WORD also with any anagrams.
+   #
    n_total = 0
-   for canon_str in pgrams_list:
-      n_this_gram = 1
-      pgram_strs = canon_str.split()
-      for word_str in pgram_strs:
-         word_anagrams = anagrams_dict.anagrams_of_str(word_str)
-         if word_anagrams is None:
-            print(word_str, end=' ')
+   for kept_line in kept_lines:
+      kept_strs = kept_line.split()
+      if kept_strs[0] == '#':
+         (anagrams, n_anagrams) = format_anagrams(anagrams_dict, kept_strs[1])
+         if n_anagrams == 1:
+            print(kept_line)
          else:
-            print(f'[{word_str}', end='')
-            for w in word_anagrams:
-               print(f'|{w}', end='')
-            print("]", end=' ')
-            n_this_gram *= (1+len(word_anagrams))
-      print('')
-      n_total += n_this_gram
+            print(f'# {anagrams} = {kept_strs[3]}')
+      else:
+         n_this_gram = 1
+         for word_str in kept_strs:
+            (anagrams, n_anagrams) = format_anagrams(anagrams_dict, word_str)
+            if n_anagrams == 1:
+               print(word_str, end=' ')
+            else:
+               print(anagrams, end=' ')
+               n_this_gram *= n_anagrams
+         print('')
+         n_total += n_this_gram
+         
    print("Total pangrams counting anagrams:", n_total, file=sys.stderr, flush=True)
