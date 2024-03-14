@@ -1,5 +1,5 @@
 ### Wordle Pangrams
-Copyright (C) Dez Moleski dez@moleski.com
+Copyright (C) 2024 Dez Moleski dez@moleski.com
 
 See also:
 - https://rentry.co/wordle-meta-list

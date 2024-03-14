@@ -1,4 +1,4 @@
-// Copyright (C) Dez Moleski dez@moleski.com
+// Copyright (C) 2024 Dez Moleski dez@moleski.com
 // MIT License: All uses allowed with attribution.
 //
 // wordle.c: This file is meant to be included in program code after including all_words.inl

@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# Copyright (C) 2024 Dez Moleski dez@moleski.com
+# MIT License: All uses allowed with attribution.
 #
 from wordgames import Word, WordList, AnagramsDict, LetterSetBitmask
 import sys

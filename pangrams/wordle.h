@@ -1,4 +1,4 @@
-// Copyright (C) Dez Moleski dez@moleski.com
+// Copyright (C) 2024 Dez Moleski dez@moleski.com
 // MIT License: All uses allowed with attribution.
 #ifndef __WORDLE_H_INCLUDED
 #define __WORDLE_H_INCLUDED

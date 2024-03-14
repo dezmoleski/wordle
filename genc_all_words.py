@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 #
-# Copyright (C) Dez Moleski dez@moleski.com
+# Copyright (C) 2024 Dez Moleski dez@moleski.com
 # MIT License: All uses allowed with attribution.
 #
 
