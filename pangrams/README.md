@@ -113,15 +113,15 @@ I have implemented a basic version of the exhaustive search in C that already ru
 Results and code are published under the MIT License, available via the URL above.
 
 The search program is now running on eleven computers. Current search status is:
-- A, B, E, G, J, and K are in progress. 
-- I and L-Z are complete. 
+- A, B, E, G, and J are in progress.
+- I and K-Z are complete.
 - C, D, F, H have not been started.
 
 Counts:
-- 363,826 "base" pangrams (without expanding anagrams) have been found. 
-- 579,585 total pangrams (with anagrams expanded) have been found.
-- 6,703 of 14,855 valid guesses (45%) appear in the known pangrams.
-- 1100 of 2313 known solutions (48%) appear in the known pangrams.
+- 596,724 "base" pangrams (without expanding anagrams) have been found. 
+- 911,500 total pangrams (with anagrams expanded) have been found.
+- 7,133 of 14,855 valid guesses (48%) appear in the known pangrams.
+- 1,144 of 2,313 known solutions (49%) appear in the known pangrams.
 
 #### Pangrams Comprised of Solutions Only
 See https://rentry.co/wordle-pangrams-solutions-only
