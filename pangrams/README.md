@@ -12,6 +12,7 @@ Pangram-related posts in the NYT Wordle Review Comments:
 - 02024 Feb 23 - https://nyti.ms/3uBhZW3#permid=131367700
 - 02024 Feb 28 - https://nyti.ms/3Tf3C2U#permid=131484206
 - 02024 Mar 07 - https://nyti.ms/433r4nj#permid=131685392
+- 02024 Mar 17 - https://www.nytimes.com/shared/comment/3tpkj5
 
 Other pangram-related articles:
 - https://en.wikipedia.org/wiki/Pangram
@@ -112,16 +113,18 @@ I have implemented a basic version of the exhaustive search in C that already ru
 
 Results and code are published under the MIT License, available via the URL above.
 
-The search program is now on eleven computers, with 24 instances running. Current search status is:
+##### Status
+The search program is now on eleven computers, with 24 instances running.
 - A, B, E, G, and J are in progress.
 - I and K-Z are complete.
 - C, D, F, H have not been started.
 
-Counts:
+##### Counts
 - 607,124 "base" pangrams (without expanding anagrams) have been found. 
 - 935,642 total pangrams (with anagrams expanded) have been found.
 - 7,169 of 14,855 valid guesses (48%) appear in the known pangrams.
 - 1,147 of 2,313 known solutions (50%) appear in the known pangrams.
+
 
 #### Pangrams Comprised of Solutions Only
 See https://rentry.co/wordle-pangrams-solutions-only
