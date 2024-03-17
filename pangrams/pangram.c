@@ -99,6 +99,7 @@ void main(int argc, char **argv)
   uint32_t n_pangrams_found; // count of pangrams found per word
   bool b_print_n_found; // can we trust & print n_pangrams_found?
   uint64_t n1=0, n2=0, n3=0, n4=0, n5=0, n6=0; // iteration counter at each level.
+  uint64_t ln1=0, ln2=0, ln3=0, ln4=0, ln5=0, ln6=0; // "last" iteration counter at each level.
   WordleWord *pw1,*pw2,*pw3,*pw4,*pw5,*pw6;
   int r2, r3, r4, r5;
   int v2, v3, v4, v5;
@@ -310,7 +311,9 @@ void main(int argc, char **argv)
 		       w5, pw5->word,
 		       w6, pw6->word);
 		fprintf(stderr, "COUNTS: %lu %lu %lu %lu %lu %lu\n", n1, n2, n3, n4, n5, n6);
+		fprintf(stderr, "DELTAS: %lu %lu %lu %lu %lu %lu\n", n1-ln1, n2-ln2, n3-ln3, n4-ln4, n5-ln5, n6-ln6);
 		fflush(stderr);
+		ln1=n1; ln2=n2; ln3=n3; ln4=n4; ln5=n5; ln6=n6;
 		if (sigusr2_received) {
 		  sigusr2_received = 0;
 		  fprintf(stderr, "PAUSED ... ");
