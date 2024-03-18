@@ -1,0 +1,195 @@
+#!/usr/bin/python3
+# Copyright (C) 2024 Dez Moleski dez@moleski.com
+# MIT License: All uses allowed with attribution.
+#
+from wordgames import Word, WordList
+import sys
+import os.path
+
+def print_zero(word: str, anagrams: dict) -> None:
+   # Look up anagrams for the given word, use those if found.
+   word_or_anagrams = word
+   word_anagrams = anagrams.get(word)
+   if not word_anagrams is None:
+      word_or_anagrams = word_anagrams
+   print(f'# {word_or_anagrams} = 0')
+
+if __name__ == "__main__":
+   if len(sys.argv) != 2:
+      exit("Usage: fix-counts <data file>")
+   
+   # Read NO-ANAGRAMS file
+   NO_ANAGRAMS_FILE = "./NO-ANAGRAMS"
+   print("Reading no-anagrams file:", NO_ANAGRAMS_FILE, file=sys.stderr, flush=True, end=' ')
+   no_anagrams = WordList.from_file(NO_ANAGRAMS_FILE) # file is assumed to be sorted already
+   print("N =", len(no_anagrams), file=sys.stderr, flush=True)
+   
+   # Read ANAGRAMS file, build a dict with key=first word of anagrams set.
+   ANAGRAMS_FILE = "./ANAGRAMS"
+   print("Reading anagrams file:", ANAGRAMS_FILE, file=sys.stderr, flush=True, end=' ')
+   anagrams = dict()
+   if os.path.isfile(ANAGRAMS_FILE):
+      with open(ANAGRAMS_FILE, 'r') as f:
+         for line in f:
+            # Each line of ANAGRAMS is expected to look like '[VIGOR|VIRGO]'
+            k = line[1:6]
+            anagrams[k] = line.rstrip() # Drop the newline
+   print("N =", len(anagrams), file=sys.stderr, flush=True)
+   
+   # Get the first and last words from the name of the data file.
+   #
+   # If the data file name doesn't contain a "-" then there's only
+   # one word in the file and all we're going to do is count the
+   # pangrams in the file and emit (or verify) a final line that
+   # looks like: "# WORD = <count>"
+   #
+   DATA_FILE = sys.argv[1]
+   print("Fixing counts in data file: ", DATA_FILE, file=sys.stderr, flush=True)
+   base = os.path.basename(DATA_FILE)
+   parts = base.split('-')
+   first_word = parts[0]
+   last_word = ''
+   one_word_file = len(parts) == 1
+   if len(parts) == 2:
+      last_word = parts[1]
+   elif len(parts) > 2:
+      exit("fix-counts only works with files containing one word, or named FIRST-LAST.")
+   
+   # One more sanity-check: the first word must appear in the no_anagrams word list.
+   if not no_anagrams.contains(first_word):
+      exit(f'{first_word} is not in the no-anagrams word list.')
+      
+   if one_word_file:
+      # If this is a one-word file, I'm just going to special-case that right now.
+      print("ONE WORD:", first_word, file=sys.stderr, flush=True)
+
+      # Our job is to: read each line of the data file; count the lines that start
+      # with the given word or with a set of anagrams starting with that word; emit
+      # each conforming line or an error for non-conforming lines; and finally
+      # print the final count for the word.
+      word = first_word
+      good_line_count = 0
+      word_or_anagrams = None
+      if os.path.isfile(DATA_FILE):
+         with open(DATA_FILE, 'r') as f:
+            for line in f:
+               line_list = line.split()
+               # Once we see a line that starts with the given word, or with
+               # a set of anagrams of that word, then only lines that match
+               # that word or anagrams pattern are allowed / counted as good.
+               if word_or_anagrams is None:
+                  if line_list[0] == word or line_list[0].startswith('['+word):
+                     word_or_anagrams = line_list[0]
+               
+               if line_list[0] == word_or_anagrams:
+                  good_line_count += 1
+                  print(line, end='')
+               else:
+                  print("SKIP non-matching line:", line, end='', file=sys.stderr, flush=True)
+            print(f'# {word_or_anagrams} = {good_line_count}')
+      
+      print("DONE:", DATA_FILE, file=sys.stderr, flush=True)
+      sys.exit(0) # PUNCH-OUT, END ONE-WORD FILE CASE
+   
+   # BEGIN FIRST-WORD TO LAST-WORD CASE
+   
+   # Other half of the sanity-check: the last word must appear in the no_anagrams word list.
+   if not no_anagrams.contains(last_word):
+      exit(f'{last_word} is not in the no-anagrams word list.')
+   print("FIRST:", first_word, "LAST:", last_word, file=sys.stderr, flush=True)
+   
+   # The algorithm now requires that we step through two iterators, one for the
+   # no-anagrams word list so we can detect words in the first-last range that have
+   # no pangrams found and emit '# WORD = 0' or '# [ANAGRAMS] = 0' for those, and
+   # the other will be our main for-loop over the lines in the data file.
+   
+   # Set up the non_anagram iterator so it's at the first word.
+   non_anagram = iter(no_anagrams.word_list)
+   while True:
+      curr_non_anagram = next(non_anagram, None)
+      if curr_non_anagram.word == first_word:
+         break
+      
+   if os.path.isfile(DATA_FILE):
+      with open(DATA_FILE, 'r') as f:
+         word_line_count_in_process = False
+         word_line_count_word = ''
+         word_line_count_rep = '' # word or anagrams list
+         word_line_count = 0
+         for line in f:
+            # Get the first word from this line. Slice out the first word
+            # of any anagram set like '[VIGOR|VIRGO]'
+            line_list = line.split()
+            line_first = line_list[0]
+            line_word = line_first[1:6] if line_first.startswith('[') else line_first
+            
+            # If the line array isn't six long, or if that first word of the line
+            # isn't a recognized word, then this line looks like junk or possibly
+            # a previous count line like '# WORD = n' which we're going to ignore.
+            if len(line_list) != 6 or not no_anagrams.contains(line_word):
+               # Silently ignore lines starting with '#', otherwise squawk.
+               if line_word != '#':
+                  print("SKIP unrecognized line:", line, end='', file=sys.stderr, flush=True)
+               continue # JUMP TO THE NEXT LINE
+            
+            # If we're already in the process of counting lines for a word, as long
+            # as the line_word matches the count word, just increment the count.
+            if word_line_count_in_process:
+               if line_word == word_line_count_word:
+                  print(line, end='')
+                  word_line_count += 1
+                  continue # JUMP TO THE NEXT LINE
+               else:
+                  # We've hit a new word. Emit the info line for the current word.
+                  print(f'# {word_line_count_rep} = {word_line_count}')
+                  # Reset our word line count variables, and advance the non-anagrams iterator
+                  word_line_count_in_process = False
+                  word_line_count_word = ''
+                  word_line_count_rep = '' # word or anagrams list
+                  word_line_count = 0
+                  curr_non_anagram = next(non_anagram, None)
+            
+            # OK, we're not in the process (yet) of counting lines for the current word.
+            # If the current word from the data file is the same as the word indicated by
+            # the current non-anagrams iterator, then just start counting lines.
+            if line_word == curr_non_anagram.word:
+               word_line_count_in_process = True
+               word_line_count_word = line_word
+               word_line_count_rep = line_first # word or anagrams list
+               word_line_count = 1
+               print(line, end='')
+            elif curr_non_anagram.word < line_word:
+               # Emit zero-count lines until the non-anagrams iterator reaches this word.
+               while curr_non_anagram.word < line_word:
+                  print_zero(curr_non_anagram.word, anagrams)
+                  curr_non_anagram = next(non_anagram, None)
+               # Now start the count of the current line.
+               word_line_count_in_process = True
+               word_line_count_word = line_word
+               word_line_count_rep = line_first # word or anagrams list
+               word_line_count = 1
+               print(line, end='')
+            else:
+               # Looks like the non-anagrams iterator got ahead of the lines
+               # in the file? This should not happen.
+               print(f'ERROR: curr non-anagram: {curr_non_anagram} is greater than current line: {line_word}!',
+                     file=sys.stderr, flush=True)
+         # end for line in f
+
+         # If there's a count in progress, emit that final count now,
+         # and advance the current non-anagram iterator (which should
+         # be equal to the last-counted word).
+         if word_line_count_in_process:
+            print(f'# {word_line_count_rep} = {word_line_count}')
+            if line_word != '#' and curr_non_anagram.word != word_line_count_word:
+               print(f'ERROR: curr non-anagram: {curr_non_anagram} != current line: {line_word} at EOF!',
+                     file=sys.stderr, flush=True)
+            curr_non_anagram = next(non_anagram, None)
+            
+         # If the non-anagrams iterator is not None and is less than the last word,
+         # then emit zero count lines until we reach the last word.
+         while (not curr_non_anagram is None) and (curr_non_anagram.word <= last_word):
+            print_zero(curr_non_anagram.word, anagrams)
+            curr_non_anagram = next(non_anagram, None)
+         
+   print("DONE:", DATA_FILE, file=sys.stderr, flush=True)
