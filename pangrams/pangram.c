@@ -303,13 +303,13 @@ void main(int argc, char **argv)
 	      // or to pause the search here (SIGUSR2) until signaled again.
 	      if (sigusr1_received || sigusr2_received) {
 		sigusr1_received = 0;
-		fprintf(stderr, "STACK: %d %s %d %s %d %s %d %s %d %s %d %s\n",
-		       w1, pw1->word,
-		       w2, pw2->word,
-		       w3, pw3->word,
-		       w4, pw4->word,
-		       w5, pw5->word,
-		       w6, pw6->word);
+		fprintf(stderr, "STACK: %s %s %s %s %s %s\n",
+			pw1->word,
+			pw2->word,
+			pw3->word,
+			pw4->word,
+			pw5->word,
+			pw6->word);
 		fprintf(stderr, "COUNTS: %lu %lu %lu %lu %lu %lu\n", n1, n2, n3, n4, n5, n6);
 		fprintf(stderr, "DELTAS: %lu %lu %lu %lu %lu %lu\n", n1-ln1, n2-ln2, n3-ln3, n4-ln4, n5-ln5, n6-ln6);
 		fflush(stderr);
