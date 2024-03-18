@@ -1,0 +1,47 @@
+#!/usr/bin/python3
+# Copyright (C) 2024 Dez Moleski dez@moleski.com
+# MIT License: All uses allowed with attribution.
+#
+from wordgames import Word, WordList, AnagramsDict, LetterSetBitmask, ALPHABET_LIST
+import sys
+from copy import deepcopy
+from glob import glob
+import datetime
+import json
+import os.path
+
+if __name__ == "__main__":
+   if len(sys.argv) != 1:
+      exit("Usage: anagrams")
+   
+   # Read ALL GUESSES file
+   ALL_FILE = "./ALL"
+   print("Reading all valid guesses file:", ALL_FILE, file=sys.stderr, flush=True, end=' ')
+   valid_guesses = WordList.from_file(ALL_FILE)
+   valid_guesses.sort()
+   print("N =", len(valid_guesses), file=sys.stderr, flush=True)
+   
+   anagrams_dict = AnagramsDict()
+   anagrams_dict.add_wordlist(valid_guesses)
+   anagrams_dict.prune() # Remove entries with just one anagram, i.e. the root word
+   anagrams_dict.sort() # Sort the lists of anagrams within the dict for consistent results
+   
+   # Start with a copy of all the given words.
+   # Then remove all but the first anagram listed for each entry in the anagrams dict.
+   # The resulting list contains no anagrams of any of the words in the list.
+   no_anagrams = deepcopy(valid_guesses)
+   for agrams in anagrams_dict.anagrams.values():
+      for wordstr in agrams[1:]:
+         no_anagrams.remove_str(wordstr)
+   no_anagrams.sort() # This is the master sorted list of 8401 words that drives the pangrams search.
+   
+   # For each word from the 8401 "no_anagrams" list, traversing in sorted order,
+   # if the word has multiple anagrams then print those anagrams the way we format them
+   # in the pangram-search output, i.e. like this: '[VIGOR|VIRGO]'
+   for w in no_anagrams.word_list:
+      word_anagrams = anagrams_dict.anagrams_of_word(w)
+      if not word_anagrams is None:
+         print(f'[{w}', end='')
+         for a in word_anagrams:
+            print(f'|{a}', end='')
+         print("]")
