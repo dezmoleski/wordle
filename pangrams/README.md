@@ -115,15 +115,15 @@ Results and code are published under the MIT License, available via the URL abov
 
 ##### Status
 The search program is now on eleven computers, with 24 instances running.
-- A, B, E, G, and J are in progress.
-- I and K-Z are complete.
-- C, D, F, H have not been started.
+- A, B, E, G, and H are in progress.
+- I-Z are complete.
+- C, D, F have not been started.
 
 ##### Counts
-- 607,124 "base" pangrams (without expanding anagrams) have been found. 
-- 935,642 total pangrams (with anagrams expanded) have been found.
-- 7,169 of 14,855 valid guesses (48%) appear in the known pangrams.
-- 1,147 of 2,313 known solutions (50%) appear in the known pangrams.
+- 995,082 "base" pangrams (without expanding anagrams) have been found. 
+- 1,472,611 total pangrams (with anagrams expanded) have been found.
+- 8,061 of 14,855 valid guesses (54%) appear in the known pangrams.
+- 1,224 of 2,313 known solutions (53%) appear in the known pangrams.
 
 
 #### Pangrams Comprised of Solutions Only
