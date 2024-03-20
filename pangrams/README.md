@@ -118,12 +118,13 @@ The search program is now on eleven computers, with 24 instances running.
 - A, B, E, G, and H are in progress.
 - I-Z are complete.
 - C, D, F have not been started.
+- Approximately 5.5% of the total search space has been covered.
 
 ##### Counts
-- 1,006,305 "base" pangrams (without expanding anagrams) have been found. 
-- 1,500,556 total pangrams (with anagrams expanded) have been found.
-- 8,105 of 14,855 valid guesses (55%) appear in the known pangrams.
-- 1,232 of 2,313 known solutions (53%) appear in the known pangrams.
+- 1,038,062 "base" pangrams (without expanding anagrams) have been found. 
+- 1,547,213 total pangrams (with anagrams expanded) have been found.
+- 8,145 of 14,855 valid guesses (55%) appear in the known pangrams.
+- 1,242 of 2,313 known solutions (54%) appear in the known pangrams.
 
 
 #### Pangrams Comprised of Solutions Only
