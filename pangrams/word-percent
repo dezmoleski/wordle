@@ -1,0 +1,40 @@
+#!/usr/bin/python3
+# Copyright (C) 2024 Dez Moleski dez@moleski.com
+# MIT License: All uses allowed with attribution.
+#
+import sys
+import os.path
+from string import ascii_uppercase
+
+if __name__ == "__main__":
+   if len(sys.argv) != 1:
+      exit("Usage: word-percent")
+   
+   # We will merge the reads of the NO-ANAGRAMS file and the
+   # word-percentages.txt file, writing WORD PERCENT on the
+   # output, and accumulating a check that they sum to about 100%
+   NO_ANAGRAMS_FILE = "./NO-ANAGRAMS"
+   PCT_TXT_FILE = "./word-percentages.txt"
+   
+   letter_percents = dict()
+   for l in ascii_uppercase:
+      letter_percents[l] = 0.0
+      
+   if os.path.isfile(NO_ANAGRAMS_FILE) and os.path.isfile(PCT_TXT_FILE):
+      with open(NO_ANAGRAMS_FILE, 'r') as naf, open(PCT_TXT_FILE, 'r') as pct:
+         non_anagram = iter(naf)
+         percent_sum = 0.0
+         for percent_line in pct:
+            word_line = next(non_anagram)
+            percent = float(percent_line)
+            percent_sum += percent
+            letter_percents[word_line[0]] += percent
+            print(word_line.rstrip(), percent)
+
+         print("Check sum ~= 100:", percent_sum, file=sys.stderr)
+         for l in ascii_uppercase:
+            print(l, f'{letter_percents[l]:.6}', file=sys.stderr)
+         
+         
+   else:
+      exit("ERROR: input file NO-ANAGRAMS or word-percentages.txt not found.")

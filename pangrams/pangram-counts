@@ -10,37 +10,6 @@ import datetime
 import json
 import os.path
 
-def sorted_letters(s: set) -> str:
-   l = list(s)
-   l.sort()
-   return ''.join(l)
-
-
-def sorted_words_str(words: list, mutable: bool) -> str:
-   '''Words is a list of strings. Mutable tells us if we must copy before sorting.'''
-   # Put the given list into a canonical form that we can
-   # use to recognize whether it's just a permutation of a
-   # list that we've already seen.
-   if not mutable:
-      mutable_list = words.copy() # We're not allowed to modify the given list!
-   else:
-      mutable_list = words
-   mutable_list.sort()
-   return ' '.join(mutable_list)
-
-
-KNOWN_PGRAMS = set()
-def is_new_pangram(pgram: list, mutable: bool) -> str:
-   '''Returns canonical pangram string if this is a new pangram, None if already known'''
-   
-   canon_str = sorted_words_str(pgram, mutable)
-   
-   if canon_str in KNOWN_PGRAMS:
-      return None
-   else:
-      KNOWN_PGRAMS.add(canon_str)
-      return canon_str
-
 if __name__ == "__main__":
    if len(sys.argv) != 1:
       exit("Usage: pangram-counts")
@@ -58,6 +27,26 @@ if __name__ == "__main__":
    answers = WordList.from_file(ANSWERS_FILE)
    answers.sort()
    print("N =", len(answers), file=sys.stderr, flush=True)
+
+   # Read WORD-PERCENT list and build up the word_percent dict.
+   # We only need to keep individual items for words starting
+   # with letters less than our "done from here on..." letter.
+   DONE_FROM_LETTER = 'I'
+   word_percent = dict()
+   WORD_PERCENT_FILE = "./WORD-PERCENT"
+   done_percent = 0.0
+   print("Done from", DONE_FROM_LETTER, "to Z, percent = ", file=sys.stderr, flush=True, end='')
+   if os.path.isfile(WORD_PERCENT_FILE):
+      with open(WORD_PERCENT_FILE) as f:
+         for word_percent_line in f:
+            wp = word_percent_line.split()
+            word = wp[0]
+            percent = float(wp[1])
+            if word[0] < DONE_FROM_LETTER:
+               word_percent[word] = percent
+            else:
+               done_percent += percent
+   print(f'{done_percent:.2}%', file=sys.stderr, flush=True)
    
    # Visit each pangram data file
    print("Scanning data files: ", file=sys.stderr, flush=True, end='')
@@ -65,6 +54,7 @@ if __name__ == "__main__":
    all_words = WordList()
    answers_used = WordList()
    total_pangrams = 0
+   n_word_percents_counted = 0
    for letter in ALPHABET_LIST:
       print(letter, file=sys.stderr, flush=True, end=' ')
       datadir = f"./data/{letter}/"
@@ -75,10 +65,21 @@ if __name__ == "__main__":
             with open(filepath, 'r') as f:
                # Read each line and split first into line_list array.
                # Anagrams within the line are like: '[VIGOR|VIRGO]'
-               # Ignore lines that start with '#'
                for line in f:
                   line_list = line.split()
-                  if line_list[0] != '#':
+                  if line_list[0] == '#':
+                     # For lines that start with '#', get the key word
+                     # which is either by itself, or the first word of
+                     # an anagram set like '[VIRGO|VIGOR]'
+                     word_or_anagram = line_list[1]
+                     if word_or_anagram[0] == '[':
+                        word = word_or_anagram[1:6]
+                     else:
+                        word = word_or_anagram
+                     if word[0] < DONE_FROM_LETTER:
+                        done_percent += word_percent[word]
+                        n_word_percents_counted += 1
+                  else:
                      all_pgrams.append(line_list) # unexpanded anagrams here
                      # Visit each word or anagram set in the line, and
                      # accumulate the words into our all_words WordList.
@@ -108,4 +109,6 @@ if __name__ == "__main__":
    print(f"N words used: {len(all_words)} / {len(valid_guesses)} = {percent:.0%}", file=sys.stderr, flush=True)
    percent = len(answers_used) / len(answers)
    print(f"N answers used: {len(answers_used)} / {len(answers)} = {percent:.0%}", file=sys.stderr, flush=True)
+   print(f'Overall done = {done_percent:.2}% ({n_word_percents_counted} words before letter {DONE_FROM_LETTER})',
+         file=sys.stderr, flush=True)
    
