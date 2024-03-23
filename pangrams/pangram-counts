@@ -59,6 +59,7 @@ if __name__ == "__main__":
    count_this_head_word = 0
    max_head_word = None
    max_head_word_count = 0
+   word_count = dict()
    for letter in ALPHABET_LIST:
       print(letter, file=sys.stderr, flush=True, end=' ')
       datadir = f"./data/{letter}/"
@@ -103,12 +104,14 @@ if __name__ == "__main__":
                         # If it's five letters, this item is a single word
                         if len(item) == 5:
                            all_words.add_str(item)
+                           word_count[item] = word_count.get(item, 0) + 1
                            if answers.contains(item):
                               answers_used.add_str(item)
                         else:
                            # It's anagrams like '[VIGOR|VIRGO]', so trim and split it into words.
                            stripped = item.strip('[]')
                            words = stripped.split('|')
+                           word_count[words[0]] = word_count.get(words[0], 0) + 1
                            count_this_pangram *= len(words)
                            for w in words:
                               all_words.add_str(w)
@@ -127,3 +130,9 @@ if __name__ == "__main__":
    print(f'Overall done = {done_percent:.2}% ({n_word_percents_counted} words before letter {DONE_FROM_LETTER})',
          file=sys.stderr, flush=True)
    print(f'Max head word = {max_head_word}, with {max_head_word_count} pangrams.', file=sys.stderr, flush=True)
+   
+   print("Top five words found in pangrams:", file=sys.stderr, flush=True)
+   # Sort the (word,count) tuples in the word_count dict by count, highest to lowest, and slice off the top 5
+   l = sorted(word_count.items(), key=lambda t: t[1], reverse=True)[0:5]
+   for t in l:
+      print(f'{t[0]}: {t[1]}', file=sys.stderr, flush=True)
