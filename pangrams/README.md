@@ -114,17 +114,17 @@ I have implemented a basic version of the exhaustive search in C that already ru
 Results and code are published under the MIT License, available via the URL above.
 
 ##### Status
-The search program is now on eleven computers, with 24 instances running.
-- A, B, E, G, and H are in progress.
-- I-Z are complete.
-- C, D, F have not been started.
-- Approximately 7.7% of the total search space has been covered.
+The search program is now on eleven computers, with 29 instances running.
+- A, B, E, and G are in progress.
+- H-Z are complete (representing 2.5% of the search space).
+- C, D, and F have not been started.
+- Approximately 8.2% of the total search space has been covered.
 
 ##### Counts
-- 1,385,738 "base" pangrams (without expanding anagrams) have been found. 
-- 2,075,251 total pangrams (with anagrams expanded) have been found.
-- 8,865 of 14,855 valid guesses (60%) appear in the known pangrams.
-- 1,338 of 2,313 known solutions (58%) appear in the known pangrams.
+- 1,483,213 "base" pangrams (without expanding anagrams) have been found. 
+- 2,217,326 total pangrams (with anagrams expanded) have been found.
+- 9,188 of 14,855 valid guesses (62%) appear in the known pangrams.
+- 1,380 of 2,313 known solutions (60%) appear in the known pangrams.
 
 The most productive first word is JUDGY, with 139,215 pangrams found.
 
