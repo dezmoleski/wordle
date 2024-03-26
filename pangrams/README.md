@@ -118,13 +118,13 @@ The search program is now on eleven computers, with 29 instances running.
 - A, B, E, and G are in progress.
 - H-Z are complete (representing 2.5% of the search space).
 - C, D, and F have not been started.
-- Approximately 8.2% of the total search space has been covered.
+- Approximately 9.0% of the total search space has been covered.
 
 ##### Counts
-- 1,483,213 "base" pangrams (without expanding anagrams) have been found. 
-- 2,217,326 total pangrams (with anagrams expanded) have been found.
-- 9,188 of 14,855 valid guesses (62%) appear in the known pangrams.
-- 1,380 of 2,313 known solutions (60%) appear in the known pangrams.
+- 1,817,119 "base" pangrams (without expanding anagrams) have been found. 
+- 2,736,909 total pangrams (with anagrams expanded) have been found.
+- 9,401 of 14,855 valid guesses (63%) appear in the known pangrams.
+- 1,416 of 2,313 known solutions (61%) appear in the known pangrams.
 
 The most productive first word is JUDGY, with 139,215 pangrams found.
 
