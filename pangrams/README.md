@@ -114,19 +114,23 @@ I have implemented a basic version of the exhaustive search in C that already ru
 Results and code are published under the MIT License, available via the URL above.
 
 ##### Status
-The search program is now on eleven computers, with 29 instances running.
+The search program is now on eleven computers, but several have gone idle,
+waiting for updated instructions. Currently 9 productive instances of the
+search remain running. One new computer is in the process of being commissioned
+to join the search!
+
 - A, B, E, and G are in progress.
 - H-Z are complete (representing 2.5% of the search space).
 - C, D, and F have not been started.
-- Approximately 9.1% of the total search space has been covered.
+- Approximately 9.5% of the total search space has been covered.
 
 ##### Counts
-- 1,918,278 "base" pangrams (without expanding anagrams) have been found. 
-- 2,889,711 total pangrams (with anagrams expanded) have been found.
-- 9,407 of 14,855 valid guesses (63%) appear in the known pangrams.
-- 1,417 of 2,313 known solutions (61%) appear in the known pangrams.
+- 2,502,403 "base" pangrams (without expanding anagrams) have been found. 
+- 4,012,360 total pangrams (with anagrams expanded) have been found.
+- 9,631 of 14,855 valid guesses (65%) appear in the known pangrams.
+- 1,447 of 2,313 known solutions (63%) appear in the known pangrams.
 
-The most productive first word is JUDGY, with 139,215 pangrams found.
+The most productive first word is EMBOX, with 336,269 pangrams found.
 
 #### Pangrams Comprised of Solutions Only
 See https://rentry.co/wordle-pangrams-solutions-only
