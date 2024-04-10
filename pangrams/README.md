@@ -13,6 +13,7 @@ Pangram-related posts in the NYT Wordle Review Comments:
 - 02024 Feb 28 - https://nyti.ms/3Tf3C2U#permid=131484206
 - 02024 Mar 07 - https://nyti.ms/433r4nj#permid=131685392
 - 02024 Mar 17 - https://www.nytimes.com/shared/comment/3tpkj5
+- 02024 Mar 19 - https://www.nytimes.com/shared/comment/3tqus9
 
 Other pangram-related articles:
 - https://en.wikipedia.org/wiki/Pangram
@@ -82,9 +83,15 @@ Step 6: Solve and collect your pangram win, or hope for better luck tomorrow!
 Finally, if you do win Wordle with a pangram by any method, be sure to get a screen capture of your completed game showing ALL the letters of the keyboard have changed color. This is half the fun of winning with a pangram, so save that screen capture to share later with other Wordle players.
 
 **Known Pangram Wins:**
-1. Wordle `0939 DOING` - https://nyti.ms/3Hf10eR#permid=130444396 @WT
-1. Wordle `0944 THING` - https://nyti.ms/3U0EDkS#permid=130556623 @Wordler
-1. Wordle `0995 GRASP` - https://nyti.ms/49Gjwt0#permid=131749118 @Dez
+1. Wordle `0939 DOING`
+  - https://nyti.ms/3Hf10eR#permid=130444396 @WT
+1. Wordle `0944 THING`
+  - https://nyti.ms/3U0EDkS#permid=130556623 @Wordler
+1. Wordle `0995 GRASP`
+  - https://nyti.ms/49Gjwt0#permid=131749118 @Dez
+1. Wordle `1023 VOILA` - the first V!
+  - https://www.nytimes.com/shared/comment/3u7o0b @Couchpumpkin
+  - @Couchpumpkin went on a 10 day quest for a V-pangram with DRECK GLITZ JUMBO PHYNX WAQFS, eschewing the algorithm given above and quoting Hemingway while fishing patiently and confidently.
 
 ##### Total Number of Pangrams Generated from Heterograms
 There is:
@@ -114,23 +121,24 @@ I have implemented a basic version of the exhaustive search in C that already ru
 Results and code are published under the MIT License, available via the URL above.
 
 ##### Status
-The search program is now on eleven computers, but several have gone idle,
-waiting for updated instructions. Currently 9 productive instances of the
-search remain running. One new computer is in the process of being commissioned
-to join the search!
+The search program is now on eleven computers, but several have gone idle, waiting for updated instructions. Currently 3 productive instances of the search remain running. One new computer is in the process of being commissioned to join the search!
 
 - A, B, E, and G are in progress.
 - H-Z are complete (representing 2.5% of the search space).
 - C, D, and F have not been started.
-- Approximately 9.5% of the total search space has been covered.
+- Approximately 11% of the total search space has been covered.
 
 ##### Counts
-- 2,502,403 "base" pangrams (without expanding anagrams) have been found. 
-- 4,012,360 total pangrams (with anagrams expanded) have been found.
-- 9,631 of 14,855 valid guesses (65%) appear in the known pangrams.
-- 1,447 of 2,313 known solutions (63%) appear in the known pangrams.
+- 2,942,595 "base" pangrams (without expanding anagrams) have been found. 
+- 5,003,295 total pangrams (with anagrams expanded) have been found.
+- 9,918 of 14,855 valid guesses (67%) appear in the known pangrams.
+- 1,492 of 2,313 known solutions (65%) appear in the known pangrams.
 
 The most productive first word is EMBOX, with 336,269 pangrams found.
 
+
 #### Pangrams Comprised of Solutions Only
 See https://rentry.co/wordle-pangrams-solutions-only
+
+### More Pangram Posts
+- https://www.nytimes.com/shared/comment/3u27j7
