@@ -118,18 +118,18 @@ I have implemented a basic version of the exhaustive search in C that already ru
 Results and code are published under the MIT License, available via the URL above.
 
 ##### Status
-The search program is now on eleven computers, but several have gone idle, waiting for updated instructions. Currently 3 productive instances of the search remain running. One new computer is in the process of being commissioned to join the search!
+The search program is now on eleven computers, but several have gone idle, waiting for updated instructions. Currently only a few productive instances of the search remain running. One new computer is in the process of being commissioned to join the search!
 
-- A, B, E, and G are in progress.
-- H-Z are complete (representing 2.5% of the search space).
-- C, D, and F have not been started.
+- A, B, F and G are in progress.
+- E, and H-Z are complete (representing over 2.5% of the search space).
+- C and D have not been started.
 - Approximately 11% of the total search space has been covered.
 
 ##### Counts
-- 2,942,595 "base" pangrams (without expanding anagrams) have been found. 
-- 5,003,295 total pangrams (with anagrams expanded) have been found.
-- 9,918 of 14,855 valid guesses (67%) appear in the known pangrams.
-- 1,492 of 2,313 known solutions (65%) appear in the known pangrams.
+- 2,956,687 "base" pangrams (without expanding anagrams) have been found. 
+- 5,028,707 total pangrams (with anagrams expanded) have been found.
+- 9,949 of 14,855 valid guesses (67%) appear in the known pangrams.
+- 1,497 of 2,313 known solutions (65%) appear in the known pangrams.
 
 The most productive first word is EMBOX, with 336,269 pangrams found.
 
