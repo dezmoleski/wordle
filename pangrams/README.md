@@ -126,12 +126,12 @@ The search program is now on eleven computers, but several have gone idle, waiti
 - Approximately 11% of the total search space has been covered.
 
 ##### Counts
-- 2,956,687 "base" pangrams (without expanding anagrams) have been found. 
-- 5,028,707 total pangrams (with anagrams expanded) have been found.
-- 9,949 of 14,855 valid guesses (67%) appear in the known pangrams.
-- 1,497 of 2,313 known solutions (65%) appear in the known pangrams.
+- 4,020,277 "base" pangrams (without expanding anagrams) have been found. 
+- 6,717,105 total pangrams (with anagrams expanded) have been found.
+- 10,450 of 14,855 valid guesses (70%) appear in the known pangrams.
+- 1,566 of 2,313 known solutions (68%) appear in the known pangrams.
 
-The most productive first word is EMBOX, with 336,269 pangrams found.
+The most productive first word is FJORD, with 756,841 pangrams found.
 
 
 #### Pangrams Comprised of Solutions Only
