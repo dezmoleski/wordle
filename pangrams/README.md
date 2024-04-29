@@ -123,13 +123,13 @@ The search program is now on eleven computers, but several have gone idle, waiti
 - A, B, F and G are in progress.
 - E, and H-Z are complete (representing over 2.5% of the search space).
 - C and D have not been started.
-- Approximately 11% of the total search space has been covered.
+- Approximately 12% of the total search space has been covered.
 
 ##### Counts
-- 4,020,277 "base" pangrams (without expanding anagrams) have been found. 
-- 6,717,105 total pangrams (with anagrams expanded) have been found.
-- 10,450 of 14,855 valid guesses (70%) appear in the known pangrams.
-- 1,566 of 2,313 known solutions (68%) appear in the known pangrams.
+- 4,457,405 "base" pangrams (without expanding anagrams) have been found. 
+- 7,435,179 total pangrams (with anagrams expanded) have been found.
+- 10,555 of 14,855 valid guesses (71%) appear in the known pangrams.
+- 1,581 of 2,313 known solutions (68%) appear in the known pangrams.
 
 The most productive first word is FJORD, with 756,841 pangrams found.
 
