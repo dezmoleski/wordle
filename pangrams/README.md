@@ -121,18 +121,42 @@ Results and code are published under the MIT License, available via the URL abov
 The search program is now on eleven computers, but several have gone idle, waiting for updated instructions. Currently only a few productive instances of the search remain running. One new computer is in the process of being commissioned to join the search!
 
 - A, B, F and G are in progress.
-- E, and H-Z are complete (representing over 2.5% of the search space).
+- E, and H-Z are complete (representing 2.53% of the search space).
 - C and D have not been started.
-- Approximately 13% of the total search space has been covered.
+- Approximately 13% of the total search space has been covered to date.
 
 ##### Counts
 - 5,076,150 "base" pangrams (without expanding anagrams) have been found. 
 - 8,574,042 total pangrams (with anagrams expanded) have been found.
-- 10,568 of 14,855 valid guesses (71%) appear in the known pangrams.
-- 1,582 of 2,313 known solutions (68%) appear in the known pangrams.
+- 10,568 of 14,855 valid guesses (71%) appear in pangrams found to date.
+- 1,762 of 2,313 known solutions (76%) appear in pangrams found to date.
 
-The most productive first word is FJORD, with 756,841 pangrams found.
-
+Top words occurring in pangrams found to date:
+1. VOZHD: 2886605 (34%) 
+1. WAQFS: 2420863 (28%) 
+1. VIBEX: 1156513 (13%) 
+1. FJORD: 883953 (10%) 
+1. PHYNX: 854922 (10%) 
+1. FJELD: 840852 (10%) 
+1. JUMBY: 742917 (9%) 
+1. QUACK: 614629 (7%) 
+1. QUICK: 611155 (7%) 
+1. QUAWK: 512352 (6%) 
+1. QUECK: 511342 (6%) 
+1. EMBOX: 339389 (4%) 
+1. JUDGY: 310997 (4%) 
+1. JOCKY: 304916 (4%) 
+1. FLAXY: 302328 (4%) 
+1. QUBIT: 301431 (4%) 
+1. VEXED: 294021 (3%) 
+1. ABJUD: 278948 (3%) 
+1. JACKY: 273468 (3%) 
+1. JIVED: 271845 (3%) 
+1. JAMBS: 271641 (3%) 
+1. ZIMBS: 254488 (3%) 
+1. JUMPY: 245534 (3%) 
+1. GUQIN: 242750 (3%) 
+1. SQUIZ: 237115 (3%) 
 
 #### Pangrams Comprised of Solutions Only
 See https://rentry.co/wordle-pangrams-solutions-only
