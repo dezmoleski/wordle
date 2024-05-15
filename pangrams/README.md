@@ -126,37 +126,37 @@ The search program is now on eleven computers, but several have gone idle, waiti
 - Approximately 14% of the total search space has been covered to date.
 
 ##### Counts
-- 5,405,319 "base" pangrams (without expanding anagrams) have been found. 
-- 9,116,459 total pangrams (with anagrams expanded) have been found.
-- 10,588 of 14,855 valid guesses (71%) appear in pangrams found to date.
-- 1,768 of 2,313 known solutions (76%) appear in pangrams found to date.
+- 5,418,505 "base" pangrams (without expanding anagrams) have been found. 
+- 9,143,359 total pangrams (with anagrams expanded) have been found.
+- 10,597 of 14,855 valid guesses (71%) appear in pangrams found to date.
+- 1,770 of 2,313 known solutions (76%) appear in pangrams found to date.
 
 Top 25 words occurring in pangrams found to date:
-1. `VOZHD` : 34% (3137322) 
-1. `WAQFS` : 27% (2473778) 
-1. `VIBEX` : 13% (1205496) 
-1. `PHYNX` : 10% (924005) 
-1. `FJORD` : 10% (884099) 
-1. `FJELD` : 9% (841219) 
-1. `JUMBY` : 9% (809640) 
-1. `QUACK` : 7% (657473) 
-1. `QUICK` : 7% (656284) 
-1. `QUECK` : 6% (548560) 
-1. `QUAWK` : 6% (543262) 
-1. `QUBIT` : 4% (345147) 
-1. `EMBOX` : 4% (339389) 
-1. `JUDGY` : 4% (330701) 
-1. `JOCKY` : 4% (328719) 
-1. `VEXED` : 3% (317864) 
-1. `JAMBS` : 3% (308658) 
-1. `FLAXY` : 3% (302604) 
-1. `JACKY` : 3% (299912) 
-1. `JIVED` : 3% (288451) 
+1. `VOZHD` : 34% (3152922) 
+1. `WAQFS` : 27% (2491122) 
+1. `VIBEX` : 13% (1206226) 
+1. `PHYNX` : 10% (927258) 
+1. `FJORD` : 10% (884591) 
+1. `FJELD` : 9% (842224) 
+1. `JUMBY` : 9% (810018) 
+1. `QUACK` : 7% (659022) 
+1. `QUICK` : 7% (657705) 
+1. `QUECK` : 6% (550360) 
+1. `QUAWK` : 6% (545143) 
+1. `QUBIT` : 4% (345171) 
+1. `EMBOX` : 4% (339395) 
+1. `JUDGY` : 4% (331335) 
+1. `JOCKY` : 4% (330402) 
+1. `VEXED` : 3% (319662) 
+1. `JAMBS` : 3% (309075) 
+1. `FLAXY` : 3% (302908) 
+1. `JACKY` : 3% (301441) 
+1. `JIVED` : 3% (289729) 
 1. `ABJUD` : 3% (278948) 
-1. `ZIMBS` : 3% (268464) 
-1. `JUMPY` : 3% (266327) 
-1. `GUQIN` : 3% (262389) 
-1. `SQUIZ` : 3% (257233) 
+1. `JUMPY` : 3% (268855) 
+1. `ZIMBS` : 3% (268534) 
+1. `GUQIN` : 3% (263133) 
+1. `SQUIZ` : 3% (257653) 
 
 #### Pangrams Comprised of Solutions Only
 See https://rentry.co/wordle-pangrams-solutions-only
