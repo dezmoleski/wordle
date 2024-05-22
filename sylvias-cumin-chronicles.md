@@ -1,81 +1,114 @@
 #### Sylvia's Cumin Chronicles
 by @Julia, Bay Area
 
-###### ⁓ &nbsp;&nbsp; [Sylvia’s Cumin Pesto Fiasco](https://www.nytimes.com/shared/comment/3npmpu) &nbsp;&nbsp; ⁓ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #720 BALSA
-
+###### ⁓ &nbsp;&nbsp; [1 &nbsp;&nbsp; Sylvia’s Cumin Pesto Fiasco](https://www.nytimes.com/shared/comment/3npmpu) &nbsp;&nbsp; ⁓ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Coriander and Cumin Pesto](https://www.nzherald.co.nz/eatwell/recipes/coriander-and-cumin-pesto/2L5WDHBTENYFDT75HEO6OPCZJ4)
 
-###### ⁓ &nbsp;&nbsp; [A Scone Next Day (Tom)](https://www.nytimes.com/shared/comment/3nq766) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #721 AGAIN
+###### ⁓ &nbsp;&nbsp; [2 &nbsp;&nbsp; A Scone Next Day (Tom)](https://www.nytimes.com/shared/comment/3nq766) &nbsp;&nbsp; ⁓
 
-###### ⁓ &nbsp;&nbsp; [Sylvia Visits the Café](https://www.nytimes.com/shared/comment/3nqqsr) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #722 GUARD
+###### ⁓ &nbsp;&nbsp; [3 &nbsp;&nbsp; Sylvia Visits the Café](https://www.nytimes.com/shared/comment/3nqqsr) &nbsp;&nbsp; ⁓
 
-###### ⁓ &nbsp;&nbsp; [Tom Receives an Invitation ](https://www.nytimes.com/shared/comment/3nr8sn) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #723 WRONG
+###### ⁓ &nbsp;&nbsp; [4 &nbsp;&nbsp; Tom Receives an Invitation ](https://www.nytimes.com/shared/comment/3nr8sn) &nbsp;&nbsp; ⁓
 
-###### ⁓ &nbsp;&nbsp; [Squid Porridge](https://www.nytimes.com/shared/comment/3nrv89) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #724 PLUNK
-
+###### ⁓ &nbsp;&nbsp; [5 &nbsp;&nbsp; Squid Porridge](https://www.nytimes.com/shared/comment/3nrv89) &nbsp;&nbsp; ⁓
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Squid Congee](https://www.unfamiliarchina.com/congee/squid-congee)
 
-###### ⁓ &nbsp;&nbsp; [Tom’s Acorn Ice Cream Idea](https://www.nytimes.com/shared/comment/3nsqgd) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #725 CRIME
+***
+***
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Homemade Acorn Liqueur](https://nutgeeks.com/homemade-acorn-liqueur/)
+###### -> ⁓ &nbsp;&nbsp; 6 &nbsp;&nbsp; ⁓ <-
+##### -> [Tom’s Acorn Ice Cream Idea](https://www.nytimes.com/shared/comment/3nsqgd)  <-
+-> 🌶️ [Homemade Acorn Liqueur](https://nutgeeks.com/homemade-acorn-liqueur/) <-
 
-###### ⁓ &nbsp;&nbsp; [Strange Flavor Eggplant Spread](https://www.nytimes.com/shared/comment/3ntldb) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #726 MAYBE
+&nbsp;
 
-###### ⁓ &nbsp;&nbsp; [A Simple Omelet ](https://www.nytimes.com/shared/comment/3nu9cs) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #727 STRAP
+###### -> ⁓ &nbsp;&nbsp; 7 &nbsp;&nbsp; ⁓ <-
+##### -> [Strange Flavor Eggplant Spread](https://www.nytimes.com/shared/comment/3ntldb) <-
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Blooming Broccoli is Edible and Delicious](https://plantersplace.com/kitchen-garden/blooming-broccoli-is-edible/)
+&nbsp;
 
-###### ⁓ &nbsp;&nbsp; [Tom’s Eggplant Recipes](https://www.nytimes.com/shared/comment/3nulbd) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #728 RANCH
+###### -> ⁓ &nbsp;&nbsp; 8 &nbsp;&nbsp; ⁓ <-
+##### -> [A Simple Omelet ](https://www.nytimes.com/shared/comment/3nu9cs) <-
+-> 🌶️ [Blooming Broccoli is Edible and Delicious](https://plantersplace.com/kitchen-garden/blooming-broccoli-is-edible/) <-
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Eggplant Crisp with Walnut Streusel](https://www.foodnetwork.com/recipes/food-network-kitchen/eggplant-crisp-with-walnut-streusel-3364521)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Panko Crusted Eggplant](https://herbielikesspaghetti.com/2011/05/fried-eggplant-buttermilk-ranch.html)
+&nbsp;
 
-###### ⁓ &nbsp;&nbsp; [Tom’s Memory of the Pesto Fiasco](https://www.nytimes.com/shared/comment/3nv27d) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #729 SHYLY
+###### -> ⁓ &nbsp;&nbsp; 9 &nbsp;&nbsp; ⁓ <-
+##### -> [Tom’s Eggplant Recipes](https://www.nytimes.com/shared/comment/3nulbd) <-
+-> 🌶️ [Eggplant Crisp with Walnut Streusel](https://www.foodnetwork.com/recipes/food-network-kitchen/eggplant-crisp-with-walnut-streusel-3364521) <-
+-> 🌶️ [Panko Crusted Eggplant](https://herbielikesspaghetti.com/2011/05/fried-eggplant-buttermilk-ranch.html) <-
 
-###### ⁓ &nbsp;&nbsp; [Wordle Birthday Party with Bundt Cake](https://www.nytimes.com/shared/comment/3nvcue) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #730 KAZOO
+&nbsp;
 
-###### ⁓ &nbsp;&nbsp; [Sylvia at the Bookshop Café ](https://www.nytimes.com/shared/comment/3nvom0) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #731 FROST
+###### -> ⁓ &nbsp;&nbsp; 10 &nbsp;&nbsp; ⁓ <-
+##### -> [Tom’s Memory of the Pesto Fiasco](https://www.nytimes.com/shared/comment/3nv27d) <-
 
-###### ⁓ &nbsp;&nbsp; [Anise Cookies](https://www.nytimes.com/shared/comment/3o1arm) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #733 TASTE
+&nbsp;
 
-###### ⁓ &nbsp;&nbsp; [Fenugreek Seeds](https://www.nytimes.com/shared/comment/3o2bje) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #734 COVET
+***
+***
 
-###### ⁓ &nbsp;&nbsp; [Good Capers](https://www.nytimes.com/shared/comment/3o2mo3) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #735 GRAND
+###### -> ⁓ &nbsp;&nbsp; 730 KAZOO &nbsp;&nbsp; ⁓ <-
+##### -> [Wordle Birthday Party with Bundt Cake](https://www.nytimes.com/shared/comment/3nvcue) <-
 
-###### ⁓ &nbsp;&nbsp; [Cumin Squid Tentacles ](https://www.nytimes.com/shared/comment/3o30r5) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #736 RODEO
+&nbsp;
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Cumin Squid Tentacles with Chili](https://mychinesehomekitchen.com/2021/08/06/cumin-squid-tentacles-with-chili)
+###### -> ⁓ &nbsp;&nbsp; 731 FROST &nbsp;&nbsp; ⁓ <-
+##### -> [Sylvia at the Bookshop Café ](https://www.nytimes.com/shared/comment/3nvom0) <-
 
-###### ⁓ &nbsp;&nbsp; [Avocado Recipes](https://www.nytimes.com/shared/comment/3o6efl) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #741 STRAW
+&nbsp;
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Zesty Avocado Toast](https://australianavocados.com.au/recipes/zesty-avocado-toast/)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Satiny Guacamole](https://www.recipesecrets.net/t/satiny-guacamole/218415)
+###### -> ⁓ &nbsp;&nbsp; 733 TASTE &nbsp;&nbsp; ⁓ <-
+##### -> [Anise Cookies](https://www.nytimes.com/shared/comment/3o1arm) <-
 
-###### ⁓ &nbsp;&nbsp; [Sylvia’s New Curtains](https://www.nytimes.com/shared/comment/3pcula) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #798 CHOIR
+&nbsp;
 
-###### ⁓ &nbsp;&nbsp; [Sylvia’s Reputation ](https://www.nytimes.com/shared/comment/3pejgn) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #801 CAPER
+###### -> ⁓ &nbsp;&nbsp; 734 COVET &nbsp;&nbsp; ⁓ <-
+##### -> [Fenugreek Seeds](https://www.nytimes.com/shared/comment/3o2bje) <-
 
-###### ⁓ &nbsp;&nbsp; [Sylvia and Tom in Cahoots](https://www.nytimes.com/shared/comment/3pfrai) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #802 AUDIO
+&nbsp;
+
+###### -> ⁓ &nbsp;&nbsp; 735 GRAND &nbsp;&nbsp; ⁓ <-
+##### -> [Good Capers](https://www.nytimes.com/shared/comment/3o2mo3) <-
+
+&nbsp;
+
+***
+***
+
+###### ⁓ &nbsp;&nbsp; 736 RODEO &nbsp;&nbsp; ⁓
+##### [Cumin Squid Tentacles ](https://www.nytimes.com/shared/comment/3o30r5)
+🌶️ [Cumin Squid Tentacles with Chili](https://mychinesehomekitchen.com/2021/08/06/cumin-squid-tentacles-with-chili)
+
+&nbsp;
+***
+
+###### ⁓ &nbsp;&nbsp; 741 STRAW &nbsp;&nbsp; ⁓
+##### [Avocado Recipes](https://www.nytimes.com/shared/comment/3o6efl)
+🌶️ [Zesty Avocado Toast](https://australianavocados.com.au/recipes/zesty-avocado-toast/)
+🌶️ [Satiny Guacamole](https://www.recipesecrets.net/t/satiny-guacamole/218415)
+
+&nbsp;
+***
+
+###### ⁓ &nbsp;&nbsp; 798 CHOIR &nbsp;&nbsp; ⁓
+##### [Sylvia’s New Curtains](https://www.nytimes.com/shared/comment/3pcula)
+
+&nbsp;
+***
+
+###### ⁓ &nbsp;&nbsp; 801 CAPER &nbsp;&nbsp; ⁓
+##### [Sylvia’s Reputation ](https://www.nytimes.com/shared/comment/3pejgn)
+
+&nbsp;
+***
+
+###### ⁓ &nbsp;&nbsp; 802 AUDIO &nbsp;&nbsp; ⁓
+##### [Sylvia and Tom in Cahoots](https://www.nytimes.com/shared/comment/3pfrai)
+
+&nbsp;
+***
+***
 
 ###### ⁓ &nbsp;&nbsp; [Sylvia, a Fan of Festivity](https://www.nytimes.com/shared/comment/3pgob3) &nbsp;&nbsp; ⁓
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #803 BRIDE
