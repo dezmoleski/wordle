@@ -121,42 +121,42 @@ Results and code are published under the MIT License, available via the URL abov
 The search program is now on eleven computers, but several have gone idle, waiting for updated instructions. Currently only a few productive instances of the search remain running. One new computer is in the process of being commissioned to join the search!
 
 - A, B, and F are in progress.
-- E, and G-Z are complete (representing over 2.5% of the search space).
+- E, and G-Z are complete (representing 4.5% of the search space).
 - C and D have not been started.
-- Approximately 14.7% of the total search space has been covered to date.
+- Approximately 15.6% of the total search space has been covered to date.
 
 ##### Counts
-- 5,963,412 "base" pangrams (without expanding anagrams) have been found. 
-- 9,909,234 total pangrams (with anagrams expanded) have been found.
-- 10,647 of 14,855 valid guesses (72%) appear in pangrams found to date.
-- 1,778 of 2,314 known potential solutions (77%) appear in pangrams found to date.
+-  6,331,420 "base" pangrams (without expanding anagrams) have been found. 
+- 10,468,815 total pangrams (with anagrams expanded) have been found.
+- 10,678 of 14,855 valid guesses (72%) appear in pangrams found to date.
+- 1,782 of 2,314 known potential solutions (77%) appear in pangrams found to date.
 
 Top 25 words occurring in pangrams found to date:
-1. `VOZHD` : 34% (3360792) 
-1. `WAQFS` : 28% (2736444) 
-1. `VIBEX` : 13% (1279781) 
-1. `PHYNX` : 11% (1054226) 
-1. `FJORD` : 9% (892018) 
-1. `JUMBY` : 9% (877210) 
-1. `FJELD` : 9% (843442) 
-1. `QUICK` : 7% (708995) 
-1. `QUACK` : 7% (708707) 
-1. `QUECK` : 6% (592386) 
-1. `QUAWK` : 6% (576297) 
-1. `QUBIT` : 4% (383424) 
-1. `VEXED` : 4% (358595) 
-1. `JOCKY` : 4% (353890) 
-1. `JUDGY` : 4% (350287) 
-1. `JAMBS` : 3% (343824) 
-1. `EMBOX` : 3% (339484) 
-1. `JACKY` : 3% (324107) 
-1. `JIVED` : 3% (322117) 
-1. `FLAXY` : 3% (303040) 
-1. `ZIMBS` : 3% (293977) 
-1. `JUMPY` : 3% (292720) 
-1. `SQUIZ` : 3% (285466) 
-1. `ABJUD` : 3% (278948) 
-1. `JIMPY` : 3% (278831) 
+1. `VOZHD` : 34% (3509524) 
+1. `WAQFS` : 27% (2777707) 
+1. `VIBEX` : 13% (1346820) 
+1. `PHYNX` : 11% (1131413) 
+1. `JUMBY` : 9% (945707) 
+1. `FJORD` : 9% (893943) 
+1. `FJELD` : 8% (845555) 
+1. `QUICK` : 7% (783766) 
+1. `QUACK` : 7% (767455) 
+1. `QUECK` : 6% (642817) 
+1. `QUAWK` : 6% (626472) 
+1. `QUBIT` : 4% (425766) 
+1. `VEXED` : 4% (389787) 
+1. `JAMBS` : 4% (382774) 
+1. `JOCKY` : 4% (378882) 
+1. `JUDGY` : 3% (364010) 
+1. `JACKY` : 3% (348779) 
+1. `JIVED` : 3% (346879) 
+1. `EMBOX` : 3% (339493) 
+1. `ZIMBS` : 3% (315063) 
+1. `JUMPY` : 3% (314934) 
+1. `FLAXY` : 3% (303934) 
+1. `SQUIZ` : 3% (303107) 
+1. `JIMPY` : 3% (301389) 
+1. `GUQIN` : 3% (295354) 
 
 
 #### Pangrams Comprised of Solutions Only
