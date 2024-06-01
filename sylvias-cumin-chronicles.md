@@ -100,41 +100,40 @@
 &nbsp;
 ***
 
-
-***
-***
-
-###### ⁓ &nbsp;&nbsp; 736 RODEO &nbsp;&nbsp; ⁓
-##### %tomato% [Cumin Squid Tentacles ](https://www.nytimes.com/shared/comment/3o30r5) %%
-🌶️ %tomato% [Cumin Squid Tentacles with Chili](https://mychinesehomekitchen.com/2021/08/06/cumin-squid-tentacles-with-chili) %%
+###### -> ⁓ &nbsp;&nbsp; 16 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Cumin Squid Tentacles ](https://www.nytimes.com/shared/comment/3o30r5) %% <-
+-> 🌶️ %darkred% [Cumin Squid Tentacles with Chili](https://mychinesehomekitchen.com/2021/08/06/cumin-squid-tentacles-with-chili) %% <-
 
 &nbsp;
 ***
 
-###### ⁓ &nbsp;&nbsp; 741 STRAW &nbsp;&nbsp; ⁓
-##### %tomato% [Avocado Recipes](https://www.nytimes.com/shared/comment/3o6efl) %%
-🌶️ %tomato% [Zesty Avocado Toast](https://australianavocados.com.au/recipes/zesty-avocado-toast/) %%
-🌶️ %tomato% [Satiny Guacamole](https://www.recipesecrets.net/t/satiny-guacamole/218415) %%
+###### -> ⁓ &nbsp;&nbsp; 17 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Avocado Recipes](https://www.nytimes.com/shared/comment/3o6efl) %% <-
+-> 🌶️ %darkred% [Zesty Avocado Toast](https://australianavocados.com.au/recipes/zesty-avocado-toast/) %% <-
+-> 🌶️ %darkred% [Satiny Guacamole](https://www.recipesecrets.net/t/satiny-guacamole/218415) %% <-
 
 &nbsp;
 ***
 
-###### ⁓ &nbsp;&nbsp; 798 CHOIR &nbsp;&nbsp; ⁓
-##### %tomato% [Sylvia’s New Curtains](https://www.nytimes.com/shared/comment/3pcula) %%
+###### -> ⁓ &nbsp;&nbsp; 18 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Sylvia’s New Curtains](https://www.nytimes.com/shared/comment/3pcula) %% <-
 
 &nbsp;
 ***
 
-###### ⁓ &nbsp;&nbsp; 801 CAPER &nbsp;&nbsp; ⁓
-##### %tomato% [Sylvia’s Reputation ](https://www.nytimes.com/shared/comment/3pejgn) %%
+###### -> ⁓ &nbsp;&nbsp; 19 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Sylvia’s Reputation ](https://www.nytimes.com/shared/comment/3pejgn) %% <-
 
 &nbsp;
 ***
 
-###### ⁓ &nbsp;&nbsp; 802 AUDIO &nbsp;&nbsp; ⁓
-##### %tomato% [Sylvia and Tom in Cahoots](https://www.nytimes.com/shared/comment/3pfrai) %%
+###### -> ⁓ &nbsp;&nbsp; 20 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Sylvia and Tom in Cahoots](https://www.nytimes.com/shared/comment/3pfrai) %% <-
 
 &nbsp;
+***
+
+
 ***
 ***
 
