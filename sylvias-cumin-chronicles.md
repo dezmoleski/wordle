@@ -133,159 +133,245 @@
 &nbsp;
 ***
 
+###### -> ⁓ &nbsp;&nbsp; 21 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Sylvia, a Fan of Festivity](https://www.nytimes.com/shared/comment/3pgob3) %% <-
 
+&nbsp;
 ***
+
+###### -> ⁓ &nbsp;&nbsp; 22 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Pumpkin Pie Time](https://www.nytimes.com/shared/comment/3quhvo) %% <-
+
+&nbsp;
 ***
 
-###### ⁓ &nbsp;&nbsp; [Sylvia, a Fan of Festivity](https://www.nytimes.com/shared/comment/3pgob3) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #803 BRIDE
+###### -> ⁓ &nbsp;&nbsp; 23 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Sylvia the Maverick](https://www.nytimes.com/shared/comment/3qv4qo) %% <-
 
-###### ⁓ &nbsp;&nbsp; [Pumpkin Pie Time](https://www.nytimes.com/shared/comment/3quhvo) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #867 ARDOR
+&nbsp;
+***
 
-###### ⁓ &nbsp;&nbsp; [Sylvia the Maverick](https://www.nytimes.com/shared/comment/3qv4qo) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #868 MANIA
+###### -> ⁓ &nbsp;&nbsp; 24 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Thanksgiving Desserts ](https://www.nytimes.com/shared/comment/3r75cf) %% <-
 
-###### ⁓ &nbsp;&nbsp; [Thanksgiving Desserts ](https://www.nytimes.com/shared/comment/3r75cf) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #880 TRUST
+-> 🌶️ %darkred% [Sauerkraut Cake](https://www.food.com/recipe/sauerkraut-cake-255376) %% <-
+-> 🌶️ %darkred% [Chocolate Jalapeno Cake](https://whatscookingamerica.net/cake/chocjalacake.htm) %% <-
+-> 🌶️ %darkred% [Wasabi Ice Cream](https://www.notquitenigella.com/2009/04/19/wasabi-ice-cream/) %% <-
+-> 🌶️ %darkred% [Red Curry Pandan Ice Cream](https://www.tasteofhome.com/recipes/red-curry-pandan-ice-cream/) %% <-
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Sauerkraut Cake](https://www.food.com/recipe/sauerkraut-cake-255376)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Chocolate Jalapeno Cake](https://whatscookingamerica.net/cake/chocjalacake.htm)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Wasabi Ice Cream](https://www.notquitenigella.com/2009/04/19/wasabi-ice-cream/)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Red Curry Pandan Ice Cream](https://www.tasteofhome.com/recipes/red-curry-pandan-ice-cream/)
+&nbsp;
+***
 
-###### ⁓ &nbsp;&nbsp; [Pasta Mediterránea con Jurel](https://www.nytimes.com/shared/comment/3rki81) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #902 SHARP
+###### -> ⁓ &nbsp;&nbsp; 25 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Pasta Mediterránea con Jurel](https://www.nytimes.com/shared/comment/3rki81) %% <-
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Pasta Mediterránea con Jurel](https://es.cravingsjournal.com/pasta-mediterranea-con-jurel/)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Jurel Small Horse Mackerel in Olive Oil](https://conservaculture.com/products/jurel-small-horse-mackerel-in-olive-oil)
+-> 🌶️ %darkred% [Pasta Mediterránea con Jurel](https://es.cravingsjournal.com/pasta-mediterranea-con-jurel/) %% <-
+-> 🌶️ %darkred% [Jurel Small Horse Mackerel in Olive Oil](https://conservaculture.com/products/jurel-small-horse-mackerel-in-olive-oil) %% <-
 
-###### ⁓ &nbsp;&nbsp; [Cuban Rice and Black Beans ](https://www.nytimes.com/shared/comment/3rlna4) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #904 CHAIN
+&nbsp;
+***
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Arroz con Pollo with a Spicy Twist](https://sprinklediy.com/arroz-con-pollo-with-a-spicy-twist/)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Arroz Congri](https://www.skinnytaste.com/arroz-congri-cuban-rice-and-black-beans/)
+###### -> ⁓ &nbsp;&nbsp; 26 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Cuban Rice and Black Beans ](https://www.nytimes.com/shared/comment/3rlna4) %% <-
 
-###### ⁓ &nbsp;&nbsp; [Sylvia’s Shoe Shelves ](https://www.nytimes.com/shared/comment/3rp5o5) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #908 WOULD
+-> 🌶️ %darkred% [Arroz con Pollo with a Spicy Twist](https://sprinklediy.com/arroz-con-pollo-with-a-spicy-twist/) %% <-
+-> 🌶️ %darkred% [Arroz Congri](https://www.skinnytaste.com/arroz-congri-cuban-rice-and-black-beans/) %% <-
 
-###### ⁓ &nbsp;&nbsp; [December Recipes ](https://www.nytimes.com/shared/comment/3rqtqu) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #911 BACON 
+&nbsp;
+***
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Best Lentil Soup](https://cookieandkate.com/best-lentil-soup-recipe/)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Spicy Aztec Hot Chocolate](https://www.seriouseats.com/spicy-aztec-hot-chocolate-with-chili-cinnamon-mezcal-recipe)
+###### -> ⁓ &nbsp;&nbsp; 27 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Sylvia’s Shoe Shelves ](https://www.nytimes.com/shared/comment/3rp5o5) %% <-
 
-###### ⁓ &nbsp;&nbsp; [Jamun Fruit with Cumin ](https://www.nytimes.com/shared/comment/3s949p) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #933 FINAL 
+&nbsp;
+***
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Jamun Jal Jeera](https://www.paticheri.com/2016/07/18/jamun-jal-jeera-sweet-salt-jamun-cooler-with-roasted-cumin/)
+###### -> ⁓ &nbsp;&nbsp; 28 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [December Recipes ](https://www.nytimes.com/shared/comment/3rqtqu) %% <-
 
-###### ⁓ &nbsp;&nbsp; [Sylvia Sees a Sylph Hummingbird ](https://www.nytimes.com/shared/comment/3sdhih) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #940 LUNCH 
+-> 🌶️ %darkred% [Best Lentil Soup](https://cookieandkate.com/best-lentil-soup-recipe/) %% <-
+-> 🌶️ %darkred% [Spicy Aztec Hot Chocolate](https://www.seriouseats.com/spicy-aztec-hot-chocolate-with-chili-cinnamon-mezcal-recipe) %% <-
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Leek, Cumin and Sweet Potato Soup](https://www.food.com/recipe/leek-cumin-and-sweet-potato-soup-311182)
+&nbsp;
+***
 
-###### ⁓ &nbsp;&nbsp; [Sylvia’s Cold Weather Treats ](https://www.nytimes.com/shared/comment/3se7lf) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #941 BLOND
+###### -> ⁓ &nbsp;&nbsp; 29 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Jamun Fruit with Cumin ](https://www.nytimes.com/shared/comment/3s949p) %% <-
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Tarragon Blondies](https://thehomepage.co.uk/benjamina-ebuehis-tarragon-blondies/)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Spiced Chocolate, Black Pepper & Coffee Mousse](https://thehomepage.co.uk/sabrina-ghayours-spiced-chocolate-black-pepper-and-coffee-mousse/)
+-> 🌶️ %darkred% [Jamun Jal Jeera](https://www.paticheri.com/2016/07/18/jamun-jal-jeera-sweet-salt-jamun-cooler-with-roasted-cumin/) %% <-
 
-###### ⁓ &nbsp;&nbsp; [Mr. Spock’s First Appearance ](https://www.nytimes.com/shared/comment/3sl09t) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #950 BLOCK
+&nbsp;
+***
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Easy Nduja Pasta with Roasted Cauliflower](https://www.eatloveeats.com/roasted-cauliflower-nduja-bucatini/)
+###### -> ⁓ &nbsp;&nbsp; 30 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Sylvia Sees a Sylph Hummingbird ](https://www.nytimes.com/shared/comment/3sdhih) %% <-
 
-###### ⁓ &nbsp;&nbsp; [Cumin Chili Carrots ](https://www.nytimes.com/shared/comment/3sraob) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #959 MICRO 
+-> 🌶️ %darkred% [Leek, Cumin and Sweet Potato Soup](https://www.food.com/recipe/leek-cumin-and-sweet-potato-soup-311182) %% <-
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Cumin Chili Carrots](https://www.spicemamasf.com/cumin-chili-carrots)
+&nbsp;
+***
 
-###### ⁓ &nbsp;&nbsp; [Sylvia’s Callaloo Recipe ](https://www.nytimes.com/shared/comment/3srq38) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #960 VERGE 
+###### -> ⁓ &nbsp;&nbsp; 31 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Sylvia’s Cold Weather Treats ](https://www.nytimes.com/shared/comment/3se7lf) %% <-
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Callaloo, Jamaican Greens](https://surleplat.com/recipe-items/callaloo-jamaican-greens/)
+-> 🌶️ %darkred% [Tarragon Blondies](https://thehomepage.co.uk/benjamina-ebuehis-tarragon-blondies/) %% <-
+-> 🌶️ %darkred% [Spiced Chocolate, Black Pepper & Coffee Mousse](https://thehomepage.co.uk/sabrina-ghayours-spiced-chocolate-black-pepper-and-coffee-mousse/) %% <-
 
-###### ⁓ &nbsp;&nbsp; [Mr. Spock Returns ](https://www.nytimes.com/shared/comment/3ss6mc) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #961 REPEL 
+&nbsp;
+***
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Chili Cumin Chicken Thighs](https://redhousespice.com/spicy-cumin-chicken-thighs/)
+###### -> ⁓ &nbsp;&nbsp; 32 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Mr. Spock’s First Appearance ](https://www.nytimes.com/shared/comment/3sl09t) %% <-
 
-###### ⁓ &nbsp;&nbsp; [Mr. Spock and a Heated Discussion](https://www.nytimes.com/shared/comment/3st3q7) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #962 WHICH 
+-> 🌶️ %darkred% [Easy Nduja Pasta with Roasted Cauliflower](https://www.eatloveeats.com/roasted-cauliflower-nduja-bucatini/) %% <-
 
-###### ⁓ &nbsp;&nbsp; [Plomeek Soup Recipe ](https://www.nytimes.com/shared/comment/3su1e0) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #963 AFTER 
+&nbsp;
+***
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🖖 [In Spock's Honour: Plomeek Soup](https://eatnorth.com/dan-clapson/spocks-honour-plomeek-soup)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Cajun Chili](https://www.food.com/recipe/cajun-chili-198777)
+###### -> ⁓ &nbsp;&nbsp; 33 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Cumin Chili Carrots ](https://www.nytimes.com/shared/comment/3sraob) %% <-
 
-###### ⁓ &nbsp;&nbsp; [Sylvia’s New Qajaq ](https://www.nytimes.com/shared/comment/3sviap) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #965 STIFF 
+-> 🌶️ %darkred% [Cumin Chili Carrots](https://www.spicemamasf.com/cumin-chili-carrots) %% <-
 
-###### ⁓ &nbsp;&nbsp; [Papaw Bread ](https://www.nytimes.com/shared/comment/3t0u31) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #967 NEVER 
+&nbsp;
+***
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Easy Pawpaw Bread](https://www.farmhouseonboone.com/easy-pawpaw-bread-recipe)
+###### -> ⁓ &nbsp;&nbsp; 34 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Sylvia’s Callaloo Recipe ](https://www.nytimes.com/shared/comment/3srq38) %% <-
 
-###### ⁓ &nbsp;&nbsp; [Spaghetti all’Assassina ](https://www.nytimes.com/shared/comment/3t1e61) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #968 PASTA 
+-> 🌶️ %darkred% [Callaloo, Jamaican Greens](https://surleplat.com/recipe-items/callaloo-jamaican-greens/) %% <-
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Aztec Cocoa](https://www.budgetbytes.com/aztec-cocoa/)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [This Southern Italian Dish Is So Spicy It Will Murder Your Mouth](http://tinyurl.com/22hs2kwf)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Spaghetti all'Assassina (Assassin's Spaghetti)](https://www.allrecipes.com/recipe/8534000/spaghetti-allassassina-assassins-spaghetti/)
+&nbsp;
+***
 
-######  ⁓ &nbsp;&nbsp; [Valentine’s Day Candy ](https://www.nytimes.com/shared/comment/3t30p9) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #970 TALON 
+###### -> ⁓ &nbsp;&nbsp; 35 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Mr. Spock Returns ](https://www.nytimes.com/shared/comment/3ss6mc) %% <-
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Red Velvet Fudge](https://amandascookin.com/red-velvet-fudge/)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Smoky Cowboy Candy (Candied Jalapeños)](https://ourlittlehomestead.org/recipes/candied-jalapenos/)
+-> 🌶️ %darkred% [Chili Cumin Chicken Thighs](https://redhousespice.com/spicy-cumin-chicken-thighs/) %% <-
 
-######  ⁓ &nbsp;&nbsp; [Chocolate and Cumin Babka](https://www.nytimes.com/shared/comment/3t7h19) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #977 BUILD
+&nbsp;
+***
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Chocolate & Cumin Babka - 9:13](https://youtu.be/ohyf44kdgR0?si=L96hLS5jVRoxu4Xb)
+###### -> ⁓ &nbsp;&nbsp; 36 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Mr. Spock and a Heated Discussion](https://www.nytimes.com/shared/comment/3st3q7) %% <-
 
-######  ⁓ &nbsp;&nbsp; [Vegetable Qorma ](https://www.nytimes.com/shared/comment/3tu98h) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #1009 TOWEL 
+&nbsp;
+***
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Vegetable Qorma](https://www.seriouseats.com/vegetable-qorma-5324131)
+###### -> ⁓ &nbsp;&nbsp; 37 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Plomeek Soup Recipe ](https://www.nytimes.com/shared/comment/3su1e0) %% <-
 
-######  ⁓ &nbsp;&nbsp; [Tribbles in Town ](https://www.nytimes.com/shared/comment/3tvpdi) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #1011 MAYOR  
+-> 🖖 %darkred% [In Spock's Honour: Plomeek Soup](https://eatnorth.com/dan-clapson/spocks-honour-plomeek-soup) %% <-
+-> 🌶️ %darkred% [Cajun Chili](https://www.food.com/recipe/cajun-chili-198777) %% <-
 
-######  ⁓ &nbsp;&nbsp; [Briny Soup](https://www.nytimes.com/shared/comment/3ubs15) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #1028 WHINY 
+&nbsp;
+***
 
-######  ⁓ &nbsp;&nbsp; [Sylvia and Sue Ann Nivens ](https://www.nytimes.com/shared/comment/3uhls1) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #1037 JOLLY 
+###### -> ⁓ &nbsp;&nbsp; 38 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Sylvia’s New Qajaq ](https://www.nytimes.com/shared/comment/3sviap) %% <-
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Ugali](https://allthingskenyan.com/countries/kenya/ugali-recipe)
+&nbsp;
+***
 
-######  ⁓ &nbsp;&nbsp; [Cooking Cactus ](https://www.nytimes.com/shared/comment/3ui6tf) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #1038 LASER 
+###### -> ⁓ &nbsp;&nbsp; 39 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Papaw Bread ](https://www.nytimes.com/shared/comment/3t0u31) %% <-
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [How to Prepare Nopales (Cactus Pads)](https://www.youtube.com/watch?v=H-yR3pYw9fM)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Southwestern Cactus Salad](https://www.allrecipes.com/recipe/14905/southwestern-cactus-salad/)
+-> 🌶️ %darkred% [Easy Pawpaw Bread](https://www.farmhouseonboone.com/easy-pawpaw-bread-recipe) %% <-
 
-######  ⁓ &nbsp;&nbsp; [Sylvia and TV Cooks ](https://www.nytimes.com/shared/comment/3uj4af) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #1039 ROVER 
+&nbsp;
+***
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Sylvia Noble's Tuna Madras](https://www.doctorwho.tv/news-and-features/make-sylvia-nobles-tuna-madras)
+###### -> ⁓ &nbsp;&nbsp; 40 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Spaghetti all’Assassina ](https://www.nytimes.com/shared/comment/3t1e61) %% <-
 
-######  ⁓ &nbsp;&nbsp; [Sylvia’s Cumin Feast ](https://www.nytimes.com/shared/comment/3v0cr7) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #1059 CUMIN 
+-> 🌶️ %darkred% [Aztec Cocoa](https://www.budgetbytes.com/aztec-cocoa/) %% <-
+-> 🌶️ %darkred% [This Southern Italian Dish Is So Spicy It Will Murder Your Mouth](http://tinyurl.com/22hs2kwf) %% <-
+-> 🌶️ %darkred% [Spaghetti all'Assassina (Assassin's Spaghetti)](https://www.allrecipes.com/recipe/8534000/spaghetti-allassassina-assassins-spaghetti/) %% <-
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Chunky Guacamole with Cumin](https://www.foodandwine.com/recipes/chunky-guacamole-cumin)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Roasted Cauliflower Soup with Cumin](https://www.foodandwine.com/recipes/roasted-cauliflower-soup-cumin)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Cumin Chili](https://www.foodandwine.com/recipes/cumin-chili)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Cumin-and-Jaggery-Glazed Apple Pie](https://www.foodandwine.com/recipes/cumin-and-jaggery-glazed-apple-pie)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Cumin Flavoured Cookies](https://breadanddreams.in/2021/07/10/cumin-flavoured-cookies/)
+&nbsp;
+***
 
-######  ⁓ &nbsp;&nbsp; [Chili Chocolate Cupcakes and Mr. Spock is Back](https://www.nytimes.com/shared/comment/3v2kts) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #1062 STALL 
+###### -> ⁓ &nbsp;&nbsp; 41 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Valentine’s Day Candy ](https://www.nytimes.com/shared/comment/3t30p9) %% <-
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Cinco de Chili Chocolate Cupcakes with Chili Cream Cheese Frosting](https://www.allrecipes.com/recipe/218220/cinco-de-chili-chocolate-cupcakes-with-chili-cream-cheese-frosting/)
+-> 🌶️ %darkred% [Red Velvet Fudge](https://amandascookin.com/red-velvet-fudge/) %% <-
+-> 🌶️ %darkred% [Smoky Cowboy Candy (Candied Jalapeños)](https://ourlittlehomestead.org/recipes/candied-jalapenos/) %% <-
 
-######  ⁓ &nbsp;&nbsp; [Sylvia and Mr. Spock - Differing Opinions](https://www.nytimes.com/shared/comment/3v45jg) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; #1064 BRINY
+&nbsp;
+***
+
+###### -> ⁓ &nbsp;&nbsp; 42 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Chocolate and Cumin Babka](https://www.nytimes.com/shared/comment/3t7h19) %% <-
+
+-> 🌶️ %darkred% [Chocolate & Cumin Babka - 9:13](https://youtu.be/ohyf44kdgR0?si=L96hLS5jVRoxu4Xb) %% <-
+
+&nbsp;
+***
+
+###### -> ⁓ &nbsp;&nbsp; 43 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Vegetable Qorma ](https://www.nytimes.com/shared/comment/3tu98h) %% <-
+
+-> 🌶️ %darkred% [Vegetable Qorma](https://www.seriouseats.com/vegetable-qorma-5324131) %% <-
+
+&nbsp;
+***
+
+###### -> ⁓ &nbsp;&nbsp; 44 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Tribbles in Town ](https://www.nytimes.com/shared/comment/3tvpdi) %% <-
+
+&nbsp;
+***
+
+###### -> ⁓ &nbsp;&nbsp; 45 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Briny Soup](https://www.nytimes.com/shared/comment/3ubs15) %% <-
+
+&nbsp;
+***
+
+###### -> ⁓ &nbsp;&nbsp; 46 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Sylvia and Sue Ann Nivens ](https://www.nytimes.com/shared/comment/3uhls1) %% <-
+
+-> 🌶️ %darkred% [Ugali](https://allthingskenyan.com/countries/kenya/ugali-recipe) %% <-
+
+&nbsp;
+***
+
+###### -> ⁓ &nbsp;&nbsp; 47 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Cooking Cactus ](https://www.nytimes.com/shared/comment/3ui6tf) %% <-
+
+-> 🌶️ %darkred% [How to Prepare Nopales (Cactus Pads)](https://www.youtube.com/watch?v=H-yR3pYw9fM) %% <-
+-> 🌶️ %darkred% [Southwestern Cactus Salad](https://www.allrecipes.com/recipe/14905/southwestern-cactus-salad/) %% <-
+
+&nbsp;
+***
+
+###### -> ⁓ &nbsp;&nbsp; 48 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Sylvia and TV Cooks ](https://www.nytimes.com/shared/comment/3uj4af) %% <-
+
+-> 🌶️ %darkred% [Sylvia Noble's Tuna Madras](https://www.doctorwho.tv/news-and-features/make-sylvia-nobles-tuna-madras) %% <-
+
+&nbsp;
+***
+
+###### -> ⁓ &nbsp;&nbsp; 49 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Sylvia’s Cumin Feast ](https://www.nytimes.com/shared/comment/3v0cr7) %% <-
+
+-> 🌶️ %darkred% [Chunky Guacamole with Cumin](https://www.foodandwine.com/recipes/chunky-guacamole-cumin) %% <-
+-> 🌶️ %darkred% [Roasted Cauliflower Soup with Cumin](https://www.foodandwine.com/recipes/roasted-cauliflower-soup-cumin) %% <-
+-> 🌶️ %darkred% [Cumin Chili](https://www.foodandwine.com/recipes/cumin-chili) %% <-
+-> 🌶️ %darkred% [Cumin-and-Jaggery-Glazed Apple Pie](https://www.foodandwine.com/recipes/cumin-and-jaggery-glazed-apple-pie) %% <-
+-> 🌶️ %darkred% [Cumin Flavoured Cookies](https://breadanddreams.in/2021/07/10/cumin-flavoured-cookies/) %% <-
+
+&nbsp;
+***
+
+###### -> ⁓ &nbsp;&nbsp; 50 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Chili Chocolate Cupcakes and Mr. Spock is Back](https://www.nytimes.com/shared/comment/3v2kts) %% <-
+
+-> 🌶️ %darkred% [Cinco de Chili Chocolate Cupcakes with Chili Cream Cheese Frosting](https://www.allrecipes.com/recipe/218220/cinco-de-chili-chocolate-cupcakes-with-chili-cream-cheese-frosting/) %% <-
+
+&nbsp;
+***
+
+###### -> ⁓ &nbsp;&nbsp; 51 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Sylvia and Mr. Spock - Differing Opinions](https://www.nytimes.com/shared/comment/3v45jg) %% <-
