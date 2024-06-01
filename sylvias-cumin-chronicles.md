@@ -1,49 +1,74 @@
-#### Sylvia's Cumin Chronicles
-by @Julia, Bay Area
+#### -> Sylvia's Cumin Chronicles <-
+-> by @Julia, Bay Area <-
 
-###### ⁓ &nbsp;&nbsp; [1 &nbsp;&nbsp; Sylvia’s Cumin Pesto Fiasco](https://www.nytimes.com/shared/comment/3npmpu) &nbsp;&nbsp; ⁓ 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Coriander and Cumin Pesto](https://www.nzherald.co.nz/eatwell/recipes/coriander-and-cumin-pesto/2L5WDHBTENYFDT75HEO6OPCZJ4)
-
-###### ⁓ &nbsp;&nbsp; [2 &nbsp;&nbsp; A Scone Next Day (Tom)](https://www.nytimes.com/shared/comment/3nq766) &nbsp;&nbsp; ⁓
-
-###### ⁓ &nbsp;&nbsp; [3 &nbsp;&nbsp; Sylvia Visits the Café](https://www.nytimes.com/shared/comment/3nqqsr) &nbsp;&nbsp; ⁓
-
-###### ⁓ &nbsp;&nbsp; [4 &nbsp;&nbsp; Tom Receives an Invitation ](https://www.nytimes.com/shared/comment/3nr8sn) &nbsp;&nbsp; ⁓
-
-###### ⁓ &nbsp;&nbsp; [5 &nbsp;&nbsp; Squid Porridge](https://www.nytimes.com/shared/comment/3nrv89) &nbsp;&nbsp; ⁓
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 🌶️ [Squid Congee](https://www.unfamiliarchina.com/congee/squid-congee)
-
+&nbsp;
 ***
+
+###### -> ⁓ &nbsp;&nbsp; 1 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Sylvia’s Cumin Pesto Fiasco](https://www.nytimes.com/shared/comment/3npmpu) %% <-
+-> 🌶️ %darkred% [Coriander and Cumin Pesto](https://www.nzherald.co.nz/eatwell/recipes/coriander-and-cumin-pesto/2L5WDHBTENYFDT75HEO6OPCZJ4) %% <-
+
+&nbsp;
+***
+
+###### -> ⁓ &nbsp;&nbsp; 2 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [A Scone Next Day (Tom)](https://www.nytimes.com/shared/comment/3nq766) %% <-
+
+&nbsp;
+***
+
+###### -> ⁓ &nbsp;&nbsp; 3 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Sylvia Visits the Café](https://www.nytimes.com/shared/comment/3nqqsr) %% <-
+
+&nbsp;
+***
+
+###### -> ⁓ &nbsp;&nbsp; 4 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Tom Receives an Invitation ](https://www.nytimes.com/shared/comment/3nr8sn) %% <-
+
+&nbsp;
+***
+
+###### -> ⁓ &nbsp;&nbsp; 5 &nbsp;&nbsp; ⁓ <-
+##### -> %darkred% [Squid Porridge](https://www.nytimes.com/shared/comment/3nrv89) %% <-
+-> 🌶️ %darkred% [Squid Congee](https://www.unfamiliarchina.com/congee/squid-congee) %% <-
+
+&nbsp;
 ***
 
 ###### -> ⁓ &nbsp;&nbsp; 6 &nbsp;&nbsp; ⁓ <-
-##### -> [Tom’s Acorn Ice Cream Idea](https://www.nytimes.com/shared/comment/3nsqgd)  <-
--> 🌶️ [Homemade Acorn Liqueur](https://nutgeeks.com/homemade-acorn-liqueur/) <-
+##### -> %darkred% [Tom’s Acorn Ice Cream Idea](https://www.nytimes.com/shared/comment/3nsqgd) %%  <-
+-> 🌶️ %darkred% [Homemade Acorn Liqueur](https://nutgeeks.com/homemade-acorn-liqueur/) %% <-
 
 &nbsp;
+***
 
 ###### -> ⁓ &nbsp;&nbsp; 7 &nbsp;&nbsp; ⁓ <-
-##### -> [Strange Flavor Eggplant Spread](https://www.nytimes.com/shared/comment/3ntldb) <-
+##### -> %darkred% [Strange Flavor Eggplant Spread](https://www.nytimes.com/shared/comment/3ntldb) %% <-
 
 &nbsp;
+***
 
 ###### -> ⁓ &nbsp;&nbsp; 8 &nbsp;&nbsp; ⁓ <-
-##### -> [A Simple Omelet ](https://www.nytimes.com/shared/comment/3nu9cs) <-
--> 🌶️ [Blooming Broccoli is Edible and Delicious](https://plantersplace.com/kitchen-garden/blooming-broccoli-is-edible/) <-
+##### -> %darkred% [A Simple Omelet ](https://www.nytimes.com/shared/comment/3nu9cs) %% <-
+-> 🌶️ %darkred% [Blooming Broccoli is Edible and Delicious](https://plantersplace.com/kitchen-garden/blooming-broccoli-is-edible/) %% <-
 
 &nbsp;
+***
 
 ###### -> ⁓ &nbsp;&nbsp; 9 &nbsp;&nbsp; ⁓ <-
-##### -> [Tom’s Eggplant Recipes](https://www.nytimes.com/shared/comment/3nulbd) <-
--> 🌶️ [Eggplant Crisp with Walnut Streusel](https://www.foodnetwork.com/recipes/food-network-kitchen/eggplant-crisp-with-walnut-streusel-3364521) <-
--> 🌶️ [Panko Crusted Eggplant](https://herbielikesspaghetti.com/2011/05/fried-eggplant-buttermilk-ranch.html) <-
+##### -> %darkred% [Tom’s Eggplant Recipes](https://www.nytimes.com/shared/comment/3nulbd) %% <-
+-> 🌶️ %darkred% [Eggplant Crisp with Walnut Streusel](https://www.foodnetwork.com/recipes/food-network-kitchen/eggplant-crisp-with-walnut-streusel-3364521) %% <-
+-> 🌶️ %darkred% [Panko Crusted Eggplant](https://herbielikesspaghetti.com/2011/05/fried-eggplant-buttermilk-ranch.html) %% <-
 
 &nbsp;
+***
 
 ###### -> ⁓ &nbsp;&nbsp; 10 &nbsp;&nbsp; ⁓ <-
-##### -> [Tom’s Memory of the Pesto Fiasco](https://www.nytimes.com/shared/comment/3nv27d) <-
+##### -> %darkred% [Tom’s Memory of the Pesto Fiasco](https://www.nytimes.com/shared/comment/3nv27d) %% <-
 
 &nbsp;
+***
 
 ***
 ***
@@ -77,34 +102,34 @@ by @Julia, Bay Area
 ***
 
 ###### ⁓ &nbsp;&nbsp; 736 RODEO &nbsp;&nbsp; ⁓
-##### [Cumin Squid Tentacles ](https://www.nytimes.com/shared/comment/3o30r5)
-🌶️ [Cumin Squid Tentacles with Chili](https://mychinesehomekitchen.com/2021/08/06/cumin-squid-tentacles-with-chili)
+##### %tomato% [Cumin Squid Tentacles ](https://www.nytimes.com/shared/comment/3o30r5) %%
+🌶️ %tomato% [Cumin Squid Tentacles with Chili](https://mychinesehomekitchen.com/2021/08/06/cumin-squid-tentacles-with-chili) %%
 
 &nbsp;
 ***
 
 ###### ⁓ &nbsp;&nbsp; 741 STRAW &nbsp;&nbsp; ⁓
-##### [Avocado Recipes](https://www.nytimes.com/shared/comment/3o6efl)
-🌶️ [Zesty Avocado Toast](https://australianavocados.com.au/recipes/zesty-avocado-toast/)
-🌶️ [Satiny Guacamole](https://www.recipesecrets.net/t/satiny-guacamole/218415)
+##### %tomato% [Avocado Recipes](https://www.nytimes.com/shared/comment/3o6efl) %%
+🌶️ %tomato% [Zesty Avocado Toast](https://australianavocados.com.au/recipes/zesty-avocado-toast/) %%
+🌶️ %tomato% [Satiny Guacamole](https://www.recipesecrets.net/t/satiny-guacamole/218415) %%
 
 &nbsp;
 ***
 
 ###### ⁓ &nbsp;&nbsp; 798 CHOIR &nbsp;&nbsp; ⁓
-##### [Sylvia’s New Curtains](https://www.nytimes.com/shared/comment/3pcula)
+##### %tomato% [Sylvia’s New Curtains](https://www.nytimes.com/shared/comment/3pcula) %%
 
 &nbsp;
 ***
 
 ###### ⁓ &nbsp;&nbsp; 801 CAPER &nbsp;&nbsp; ⁓
-##### [Sylvia’s Reputation ](https://www.nytimes.com/shared/comment/3pejgn)
+##### %tomato% [Sylvia’s Reputation ](https://www.nytimes.com/shared/comment/3pejgn) %%
 
 &nbsp;
 ***
 
 ###### ⁓ &nbsp;&nbsp; 802 AUDIO &nbsp;&nbsp; ⁓
-##### [Sylvia and Tom in Cahoots](https://www.nytimes.com/shared/comment/3pfrai)
+##### %tomato% [Sylvia and Tom in Cahoots](https://www.nytimes.com/shared/comment/3pfrai) %%
 
 &nbsp;
 ***
