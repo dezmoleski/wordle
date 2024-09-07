@@ -11,6 +11,7 @@ from itertools import islice
 import datetime
 import json
 import os.path
+import re
 
 if __name__ == "__main__":
    if len(sys.argv) != 1:
@@ -64,6 +65,7 @@ if __name__ == "__main__":
    word_count = dict()
    anagrams = set()
    pangram_counts_by_n_anagrams = [0,0,0,0,0,0,0]
+   zero_pangram_words = WordList()
    for letter in ALPHABET_LIST:
       print(letter, file=sys.stderr, flush=True, end=' ')
       datadir = f"./data/{letter}/"
@@ -88,6 +90,13 @@ if __name__ == "__main__":
                      if word[0] < DONE_FROM_LETTER:
                         done_percent += word_percent[word]
                         n_word_percents_counted += 1
+                     # Look for zero pangram count words (and all anagrams)
+                     n_pangrams = int(line_list[-1])
+                     if n_pangrams == 0:
+                        anas_list = re.split('\[|\||\]',word_or_anagram)
+                        for w in anas_list:
+                           if len(w) > 0:
+                              zero_pangram_words.add_str(w)
                   else:
                      all_pgrams.append(line_list) # unexpanded anagrams here
                      
@@ -213,3 +222,14 @@ if __name__ == "__main__":
       else:
          print('', file=sys.stderr, flush=True)
    
+   print("\nN head words yielding zero pangrams:", len(zero_pangram_words), file=sys.stderr, flush=True)
+   
+   print('Solutions NOT in ANY pangram found so far:', file=sys.stderr, flush=True)
+   zero_pangram_words.sort()
+   n_solutions_in_zero_pangrams = 0
+   for w in zero_pangram_words.word_list:
+      if answers.contains_word(w) and not answers_used.contains_word(w):
+         print(w, file=sys.stderr, flush=True, end=' ')
+         n_solutions_in_zero_pangrams += 1
+   print('', file=sys.stderr, flush=True)
+   print('N solutions in zero pangrams:', n_solutions_in_zero_pangrams, file=sys.stderr, flush=True)
