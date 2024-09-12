@@ -135,7 +135,7 @@ Currently ~8 productive instances of the search are running, covering (very) app
 - 12,432 of 14,855 valid guesses (84%) appear in pangrams found to date.
 - 2,029 of 2,315 known potential solutions (88%) appear in pangrams found to date.
 
-The following 56 known potential solutions (2.4%) have not been found in any pangrams yet, and yielded no pangrams when the search started from that word:
+The following 68 known potential solutions (2.9%) have not been found in any pangrams yet, and yielded no pangrams when the search started from that word:
 ~~~
 ABASE ABBEY ABUSE
 BASIS
@@ -149,11 +149,14 @@ HELLO HILLY HORSE HOUSE HURRY
 HUSSY
 KHAKI KIOSK
 LAYER LEASE LEASH LOSER LOUSE
-NOISE
+NANNY NINNY NOISE NOOSE
+PAUSE PAYEE PIOUS POISE POPPY
+POSSE PUPPY
 RELAY ROUSE
 SENSE SHALE SHALL SHARE SHEAR
 SHEER SHELL SHIRE SHORE SHUSH
-SLASH STEAD STEED SUITE
+SLASH SOLAR STEAD STEED STOUT
+SUITE
 THETA TITHE
 USHER
 ~~~
