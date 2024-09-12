@@ -34,7 +34,7 @@ if __name__ == "__main__":
    # Read WORD-PERCENT list and build up the word_percent dict.
    # We only need to keep individual items for words starting
    # with letters less than our "done from here on..." letter.
-   DONE_FROM_LETTER = 'E'
+   DONE_FROM_LETTER = 'D'
    word_percent = dict()
    WORD_PERCENT_FILE = "./WORD-PERCENT"
    done_percent = 0.0

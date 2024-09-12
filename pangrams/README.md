@@ -118,18 +118,22 @@ I have implemented a basic version of the exhaustive search in C that already ru
 Results and code are published under the MIT License, available via the URL above.
 
 ##### Status
-The search program has been running on up to twelve computers, but several have gone idle, waiting for improved distributed management code. Currently ~8 productive instances of the search are running, covering (very) approximately 1% of the search area remaining per week.
+**Updated 11 Sept 2024**
 
-- A, B, and D are in progress.
-- E-Z are complete (representing 10.1% of the search space).
-- C has not been started.
-- Almost one-third of the total search space has been covered to date.
+The search program has been running on up to twelve computers, but several have gone idle, waiting for improved distributed search management code.
+
+Currently ~8 productive instances of the search are running, covering (very) approximately 1% of the search area remaining per week.
+
+- D-Z are complete (representing ~17% of the search space).
+- A, B, and C are in progress.
+- Searches from 301 of 2149 head words starting with A, B, or C are complete.
+- About one-third of the total search space has been covered to date.
 
 ##### Counts
-- 11,368,941 "base" pangrams (without expanding anagrams) have been found. 
-- 18,613,080 total pangrams (with anagrams expanded) have been found.
-- 12,419 of 14,855 valid guesses (84%) appear in pangrams found to date.
-- 2,027 of 2,314 known potential solutions (88%) appear in pangrams found to date.
+- 11,483,310 "base" pangrams (without expanding anagrams) have been found. 
+- 18,805,682 total pangrams (with anagrams expanded) have been found.
+- 12,432 of 14,855 valid guesses (84%) appear in pangrams found to date.
+- 2,029 of 2,315 known potential solutions (88%) appear in pangrams found to date.
 
 The following 56 known potential solutions (2.4%) have not been found in any pangrams yet, and yielded no pangrams when the search started from that word:
 ~~~
@@ -154,32 +158,32 @@ THETA TITHE
 USHER
 ~~~
 
-Top 25 words occurring in pangrams found to date:
-1. `VOZHD` : 26% (4869256) 
-1. `WAQFS` : 23% (4266202) 
-1. `VIBEX` : 14% (2576755) 
-1. `PHYNX` : 11% (1991941) 
-1. `JUMBY` : 9% (1767791) 
-1. `QUICK` : 8% (1425430) 
-1. `QUACK` : 8% (1415931) 
-1. `QUAWK` : 7% (1244404) 
-1. `QUECK` : 6% (1189907) 
-1. `FJORD` : 6% (1063395) 
-1. `FJELD` : 5% (1005322) 
-1. `JAMBS` : 4% (805643) 
-1. `FIQHS` : 4% (783777) 
-1. `JOCKY` : 4% (778813) 
-1. `QUBIT` : 4% (746763) 
-1. `VEXED` : 4% (721010) 
-1. `JACKY` : 4% (694767) 
-1. `JUMPY` : 3% (644788) 
-1. `JUDGY` : 3% (619372) 
-1. `GLITZ` : 3% (604432) 
-1. `FRITZ` : 3% (600768) 
-1. `PHLOX` : 3% (593811) 
-1. `SQUIZ` : 3% (592722) 
-1. `JIVED` : 3% (563567) 
-1. `JIMPY` : 3% (558079) 
+Top 25 words occurring in pangrams found to date. The list shows the percent (and number) of pangrams found to date that contain each word:
+1. `VOZHD` : 26% (4874160) 
+1. `WAQFS` : 23% (4352380) 
+1. `VIBEX` : 14% (2633706) 
+1. `PHYNX` : 11% (2005341) 
+1. `JUMBY` : 10% (1796193) 
+1. `QUICK` : 8% (1431853) 
+1. `QUACK` : 8% (1427661) 
+1. `QUAWK` : 7% (1269629) 
+1. `QUECK` : 6% (1197673) 
+1. `FJORD` : 6% (1064448) 
+1. `FJELD` : 5% (1006064) 
+1. `JAMBS` : 4% (811790) 
+1. `FIQHS` : 4% (790903) 
+1. `JOCKY` : 4% (782592) 
+1. `QUBIT` : 4% (748868) 
+1. `VEXED` : 4% (721641) 
+1. `JACKY` : 4% (697814) 
+1. `JUMPY` : 3% (654903) 
+1. `JUDGY` : 3% (619729) 
+1. `GLITZ` : 3% (610912) 
+1. `FRITZ` : 3% (607964) 
+1. `PHLOX` : 3% (605642) 
+1. `SQUIZ` : 3% (596246) 
+1. `JIMPY` : 3% (564136) 
+1. `JIVED` : 3% (563901) 
 
 
 #### Pangrams Comprised of Solutions Only
