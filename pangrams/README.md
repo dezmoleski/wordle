@@ -135,7 +135,7 @@ Currently ~8 productive instances of the search are running, covering (very) app
 - 12,432 of 14,855 valid guesses (84%) appear in pangrams found to date.
 - 2,029 of 2,315 known potential solutions (88%) appear in pangrams found to date.
 
-The following 85 known potential solutions (3.7%) have not been found in any pangrams yet, and yielded no pangrams when the search started from that word (which is more consequential for words earlier in the alphabet than later, due to the basic search optimization of proceeding only with lexically-greater words from the head word).
+The following 90 known potential solutions (3.9%) have not been found in any pangrams yet, and yielded no pangrams when the search started from that word (which is more consequential for words earlier in the alphabet than later, due to the basic search optimization of proceeding only with lexically-greater words from the head word).
 ~~~
 ABASE ABBEY ABUSE
 BASIS
@@ -149,6 +149,7 @@ HELLO HILLY HORSE HOUSE HURRY
 HUSSY
 KHAKI KIOSK
 LAYER LEASE LEASH LOSER LOUSE
+MAMMA MAMMY MUMMY
 NANNY NINNY NOISE NOOSE
 PAUSE PAYEE PIOUS POISE POPPY
 POSSE PUPPY
@@ -160,7 +161,8 @@ SOLAR SOOTY SORRY STEAD STEED
 STOUT SUITE SULLY SURER SUSHI
 TASTY TATTY TEETH TESTY THETA
 TITHE TOOTH
-USHER
+UNION USHER
+YEAST
 ~~~
 
 Top 25 words occurring in pangrams found to date. The list shows the percent (and number) of pangrams found to date that contain each word:
