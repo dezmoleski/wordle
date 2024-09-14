@@ -77,8 +77,8 @@ Finally, if you do win Wordle with a pangram by any method, be sure to get a scr
 1. Wordle `0944 THING` - https://nyti.ms/3U0EDkS#permid=130556623 @Wordler
 1. Wordle `0995 GRASP` - https://nyti.ms/49Gjwt0#permid=131749118 @Dez
 1. Wordle `1023 VOILA` - the first V!
-  + https://www.nytimes.com/shared/comment/3u7o0b @Couchpumpkin
-  + @Couchpumpkin went on a 10 day quest for a V-pangram with DRECK GLITZ JUMBO PHYNX WAQFS, eschewing the algorithm given above and quoting Hemingway while fishing patiently and confidently.
+    + https://www.nytimes.com/shared/comment/3u7o0b @Couchpumpkin
+    + @Couchpumpkin went on a 10 day quest for a V-pangram with DRECK GLITZ JUMBO PHYNX WAQFS, eschewing the algorithm given above and quoting Hemingway while fishing patiently and confidently.
 
 ##### Total Number of Pangrams Generated from Heterograms
 There is:
