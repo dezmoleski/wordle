@@ -1,21 +1,13 @@
 ### Wordle Pangrams
 Copyright (C) 2024 Dez Moleski dez@moleski.com
 
-See also:
+[TOC]
+
+#### See also:
 - https://rentry.co/wordle-meta-list
 - https://rentry.co/W5W25L742
 
-Pangram-related posts in the NYT Wordle Review Comments:
-- 02024 Jan 01 - https://nyti.ms/3NM3dSH#permid=130151139
-- 02024 Jan 13 - https://nyti.ms/3Sk0OkR#permid=130437156
-- 02024 Feb 10 - https://nyti.ms/3wjHrj0#permid=131087126
-- 02024 Feb 23 - https://nyti.ms/3uBhZW3#permid=131367700
-- 02024 Feb 28 - https://nyti.ms/3Tf3C2U#permid=131484206
-- 02024 Mar 07 - https://nyti.ms/433r4nj#permid=131685392
-- 02024 Mar 17 - https://www.nytimes.com/shared/comment/3tpkj5
-- 02024 Mar 19 - https://www.nytimes.com/shared/comment/3tqus9
-
-Other pangram-related articles:
+#### Other pangram-related articles:
 - https://en.wikipedia.org/wiki/Pangram
 - https://medium.com/@FallingForFallacies/all-perfect-pangrams-of-english-8c8d0f621bee
 
@@ -83,12 +75,15 @@ Step 6: Solve and collect your pangram win, or hope for better luck tomorrow!
 Finally, if you do win Wordle with a pangram by any method, be sure to get a screen capture of your completed game showing ALL the letters of the keyboard have changed color. This is half the fun of winning with a pangram, so save that screen capture to share later with other Wordle players.
 
 **Known Pangram Wins:**
-1. Wordle `0939 DOING`  - https://nyti.ms/3Hf10eR#permid=130444396 @WT
-1. Wordle `0944 THING`  - https://nyti.ms/3U0EDkS#permid=130556623 @Wordler
-1. Wordle `0995 GRASP`  - https://nyti.ms/49Gjwt0#permid=131749118 @Dez
-1. Wordle `1023 VOILA`  - the first V!
-   + https://www.nytimes.com/shared/comment/3u7o0b @Couchpumpkin
-   + @Couchpumpkin went on a 10 day quest for a V-pangram with DRECK GLITZ JUMBO PHYNX WAQFS, eschewing the algorithm given above and quoting Hemingway while fishing patiently and confidently.
+1. Wordle `0939 DOING`
+  - https://nyti.ms/3Hf10eR#permid=130444396 @WT
+1. Wordle `0944 THING`
+  - https://nyti.ms/3U0EDkS#permid=130556623 @Wordler
+1. Wordle `0995 GRASP`
+  - https://nyti.ms/49Gjwt0#permid=131749118 @Dez
+1. Wordle `1023 VOILA` - the first V!
+  - https://www.nytimes.com/shared/comment/3u7o0b @Couchpumpkin
+  - @Couchpumpkin went on a 10 day quest for a V-pangram with DRECK GLITZ JUMBO PHYNX WAQFS, eschewing the algorithm given above and quoting Hemingway while fishing patiently and confidently.
 
 ##### Total Number of Pangrams Generated from Heterograms
 There is:
@@ -136,7 +131,7 @@ Currently ~8 productive instances of the search are running, covering (very) app
 - 2,032 of 2,315 known potential solutions (88%) appear in pangrams found to date.
 
 The following 102 known potential solutions (4.4%) have not been found in any pangrams yet, and yielded no pangrams when the search started from that word (which is more consequential for words earlier in the alphabet than later, due to the basic search optimization of proceeding only with lexically-greater words from the head word).
-~~~
+~~~text
 ABASE ABBEY ABUSE
 BASIS
 CACAO COCOA
@@ -202,5 +197,13 @@ Top 25 words occurring in pangrams found to date. The list shows the percent (an
 #### Pangrams Comprised of Solutions Only
 See https://rentry.co/wordle-pangrams-solutions-only
 
-### More Pangram Posts
-- https://www.nytimes.com/shared/comment/3u27j7
+### Pangram-related posts in the NYT Wordle Review Comments:
+- 02024 Jan 01 - https://nyti.ms/3NM3dSH#permid=130151139
+- 02024 Jan 13 - https://nyti.ms/3Sk0OkR#permid=130437156
+- 02024 Feb 10 - https://nyti.ms/3wjHrj0#permid=131087126
+- 02024 Feb 23 - https://nyti.ms/3uBhZW3#permid=131367700
+- 02024 Feb 28 - https://nyti.ms/3Tf3C2U#permid=131484206
+- 02024 Mar 07 - https://nyti.ms/433r4nj#permid=131685392
+- 02024 Mar 17 - https://www.nytimes.com/shared/comment/3tpkj5
+- 02024 Mar 19 - https://www.nytimes.com/shared/comment/3tqus9
+- 02024 Mar 29 - https://www.nytimes.com/shared/comment/3u27j7
