@@ -202,3 +202,4 @@ See https://rentry.co/wordle-pangrams-solutions-only
 - 02024 Mar 17 - https://www.nytimes.com/shared/comment/3tpkj5
 - 02024 Mar 19 - https://www.nytimes.com/shared/comment/3tqus9
 - 02024 Mar 29 - https://www.nytimes.com/shared/comment/3u27j7
+- 02024 Sep 14 - https://www.nytimes.com/shared/comment/41scvq
