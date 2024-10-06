@@ -108,7 +108,7 @@ I have implemented a basic version of the exhaustive search in C that already ru
 Results and code are published under the MIT License, available via the URL above.
 
 ##### Status
-**Updated 6 Oct 2024**
+**Updated 6 Oct 2024** (views 1224)
 
 The search program has been running on up to twelve computers, but several have gone idle, waiting for improved distributed search management code.
 
