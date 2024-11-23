@@ -108,7 +108,7 @@ I have implemented a basic version of the exhaustive search in C that already ru
 Results and code are published under the MIT License, available via the URL above.
 
 ##### Status
-**Updated 10 Nov 2024** (views 1297)
+**Updated 22 Nov 2024** (views 1314)
 
 The search program has been running on up to twelve computers, but several have gone idle, waiting for improved distributed search management code.
 
@@ -116,16 +116,16 @@ Currently ~6 productive instances of the search are running, covering maybe 1% o
 
 - D-Z are complete (representing ~17% of the search space).
 - A, B, and C are in progress.
-- Searches from 629 of 2149 head words starting with A (308/718), B (118/710), or C (203/721) are complete.
-- About 43.8% of the total search space has been covered to date.
+- Searches from 660 of 2149 head words starting with A (316/718), B (128/710), or C (216/721) are complete.
+- About 45% of the total search space has been covered to date.
 
 ##### Counts
-- 14,267,918 "base" pangrams (without expanding anagrams) have been found. 
-- 23,676,901 total pangrams (with anagrams expanded) have been found.
-- 12,748 of 14,855 valid guesses (86%) appear in pangrams found to date.
-- 2,073 of 2,317 known potential solutions (89%) appear in pangrams found to date.
+- 14,849,260 "base" pangrams (without expanding anagrams) have been found. 
+- 24,648,370 total pangrams (with anagrams expanded) have been found.
+- 12,859 of 14,855 valid guesses (87%) appear in pangrams found to date.
+- 2,085 of 2,319 known potential solutions (90%) appear in pangrams found to date.
 
-The following 105 known potential solutions (4.5%) have not been found in any pangrams yet, and yielded no pangrams when the search started from that word (which is more consequential for words earlier in the alphabet than later, due to the basic search optimization of proceeding only with lexically-greater words from the head word).
+The following 103 known potential solutions (4.4%) have not been found in any pangrams yet, and yielded no pangrams when the search started from that word (which is more consequential for words earlier in the alphabet than later, due to the basic search optimization of proceeding only with lexically-greater words from the head word).
 ~~~text
 ABASE ABBEY ABUSE ARISE AROSE
 ASSAY ASSET
@@ -134,8 +134,6 @@ CACAO COCOA
 DADDY DAISY DIODE
 EARLY EASEL EERIE ENNUI ENSUE
 ERROR ESSAY ETUDE
-FUSSY
-GAUGE
 HAIRY HARRY HARSH HELLO HILLY
 HORSE HOUSE HURRY HUSSY
 ISSUE
@@ -162,31 +160,31 @@ YEAST
 ~~~
 
 Top 25 words occurring in pangrams found to date. The list shows the percent (and number) of pangrams found to date that contain each word:
-1. `VOZHD` : 28% (6596538) 
-1. `WAQFS` : 25% (5910775) 
-1. `VIBEX` : 13% (3010839) 
-1. `PHYNX` : 10% (2464274) 
-1. `JUMBY` : 9% (2109430) 
-1. `QUAWK` : 8% (1926756) 
-1. `QUICK` : 7% (1594745) 
-1. `QUACK` : 7% (1566758) 
-1. `QUECK` : 6% (1335390) 
-1. `FJORD` : 5% (1232804) 
-1. `FJELD` : 5% (1128719) 
-1. `FIQHS` : 5% (1111520) 
-1. `VEXED` : 4% (943066) 
-1. `JAMBS` : 4% (941383) 
-1. `QUBIT` : 4% (850055) 
-1. `JOCKY` : 4% (845946) 
-1. `JUMPY` : 3% (803795) 
-1. `GLITZ` : 3% (789481) 
-1. `FRITZ` : 3% (772303) 
-1. `JUDGY` : 3% (764700) 
-1. `PHLOX` : 3% (759410) 
-1. `JACKY` : 3% (742347) 
-1. `BUNJY` : 3% (740002) 
-1. `SQUIZ` : 3% (739943) 
-1. `JIVED` : 3% (723592) 
+1. `VOZHD` : 28% (6870794) 
+1. `WAQFS` : 25% (6056499) 
+1. `VIBEX` : 13% (3144819) 
+1. `PHYNX` : 10% (2560968) 
+1. `JUMBY` : 9% (2172722) 
+1. `QUAWK` : 8% (2023700) 
+1. `QUICK` : 7% (1636136) 
+1. `QUACK` : 6% (1590541) 
+1. `QUECK` : 6% (1368087) 
+1. `FJORD` : 5% (1243693) 
+1. `FJELD` : 5% (1179163) 
+1. `FIQHS` : 5% (1169224) 
+1. `VEXED` : 4% (1006103) 
+1. `JAMBS` : 4% (976493) 
+1. `QUBIT` : 4% (878777) 
+1. `JOCKY` : 3% (850983) 
+1. `JUMPY` : 3% (831829) 
+1. `GLITZ` : 3% (814948) 
+1. `SQUIZ` : 3% (809076) 
+1. `JUDGY` : 3% (802228) 
+1. `FRITZ` : 3% (775424) 
+1. `PHLOX` : 3% (772365) 
+1. `JIVED` : 3% (759297) 
+1. `JACKY` : 3% (746969) 
+1. `BUNJY` : 3% (740348) 
 
 
 #### Pangrams Comprised of Solutions Only
