@@ -108,27 +108,28 @@ I have implemented a basic version of the exhaustive search in C that already ru
 Results and code are published under the MIT License, available via the URL above.
 
 ##### Status
-**Updated 22 Nov 2024** (views 1314)
+**Updated 1 Dec 2024** (views 1324)
 
 The search program has been running on up to twelve computers, but several have gone idle, waiting for improved distributed search management code.
 
-Currently ~6 productive instances of the search are running, covering maybe 1% of the search area remaining per week.
+Currently ~8 productive instances of the search are running, covering a little over 1% of the search area remaining per week.
 
 - D-Z are complete (representing ~17% of the search space).
 - A, B, and C are in progress.
-- Searches from 660 of 2149 head words starting with A (316/718), B (128/710), or C (216/721) are complete.
-- About 45% of the total search space has been covered to date.
+- Searches from 723 of 2149 head words starting with A (333/718), B (137/710), or C (253/721) are complete.
+- About 47% of the total search space has been covered to date.
 
 ##### Counts
-- 14,849,260 "base" pangrams (without expanding anagrams) have been found. 
-- 24,648,370 total pangrams (with anagrams expanded) have been found.
-- 12,859 of 14,855 valid guesses (87%) appear in pangrams found to date.
-- 2,085 of 2,319 known potential solutions (90%) appear in pangrams found to date.
+- 15,484,465 "base" pangrams (without expanding anagrams) have been found. 
+- 25,698,247 total pangrams (with anagrams expanded) have been found.
+- 18,977,047 pangrams (74%) contain at least one known potential solution.
+- 12,871 of 14,855 valid guesses (87%) appear in pangrams found to date.
+- 2,088 of 2,319 known potential solutions (90%) appear in pangrams found to date.
 
-The following 103 known potential solutions (4.4%) have not been found in any pangrams yet, and yielded no pangrams when the search started from that word (which is more consequential for words earlier in the alphabet than later, due to the basic search optimization of proceeding only with lexically-greater words from the head word).
+The following 104 known potential solutions (4.5%) have not been found in any pangrams yet, and yielded no pangrams when the search started from that word (which is more consequential for words earlier in the alphabet than later, due to the basic search optimization of proceeding only with lexically-greater words from the head word).
 ~~~text
 ABASE ABBEY ABUSE ARISE AROSE
-ASSAY ASSET
+ASSAY ASSET AUDIO
 BASIS
 CACAO COCOA
 DADDY DAISY DIODE
@@ -160,31 +161,31 @@ YEAST
 ~~~
 
 Top 25 words occurring in pangrams found to date. The list shows the percent (and number) of pangrams found to date that contain each word:
-1. `VOZHD` : 28% (6870794) 
-1. `WAQFS` : 25% (6056499) 
-1. `VIBEX` : 13% (3144819) 
-1. `PHYNX` : 10% (2560968) 
-1. `JUMBY` : 9% (2172722) 
-1. `QUAWK` : 8% (2023700) 
-1. `QUICK` : 7% (1636136) 
-1. `QUACK` : 6% (1590541) 
-1. `QUECK` : 6% (1368087) 
-1. `FJORD` : 5% (1243693) 
-1. `FJELD` : 5% (1179163) 
-1. `FIQHS` : 5% (1169224) 
-1. `VEXED` : 4% (1006103) 
-1. `JAMBS` : 4% (976493) 
-1. `QUBIT` : 4% (878777) 
-1. `JOCKY` : 3% (850983) 
-1. `JUMPY` : 3% (831829) 
-1. `GLITZ` : 3% (814948) 
-1. `SQUIZ` : 3% (809076) 
-1. `JUDGY` : 3% (802228) 
-1. `FRITZ` : 3% (775424) 
-1. `PHLOX` : 3% (772365) 
-1. `JIVED` : 3% (759297) 
-1. `JACKY` : 3% (746969) 
-1. `BUNJY` : 3% (740348) 
+1. `VOZHD` : 28% (7232245) 
+1. `WAQFS` : 24% (6167689) 
+1. `VIBEX` : 13% (3229118) 
+1. `PHYNX` : 10% (2695464) 
+1. `JUMBY` : 9% (2267353) 
+1. `QUAWK` : 8% (2126568) 
+1. `QUICK` : 6% (1645402) 
+1. `QUACK` : 6% (1597735) 
+1. `QUECK` : 5% (1377597) 
+1. `FJORD` : 5% (1271478) 
+1. `FJELD` : 5% (1242478) 
+1. `FIQHS` : 5% (1215809) 
+1. `VEXED` : 4% (1057553) 
+1. `JAMBS` : 4% (1008104) 
+1. `QUBIT` : 4% (906018) 
+1. `JOCKY` : 3% (885752) 
+1. `JUMPY` : 3% (884304) 
+1. `GLITZ` : 3% (858802) 
+1. `JUDGY` : 3% (840115) 
+1. `SQUIZ` : 3% (831985) 
+1. `JIVED` : 3% (811594) 
+1. `PHLOX` : 3% (806375) 
+1. `FRITZ` : 3% (798730) 
+1. `JIMPY` : 3% (782395) 
+1. `JACKY` : 3% (774571) 
 
 
 #### Pangrams Comprised of Solutions Only
