@@ -107,6 +107,9 @@ I have implemented a basic version of the exhaustive search in C that already ru
 
 Results and code are published under the MIT License, available via the URL above.
 
+An unsuccessful attempt to solve a random archive game using the intermediate data and GNU/Linux command line tools can be seen here: https://rentry.co/wordle-manual-pangram-example
+
+
 ##### Status
 **Updated 13 Dec 2024** (views 1335)
 
@@ -202,3 +205,4 @@ See https://rentry.co/wordle-pangrams-solutions-only
 - 02024 Mar 19 - https://www.nytimes.com/shared/comment/3tqus9
 - 02024 Mar 29 - https://www.nytimes.com/shared/comment/3u27j7
 - 02024 Sep 14 - https://www.nytimes.com/shared/comment/41scvq
+- 02024 Dec 14 - https://www.nytimes.com/shared/comment/43s620
