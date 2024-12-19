@@ -94,7 +94,7 @@ if __name__ == "__main__":
                      # Look for zero pangram count words (and all anagrams)
                      n_pangrams = int(line_list[-1])
                      if n_pangrams == 0:
-                        anas_list = re.split('\[|\||\]',word_or_anagram)
+                        anas_list = re.split(r'\[|\||\]',word_or_anagram)
                         for w in anas_list:
                            if len(w) > 0:
                               zero_pangram_words.add_str(w)
