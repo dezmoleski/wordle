@@ -111,7 +111,7 @@ An unsuccessful attempt to solve a random archive game using the intermediate da
 
 
 ##### Status
-**Updated 30 Dec 2024** (views 1369)
+**Updated 01 Jan 2025** (views 1391)
 
 The search program has been running on up to twelve computers, but several have gone idle, waiting for improved distributed search management code.
 
@@ -119,17 +119,17 @@ Currently ~8 productive instances of the search are running, covering a little o
 
 - D-Z are complete (representing ~17% of the search space).
 - A, B, and C are in progress.
-- Searches from 1015 of 2149 head words starting with A (400/718), B (160/710), or C (455/721) are complete.
-- About 56% of the total search space has been covered to date.
+- Searches from 1050 of 2149 head words starting with A (408/718), B (162/710), or C (480/721) are complete.
+- About 57% of the total search space has been covered to date.
 
 ##### Counts
-- 17,337,364 "base" pangrams (without expanding anagrams) have been found. 
-- 28,961,228 total pangrams (with anagrams expanded) have been found.
-- 21,311,604 pangrams (74%) contain at least one known potential solution.
-- 13,030 of 14,855 valid guesses (88%) appear in pangrams found to date.
-- 2,115 of 2,320 known potential solutions (91%) appear in pangrams found to date.
+- 17,459,876 "base" pangrams (without expanding anagrams) have been found. 
+- 29,164,287 total pangrams (with anagrams expanded) have been found.
+- 21,438,451 pangrams (74%) contain at least one known potential solution.
+- 13,137 of 14,855 valid guesses (88%) appear in pangrams found to date.
+- 2,134 of 2,320 known potential solutions (92%) appear in pangrams found to date.
 
-The following 107 known potential solutions (4.6%) have not been found in any pangrams yet, and yielded no pangrams when the search started from that word (which is more consequential for words earlier in the alphabet than later, due to the basic search optimization of proceeding only with lexically-greater words from the head word).
+The following 89 known potential solutions (3.8%) have not been found in any pangrams yet, and yielded no pangrams when the search started from that word (which is more consequential for words earlier in the alphabet than later, due to the basic search optimization of proceeding only with lexically-greater words from the head word).
 ~~~text
 ABASE ABBEY ABUSE ARISE AROSE
 ASSAY ASSET AUDIO
@@ -138,11 +138,10 @@ CACAO COCOA
 DADDY DAISY DIODE
 EARLY EASEL EERIE ENNUI ENSUE
 ERASE ERROR ESSAY ETUDE
-HAIRY HARRY HARSH HELLO HILLY
-HORSE HOUSE HURRY HUSSY
+HOUSE HUSSY
 ISSUE
 KAYAK
-LAYER LEASE LEASH LEERY LOOSE
+LAYER LEASE LEERY LOOSE
 LORRY LOSER LOUSE LOUSY
 MAMMA MAMMY MOMMY MUMMY
 NANNY NINNY NOISE NOOSE
@@ -152,43 +151,42 @@ POSSE PUPPY
 RAISE RARER RELAY REUSE RISER
 ROUSE ROYAL RULER RURAL
 SALSA SASSY SAUTE SEEDY SENSE
-SEPIA SHALE SHALL SHARE SHEAR
-SHEER SHELL SHIRE SHORE SHUSH
-SILLY SISSY SLASH SLYLY SOLAR
-SOOTY SORRY STATE STEAD STEED
-STOUT SUITE SULLY SURER SUSHI
+SEPIA SHUSH SILLY SISSY SLYLY
+SOLAR SOOTY SORRY STATE STEAD
+STEED STOUT SUITE SULLY SURER
+SUSHI
 TASTE TASTY TATTY TEASE TESTY
 TOAST
-UNION USHER
+UNION
 YEAST
 ~~~
 
 Top 25 words occurring in pangrams found to date. The list shows the percent (and number) of pangrams found to date that contain each word:
-1. `VOZHD` : 28% (8181340) 
-1. `WAQFS` : 25% (7120676) 
-1. `VIBEX` : 12% (3495467) 
-1. `PHYNX` : 11% (3045961) 
-1. `JUMBY` : 9% (2648699) 
-1. `QUAWK` : 9% (2580702) 
-1. `QUICK` : 6% (1680104) 
-1. `QUACK` : 6% (1622662) 
-1. `FIQHS` : 5% (1493927) 
-1. `FJELD` : 5% (1478886) 
-1. `FJORD` : 5% (1420543) 
-1. `QUECK` : 5% (1408468) 
-1. `VEXED` : 4% (1178056) 
-1. `JAMBS` : 4% (1099800) 
-1. `JUMPY` : 4% (1055201) 
-1. `QUBIT` : 4% (1040486) 
-1. `GLITZ` : 3% (986304) 
-1. `JIVED` : 3% (961706) 
-1. `JUDGY` : 3% (958972) 
-1. `JIMPY` : 3% (911303) 
-1. `FRITZ` : 3% (908991) 
-1. `SQUIZ` : 3% (905550) 
-1. `JOCKY` : 3% (900650) 
-1. `PHLOX` : 3% (895833) 
-1. `JACKY` : 3% (784956) 
+1. `VOZHD` : 28% (8264437) 
+1. `WAQFS` : 25% (7177642) 
+1. `VIBEX` : 12% (3531344) 
+1. `PHYNX` : 10% (3060300) 
+1. `JUMBY` : 9% (2676834) 
+1. `QUAWK` : 9% (2616909) 
+1. `QUICK` : 6% (1682576) 
+1. `QUACK` : 6% (1624419) 
+1. `FIQHS` : 5% (1510088) 
+1. `FJELD` : 5% (1489618) 
+1. `FJORD` : 5% (1430223) 
+1. `QUECK` : 5% (1410867) 
+1. `VEXED` : 4% (1183894) 
+1. `JAMBS` : 4% (1106854) 
+1. `JUMPY` : 4% (1065206) 
+1. `QUBIT` : 4% (1047273) 
+1. `GLITZ` : 3% (992657) 
+1. `JIVED` : 3% (970681) 
+1. `JUDGY` : 3% (970263) 
+1. `JIMPY` : 3% (919675) 
+1. `FRITZ` : 3% (914886) 
+1. `SQUIZ` : 3% (909997) 
+1. `JOCKY` : 3% (901636) 
+1. `PHLOX` : 3% (899214) 
+1. `JACKY` : 3% (785952) 
 
 
 #### Pangrams Comprised of Solutions Only
