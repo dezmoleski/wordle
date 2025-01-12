@@ -157,47 +157,51 @@ if __name__ == "__main__":
                      # the words or an anagram of a word are an answer).
                      this_pangram_contains_answers = False
                      for item in single_words_in_this_pangram:
-                        word_count[item] = word_count.get(item, 0) + count_this_pangram
-                        if not this_pangram_contains_answers and answers.contains(item):
+                        if answers.contains(item):
                            this_pangram_contains_answers = True
-                     # If there's exactly one anagram set in this pangram, then each word
-                     # in that set gets its count incremented by one. While we're here,
-                     # keep a tally of how many pangrams there are for each possible
+                           break
+                           
+                     # While we're here, keep a tally of how many pangrams there are for each possible
                      # number of anagrams sets in the pangram (0 to 6).
                      n_sets = len(anagram_sets_in_this_pangram)
                      pangram_counts_by_n_anagrams[n_sets] += 1
-                     if n_sets == 1:
-                        for w in anagram_sets_in_this_pangram[0]:
-                           word_count[w] = word_count.get(w, 0) + 1
-                           if not this_pangram_contains_answers and answers.contains(w):
-                              this_pangram_contains_answers = True
-                     elif n_sets > 1:
-                        # This is the tricky case...
-                        # First: count_this_pangram is the product of the lengths of all the anagram sets.
-                        #
-                        # Then for example, consider this base (unexpanded) pangram:
-                        #   ABACK FJORD GLITZ [MAQUI|UMIAQ] PHYNX [SWIVE|VIEWS|WIVES]
-                        #
-                        # So count_this_pangram = 2 * 3 == 6
-                        #
-                        # To count how many times each word in the anagram sets appears in the expanced pangrams,
-                        # we add to each word's count, in each set, count_this_pangram / len(its set).
-                        #
-                        # For our example,
-                        #   MAQUI and UMIAQ get 6 / 2 = 3 added to their counts, and
-                        #   SWIVE, VIEWS, and WIVES get 6 / 3 = 2 added to theirs.
-                        #
-                        # This generalizes to any number of anagram sets in the base pangram.
+                     if not this_pangram_contains_answers:
                         for s in anagram_sets_in_this_pangram:
-                           n_this_set = int(count_this_pangram / len(s))
                            for w in s:
-                              word_count[w] = word_count.get(w, 0) + n_this_set
                               if not this_pangram_contains_answers and answers.contains(w):
                                  this_pangram_contains_answers = True
                      
                      if this_pangram_contains_answers:
                         total_pangrams_containing_answers += count_this_pangram
-
+                        for item in single_words_in_this_pangram:
+                           word_count[item] = word_count.get(item, 0) + count_this_pangram
+                        # If there's exactly one anagram set in this pangram, then each word
+                        # in that set gets its count incremented by one.
+                        if n_sets == 1:
+                           for w in anagram_sets_in_this_pangram[0]:
+                              word_count[w] = word_count.get(w, 0) + 1
+                        elif n_sets > 1:
+                           # This is the tricky case...
+                           # First: count_this_pangram is the product of the lengths of all the anagram sets.
+                           #
+                           # Then for example, consider this base (unexpanded) pangram:
+                           #   ABACK FJORD GLITZ [MAQUI|UMIAQ] PHYNX [SWIVE|VIEWS|WIVES]
+                           #
+                           # So count_this_pangram = 2 * 3 == 6
+                           #
+                           # To count how many times each word in the anagram sets appears in the expanced pangrams,
+                           # we add to each word's count, in each set, count_this_pangram / len(its set).
+                           #
+                           # For our example,
+                           #   MAQUI and UMIAQ get 6 / 2 = 3 added to their counts, and
+                           #   SWIVE, VIEWS, and WIVES get 6 / 3 = 2 added to theirs.
+                           #
+                           # This generalizes to any number of anagram sets in the base pangram.
+                           for s in anagram_sets_in_this_pangram:
+                              n_this_set = int(count_this_pangram / len(s))
+                              for w in s:
+                                 word_count[w] = word_count.get(w, 0) + n_this_set
+                        
    print('', file=sys.stderr, flush=True)
    
    print("N base pangrams:", len(all_pgrams), file=sys.stderr, flush=True)
@@ -219,17 +223,18 @@ if __name__ == "__main__":
          file=sys.stderr, flush=True)
    print(f'Max head word = {max_head_word}, with {max_head_word_count} pangrams.', file=sys.stderr, flush=True)
    
-   print("Top words found in pangrams:", file=sys.stderr, flush=True)
+   print("Top words found in pangrams containing solutions:", file=sys.stderr, flush=True)
    # Sort the (word,count) tuples in the word_count dict by count, highest to lowest, and slice off the top N
    l = sorted(word_count.items(), key=itemgetter(1), reverse=True)
    top100 = l[0:100]
    for t in top100:
-      percent = t[1] / total_pangrams
+      percent = t[1] / total_pangrams_containing_answers
       print(f'1. `{t[0]}` : {percent:.0%} ({t[1]}) ', file=sys.stderr, flush=True, end='')
       if t[0] in anagrams:
          print('*', file=sys.stderr, flush=True)
       else:
          print('', file=sys.stderr, flush=True)
+         
    print("\nTop solutions found in pangrams:", file=sys.stderr, flush=True)
    # Filter for top100 solutions
    a = filter(lambda t: answers.contains(t[0]), l)
