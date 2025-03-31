@@ -111,7 +111,7 @@ An unsuccessful attempt to solve a random archive game using the intermediate da
 
 
 ##### Status
-**Updated 27 Mar 2025** (views 1565)
+**Updated 30 Mar 2025** (views 1570)
 
 The search program has been running on up to twelve computers, but several have gone idle, waiting for improved distributed search management code.
 
@@ -119,14 +119,14 @@ Currently ~8 productive instances of the search are running, covering a little o
 
 - C-Z are complete (representing 32.69% of the search space).
 - A and B are in progress.
-- Searches from 895 of 1428 head words starting with A (571/718) or B (324/710) are complete.
-- About 78.2% of the total search space has been covered to date.
+- Searches from 912 of 1428 head words starting with A (579/718) or B (333/710) are complete.
+- About 79% of the total search space has been covered to date.
 
 ##### Counts
-- 23,136,365 "base" pangrams (without expanding anagrams) have been found. 
-- 39,216,606 total pangrams (with anagrams expanded) have been found.
-- 28,906,940 pangrams (74%) contain at least one known potential solution.
-- 13,543 of 14,855 valid guesses (91%) appear in pangrams found to date.
+- 23,254,999 "base" pangrams (without expanding anagrams) have been found. 
+- 39,397,134 total pangrams (with anagrams expanded) have been found.
+- 29,040456 pangrams (74%) contain at least one known potential solution.
+- 13,553 of 14,855 valid guesses (91%) appear in pangrams found to date.
 - 2,184 of 2,322 known potential solutions (94%) appear in pangrams found to date.
 
 The following 93 known potential solutions (4%) have not been found in any pangrams yet, and yielded no pangrams when the search started from that word (which is more consequential for words earlier in the alphabet than later, due to the basic search optimization of proceeding only with lexically-greater words from the head word).
@@ -161,31 +161,31 @@ YEAST
 ~~~
 
 Top 25 words occurring in pangrams containing solutions found to date. The list shows the percent (and number) of pangrams containing solutions found to date that contain each word:
-1. `VOZHD` : 26% (7451519) 
-1. `WAQFS` : 24% (7021092) 
-1. `VIBEX` : 12% (3495249) 
-1. `PHYNX` : 10% (2746328) 
-1. `QUAWK` : 9% (2575098) 
-1. `JUMBY` : 8% (2391875) 
-1. `FJORD` : 8% (2201596) 
-1. `QUICK` : 7% (1998487) 
-1. `QUACK` : 7% (1897169) 
-1. `FJELD` : 5% (1563789) 
-1. `JUMPY` : 5% (1507535) 
-1. `FIQHS` : 5% (1400517) 
-1. `FRITZ` : 4% (1238631) 
-1. `VEXED` : 4% (1150126) 
-1. `QUECK` : 4% (1128070) 
-1. `JUDGY` : 4% (1076736) 
-1. `JAMBS` : 3% (1010029) 
-1. `JIVED` : 3% (979759) 
-1. `SQUIZ` : 3% (969084) 
-1. `WALTZ` : 3% (965676) 
-1. `GLITZ` : 3% (957952) 
-1. `JIMPY` : 3% (919167) 
-1. `JUMBO` : 3% (917982) 
-1. `QUBIT` : 3% (881340) 
-1. `BUXOM` : 3% (834829) 
+1. `VOZHD` : 26% (7483500) 
+1. `WAQFS` : 24% (7061926) 
+1. `VIBEX` : 12% (3496076) 
+1. `PHYNX` : 10% (2772636) 
+1. `QUAWK` : 9% (2592978) 
+1. `JUMBY` : 8% (2393234) 
+1. `FJORD` : 8% (2220100) 
+1. `QUICK` : 7% (2011122) 
+1. `QUACK` : 7% (1910270) 
+1. `FJELD` : 5% (1569332) 
+1. `JUMPY` : 5% (1520154) 
+1. `FIQHS` : 5% (1405048) 
+1. `FRITZ` : 4% (1241562) 
+1. `VEXED` : 4% (1157836) 
+1. `QUECK` : 4% (1135802) 
+1. `JUDGY` : 4% (1084449) 
+1. `JAMBS` : 3% (1010162) 
+1. `JIVED` : 3% (985643) 
+1. `SQUIZ` : 3% (972489) 
+1. `WALTZ` : 3% (968182) 
+1. `GLITZ` : 3% (960775) 
+1. `JIMPY` : 3% (924999) 
+1. `JUMBO` : 3% (918448) 
+1. `QUBIT` : 3% (881760) 
+1. `BUXOM` : 3% (835115) 
 
 
 #### Pangrams Comprised of Solutions Only
