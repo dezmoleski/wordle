@@ -111,7 +111,7 @@ An unsuccessful attempt to solve a random archive game using the intermediate da
 
 
 ##### Status
-**Updated 20 Apr 2025** (views 1612)
+**Updated 27 Apr 2025** (views 1619)
 
 The search program has been running on up to twelve computers, but several have gone idle, waiting for improved distributed search management code.
 
@@ -119,22 +119,22 @@ Currently ~8 productive instances of the search are running, covering a little o
 
 - C-Z are complete (representing 32.69% of the search space).
 - A and B are in progress.
-- Searches from 1026 of 1428 head words starting with A (617/718) or B (409/710) are complete.
-- About 84% of the total search space has been covered to date.
+- Searches from 1069 of 1428 head words starting with A (629/718) or B (440/710) are complete.
+- About 86% of the total search space has been covered to date.
 
 ##### Counts
-- 24,387,666 "base" pangrams (without expanding anagrams) have been found. 
-- 41,445,852 total pangrams (with anagrams expanded) have been found.
-- 30,574,387 pangrams (74%) contain at least one known potential solution.
-- 13,612 of 14,855 valid guesses (92%) appear in pangrams found to date.
-- 2,190 of 2,322 known potential solutions (94%) appear in pangrams found to date.
+- 24,816,482 "base" pangrams (without expanding anagrams) have been found. 
+- 42,206,405 total pangrams (with anagrams expanded) have been found.
+- 31,078,794 pangrams (74%) contain at least one known potential solution.
+- 13,631 of 14,855 valid guesses (92%) appear in pangrams found to date.
+- 2,191 of 2,323 known potential solutions (94%) appear in pangrams found to date.
 
-The following 95 known potential solutions (4%) have not been found in any pangrams yet, and yielded no pangrams when the search started from that word (which is more consequential for words earlier in the alphabet than later, due to the basic search optimization of proceeding only with lexically-greater words from the head word).
+The following 96 known potential solutions (4%) have not been found in any pangrams yet, and yielded no pangrams when the search started from that word (which is more consequential for words earlier in the alphabet than later, due to the basic search optimization of proceeding only with lexically-greater words from the head word).
 ~~~text
 ABASE ABBEY ABUSE AISLE ALLEY
 AMASS AMISS ARISE AROSE ARRAY
 ASIDE ASSAY ASSET AUDIO
-BASIS
+BASIS BAYOU
 CACAO COCOA
 DADDY DAISY DIODE
 EARLY EASEL EERIE ENNUI ENSUE
@@ -161,31 +161,31 @@ YEAST
 ~~~
 
 Top 25 words occurring in pangrams containing solutions found to date. The list shows the percent (and number) of pangrams containing solutions found to date that contain each word:
-1. `VOZHD` : 26% (7982521) 
-1. `WAQFS` : 25% (7506453) 
-1. `VIBEX` : 11% (3510809) 
-1. `PHYNX` : 10% (2938513) 
-1. `QUAWK` : 9% (2703613) 
-1. `JUMBY` : 8% (2403236) 
-1. `FJORD` : 8% (2352176) 
-1. `QUICK` : 7% (2160451) 
-1. `QUACK` : 7% (2041566) 
-1. `JUMPY` : 6% (1684268) 
-1. `FJELD` : 5% (1653066) 
-1. `FIQHS` : 5% (1464131) 
-1. `FRITZ` : 4% (1308934) 
-1. `VEXED` : 4% (1236233) 
-1. `QUECK` : 4% (1231862) 
-1. `JUDGY` : 4% (1121719) 
-1. `SQUIZ` : 3% (1048144) 
-1. `JIVED` : 3% (1044348) 
-1. `JIMPY` : 3% (1025338) 
-1. `WALTZ` : 3% (1023383) 
-1. `JAMBS` : 3% (1013685) 
-1. `GLITZ` : 3% (1011119) 
-1. `JUMBO` : 3% (921518) 
-1. `QUBIT` : 3% (884645) 
-1. `BUXOM` : 3% (837245) 
+1. `VOZHD` : 26% (8158610) 
+1. `WAQFS` : 25% (7685998) 
+1. `VIBEX` : 11% (3515949) 
+1. `PHYNX` : 10% (2958662) 
+1. `QUAWK` : 9% (2758283) 
+1. `JUMBY` : 8% (2403970) 
+1. `FJORD` : 8% (2372297) 
+1. `QUICK` : 7% (2205331) 
+1. `QUACK` : 7% (2073098) 
+1. `JUMPY` : 6% (1733329) 
+1. `FJELD` : 5% (1697425) 
+1. `FIQHS` : 5% (1485354) 
+1. `FRITZ` : 4% (1314410) 
+1. `QUECK` : 4% (1257613) 
+1. `VEXED` : 4% (1256217) 
+1. `JUDGY` : 4% (1134052) 
+1. `JIVED` : 4% (1091095) 
+1. `SQUIZ` : 3% (1067847) 
+1. `JIMPY` : 3% (1053379) 
+1. `WALTZ` : 3% (1036855) 
+1. `GLITZ` : 3% (1021016) 
+1. `JAMBS` : 3% (1013969) 
+1. `JUMBO` : 3% (921881) 
+1. `QUBIT` : 3% (886857) 
+1. `VIXEN` : 3% (843424) 
 
 
 #### Pangrams Comprised of Solutions Only
