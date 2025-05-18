@@ -126,6 +126,7 @@ Currently ~9 productive instances of the search are running, covering almost 2% 
 - 26,222,256 "base" pangrams (without expanding anagrams) have been found. 
 - 44,532,937 total pangrams (with anagrams expanded) have been found.
 - **INCORRECT, OVERCOUNT:** 32,954,162 pangrams (74%) contain at least one known potential solution.
+  + The corrected count found by a double-checking program is 30,261,752 (68%)
 - 13,691 of 14,855 valid guesses (92%) appear in pangrams found to date.
 - 2,204 of 2,323 known potential solutions (95%) appear in pangrams found to date.
 
@@ -207,3 +208,5 @@ See https://rentry.co/wordle-pangrams-solutions-only
 - 02024 Sep 14 - https://www.nytimes.com/shared/comment/41scvq
 - 02024 Dec 14 - https://www.nytimes.com/shared/comment/43s620
 - 02025 Apr 06 - https://www.nytimes.com/shared/comment/46lgvt
+- 02025 May 11 - https://www.nytimes.com/shared/comment/47f1r2
+- 02025 May 18 - https://www.nytimes.com/shared/comment/47jvne
