@@ -111,26 +111,26 @@ An unsuccessful attempt to solve a random archive game using the intermediate da
 
 
 ##### Status
-**Updated 31 May 2025** (views 1703)
+**Updated 7 June 2025** (views 1724)
 
-The search program has been running on up to twelve computers, but several have gone idle, waiting for improved distributed search management code (which now looks like it's never coming, since the search is almost done).
+The search program was run on up to twelve computers, with multiple instances per computer, but I let several of the slowest go idle, thinking I might write improved distributed search management code to reduce the manual tending that took up to an hour each day. But I hit an equilibrium and a pace of progress I could live with and never did write the fancy search management system.
 
-Currently ~9 productive instances of the search are running, covering almost 2% of the search area remaining per week.
+Now in the home stretch I've increased from 8 to 11 instances of the search running on 5 computers, and expect to complete the search the week after next at the latest.
 
-- C-Z are complete (representing 32.69% of the search space).
-- A and B are in progress.
-- Searches from 1317 of 1428 head words starting with A (699/718) or B (618/710) are complete.
-- About 95.9% of the total search space has been covered to date.
+- A and C-Z are complete (representing 74.2% of the search space).
+- Only B remains in progress.
+- Searches from 643 of 710 words starting with B are complete.
+- About 97.8% of the total search space has been covered to date.
 
 ##### Counts
-- 28,933,831 "base" pangrams (without expanding anagrams) have been found. 
-- 48,890,008 total pangrams (with anagrams expanded) have been found.
-- **INCORRECT, OVERCOUNT:** 36,105,850 pangrams (74%) contain at least one known potential solution.
-  + The corrected count found by a double-checking program is 33,161,211 (68%)
-- 13,812 of 14,855 valid guesses (93%) appear in pangrams found to date.
-- 2,215 of 2,324 known potential solutions (95%) appear in pangrams found to date.
+- 29,797,977 "base" pangrams (without expanding anagrams) have been found. 
+- 50,253,499 total pangrams (with anagrams expanded) have been found.
+- **INCORRECT OVERCOUNT so fewer than:** 37,328,877 pangrams (74%) contain at least one known potential solution.
+  + The corrected count found by a double-checking program is 34,343,473 (68%)
+- 13,847 of 14,855 valid guesses (93%) appear in pangrams found to date.
+- 2,223 of 2,325 known potential solutions (95.6%) appear in pangrams found to date.
 
-The following 103 known potential solutions (4.4%) have not been found in any pangrams yet, and yielded no pangrams when the search started from that word (which is more consequential for words earlier in the alphabet than later, due to the basic search optimization of proceeding only with lexically-greater words from the head word).
+The following 102 known potential solutions (4.4%) are not found in any pangrams discovered yet.
 ~~~text
 ABASE ABBEY ABUSE AISLE ALLAY
 ALLEY ALLOY AMASS AMISS ANNOY
@@ -146,7 +146,7 @@ INANE ISSUE
 LASER LASSO LAYER LEASE LEERY
 LOOSE LORRY LOSER LOUSE LOUSY
 LOYAL
-MAMMA MAMMY MOMMY MUMMY
+MAMMA MAMMY MOMMY
 NANNY NINNY NOISE NOOSE
 OBESE ONION
 PAUSE PIOUS POISE POPPY
@@ -163,32 +163,32 @@ UNION USUAL
 ~~~
 
 Top 25 words occurring in pangrams containing solutions found to date. The list shows the percent (and number) of pangrams containing solutions found to date that contain each word:
-**The absolute numbers shown below are an INCORRECT OVERCOUNT. Still considering whether to fix this counting bug... but the relative ranking is probably still in the ballpark so I'm leaving this incorrect list in place until I fix the counting algorithm or decide not to - in which case better data will come from post-processing after the entire search is complete.**
-1. `WAQFS` : 26% (9454351) 
-1. `VOZHD` : 25% (9144548) 
-1. `VIBEX` : 10% (3569194) 
-1. `PHYNX` : 9% (3328574) 
-1. `QUAWK` : 9% (3283511) 
-1. `FJORD` : 7% (2596395) 
-1. `QUICK` : 7% (2537888) 
-1. `JUMPY` : 7% (2446229) 
-1. `JUMBY` : 7% (2426981) 
-1. `QUACK` : 7% (2422257) 
-1. `FJELD` : 5% (1914798) 
-1. `FIQHS` : 5% (1784116) 
-1. `FRITZ` : 4% (1530382) 
-1. `JIMPY` : 4% (1482719) 
-1. `VEXED` : 4% (1479928) 
-1. `QUECK` : 4% (1448377) 
-1. `JUDGY` : 4% (1441648) 
-1. `JIVED` : 4% (1428133) 
-1. `SQUIZ` : 4% (1287795) 
-1. `BLONX` : 3% (1147445) 
-1. `WALTZ` : 3% (1145674) 
-1. `GLITZ` : 3% (1119777) 
-1. `JAMBS` : 3% (1022997) 
-1. `VIXEN` : 3% (1013667) 
-1. `JUMBO` : 3% (928406) 
+**The absolute numbers shown below are an INCORRECT OVERCOUNT. I'm unlikely to fix this counting bug... but the relative ranking is probably still in the ballpark so I'm leaving this incorrect list in place until I have accurate data from post-processing after the entire search is complete.**
+1. `WAQFS` : 26% (9856716) 
+1. `VOZHD` : 26% (9582381) 
+1. `VIBEX` : 10% (3584122) 
+1. `QUAWK` : 9% (3444448) 
+1. `PHYNX` : 9% (3387707) 
+1. `FJORD` : 7% (2663060) 
+1. `QUICK` : 7% (2599337) 
+1. `JUMPY` : 7% (2585259) 
+1. `QUACK` : 7% (2496142) 
+1. `JUMBY` : 7% (2456334) 
+1. `FJELD` : 5% (1966039) 
+1. `FIQHS` : 5% (1832262) 
+1. `JIMPY` : 4% (1575990) 
+1. `FRITZ` : 4% (1551013) 
+1. `VEXED` : 4% (1549379) 
+1. `QUECK` : 4% (1508617) 
+1. `JUDGY` : 4% (1495675) 
+1. `JIVED` : 4% (1487099) 
+1. `SQUIZ` : 4% (1344809) 
+1. `WALTZ` : 3% (1179476) 
+1. `BLONX` : 3% (1154119) 
+1. `GLITZ` : 3% (1143429) 
+1. `VIXEN` : 3% (1054133) 
+1. `JAMBS` : 3% (1030033) 
+1. `JOCKY` : 3% (983705) 
 
 
 #### Pangrams Comprised of Solutions Only
