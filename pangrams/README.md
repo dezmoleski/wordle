@@ -111,26 +111,36 @@ An unsuccessful attempt to solve a random archive game using the intermediate da
 
 
 ##### Status
-**Updated 7 June 2025** (views 1724)
+**Updated 14 June 2025** (views 1731)
 
-The search program was run on up to twelve computers, with multiple instances per computer, but I let several of the slowest go idle, thinking I might write improved distributed search management code to reduce the manual tending that took up to an hour each day. But I hit an equilibrium and a pace of progress I could live with and never did write the fancy search management system.
+**BIG NEWS!**
 
-Now in the home stretch I've increased from 8 to 11 instances of the search running on 5 computers, and expect to complete the search the week after next at the latest.
+My son found an amazing optimization of the search by pruning dead ends using a cleverly constructed cache of search state whenever a dead end is discovered. This enables the entire search to run in a single instance of the search program within about an hour on my main laptop!
+
+Because the slower searcher is so close to completing the entire search though, I'm letting it run to completion and will use both my and my son's implementation of the fast pruning searcher as a double-check on the slow searcher's results.
+
+My son also wrote his version of the search from scratch, AND ran it in parallel on a GPU, further reducing the run time to just a few minutes, so that will be a strong double check on the results. **So proud of him!** and yet humbled that I never thought of these optimizations: I gave up thinking and settled into just accepting and running this extremely long search far too soon and easily!
+
+**Slow Searcher Status**
+
+The slow search program was run on up to twelve computers, with multiple instances per computer, but I let several of the slowest go idle, thinking I might write improved distributed search management code to reduce the manual tending that took up to an hour each day. But I hit an equilibrium and a pace of progress I could live with (about 1 hour overhead per week and 2% progress) and never did write the fancy search management system.
+
+Now in the home stretch I've increased from 8 to 11 instances of the search running on 5 computers, and expect the slow searchers to reach the finish line in the next day or two.
 
 - A and C-Z are complete (representing 74.2% of the search space).
 - Only B remains in progress.
-- Searches from 643 of 710 words starting with B are complete.
-- About 97.8% of the total search space has been covered to date.
+- Searches from 683 of 710 words starting with B are complete.
+- 99.12% of the total search space has been covered to date.
 
 ##### Counts
-- 29,797,977 "base" pangrams (without expanding anagrams) have been found. 
-- 50,253,499 total pangrams (with anagrams expanded) have been found.
-- **INCORRECT OVERCOUNT so fewer than:** 37,328,877 pangrams (74%) contain at least one known potential solution.
-  + The corrected count found by a double-checking program is 34,343,473 (68%)
-- 13,847 of 14,855 valid guesses (93%) appear in pangrams found to date.
-- 2,223 of 2,325 known potential solutions (95.6%) appear in pangrams found to date.
+- 30,515,152 "base" pangrams (without expanding anagrams) have been found. 
+- 51,430,609 total pangrams (with anagrams expanded) have been found.
+- **INCORRECT OVERCOUNT so fewer than:** 38,161,465 pangrams (74%) contain at least one known potential solution.
+  + The corrected count found by a double-checking program is 35,116,114 (68%)
+- 13,862 of 14,855 valid guesses (93%) appear in pangrams found to date.
+- 2,224 of 2,325 known potential solutions (95.66%) appear in pangrams found to date.
 
-The following 102 known potential solutions (4.4%) are not found in any pangrams discovered yet.
+The following 101 known potential solutions (4.34%) are not found in any pangrams discovered yet.
 ~~~text
 ABASE ABBEY ABUSE AISLE ALLAY
 ALLEY ALLOY AMASS AMISS ANNOY
@@ -146,11 +156,11 @@ INANE ISSUE
 LASER LASSO LAYER LEASE LEERY
 LOOSE LORRY LOSER LOUSE LOUSY
 LOYAL
-MAMMA MAMMY MOMMY
+MAMMA MAMMY
 NANNY NINNY NOISE NOOSE
 OBESE ONION
-PAUSE PIOUS POISE POPPY
-POSSE PUPPY
+PAUSE PIOUS POISE POPPY POSSE
+PUPPY
 RAISE RALLY RARER RELAY REUSE
 RISER ROUSE ROYAL RULER RURAL
 SALLY SALSA SASSY SAUNA SAUTE
@@ -164,31 +174,31 @@ UNION USUAL
 
 Top 25 words occurring in pangrams containing solutions found to date. The list shows the percent (and number) of pangrams containing solutions found to date that contain each word:
 **The absolute numbers shown below are an INCORRECT OVERCOUNT. I'm unlikely to fix this counting bug... but the relative ranking is probably still in the ballpark so I'm leaving this incorrect list in place until I have accurate data from post-processing after the entire search is complete.**
-1. `WAQFS` : 26% (9856716) 
-1. `VOZHD` : 26% (9582381) 
-1. `VIBEX` : 10% (3584122) 
-1. `QUAWK` : 9% (3444448) 
-1. `PHYNX` : 9% (3387707) 
-1. `FJORD` : 7% (2663060) 
-1. `QUICK` : 7% (2599337) 
-1. `JUMPY` : 7% (2585259) 
-1. `QUACK` : 7% (2496142) 
-1. `JUMBY` : 7% (2456334) 
-1. `FJELD` : 5% (1966039) 
-1. `FIQHS` : 5% (1832262) 
-1. `JIMPY` : 4% (1575990) 
-1. `FRITZ` : 4% (1551013) 
-1. `VEXED` : 4% (1549379) 
-1. `QUECK` : 4% (1508617) 
-1. `JUDGY` : 4% (1495675) 
-1. `JIVED` : 4% (1487099) 
-1. `SQUIZ` : 4% (1344809) 
-1. `WALTZ` : 3% (1179476) 
+1. `WAQFS` : 27% (10210646) 
+1. `VOZHD` : 26% (9877312) 
+1. `VIBEX` : 9% (3585895) 
+1. `QUAWK` : 9% (3498218) 
+1. `PHYNX` : 9% (3454087) 
+1. `FJORD` : 7% (2697064) 
+1. `JUMPY` : 7% (2694078) 
+1. `QUICK` : 7% (2650814) 
+1. `QUACK` : 7% (2552012) 
+1. `JUMBY` : 6% (2457775) 
+1. `FJELD` : 5% (1987386) 
+1. `FIQHS` : 5% (1888662) 
+1. `JIMPY` : 4% (1653680) 
+1. `VEXED` : 4% (1597495) 
+1. `FRITZ` : 4% (1582167) 
+1. `JUDGY` : 4% (1545008) 
+1. `QUECK` : 4% (1544108) 
+1. `JIVED` : 4% (1538343) 
+1. `SQUIZ` : 4% (1375568) 
+1. `WALTZ` : 3% (1204179) 
+1. `GLITZ` : 3% (1163224) 
 1. `BLONX` : 3% (1154119) 
-1. `GLITZ` : 3% (1143429) 
-1. `VIXEN` : 3% (1054133) 
-1. `JAMBS` : 3% (1030033) 
-1. `JOCKY` : 3% (983705) 
+1. `VIXEN` : 3% (1077907) 
+1. `JAMBS` : 3% (1030365) 
+1. `JOCKY` : 3% (1008622) 
 
 
 #### Pangrams Comprised of Solutions Only
@@ -209,3 +219,5 @@ See https://rentry.co/wordle-pangrams-solutions-only
 - 02025 Apr 06 - https://www.nytimes.com/shared/comment/46lgvt
 - 02025 May 11 - https://www.nytimes.com/shared/comment/47f1r2
 - 02025 May 18 - https://www.nytimes.com/shared/comment/47jvne
+- 02025 Jun 07 - https://www.nytimes.com/shared/comment/482af8
+- 02025 Jun 14 - https://www.nytimes.com/shared/comment/487h4e
