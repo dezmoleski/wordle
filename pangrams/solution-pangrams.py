@@ -13,7 +13,7 @@ import json
 import os.path
 import re
 
-def expand_pangrams(expanded: list, singles: list, every_expansion_has_answers: bool, anagram_sets: list, answers: WordList):
+def expand_pangrams(expanded: list, singles: list, anagram_sets: list, answers: WordList):
    # We recurse until we reach depth == 6 at which point we can just append the
    # fully expanded anagram represented by the singles into the expanded list.
    # This could be written to stop the recursion when anagram_sets is empty, too.
@@ -29,12 +29,9 @@ def expand_pangrams(expanded: list, singles: list, every_expansion_has_answers: 
             w = Word(item)
             if answers.contains_word(w):
                w.star(True) # Marks Word to format its repr with trailing '*'
-            # Only recurse if either every expansion has answers, or if this
-            # anagram is itself an answer.
-            if every_expansion_has_answers or w.starred:
-               next_singles = singles.copy()
-               next_singles.append(w)
-               expand_pangrams(expanded, next_singles, every_expansion_has_answers, next_anagram_sets, answers)
+            next_singles = singles.copy()
+            next_singles.append(w)
+            expand_pangrams(expanded, next_singles, next_anagram_sets, answers)
       except:
          print('ERROR: singles, depth:', singles, depth, file=sys.stderr)
          print('ERROR: anagram_sets:', anagram_sets, file=sys.stderr)
@@ -114,19 +111,14 @@ if __name__ == "__main__":
                      
                      if this_pangram_contains_answers:
                         single_words = list() # a list of the single word strings as Words
-                        singles_contain_answers = False
                         for item in single_words_in_this_pangram:
                            w = Word(item)
                            if answers.contains_word(w):
                               w.star(True) # Marks Word to format its repr with trailing '*'
-                              singles_contain_answers = True
                            single_words.append(w)
                         # This recursive function builds expanded_pangrams into a list of lists of Words.
-                        # If the original single words contain any answers, then EVERY expanded
-                        # pangram will also contain answers, otherwise only expansions where an
-                        # anagram is an answer contains an answer!
                         expanded_pangrams = list()
-                        expand_pangrams(expanded_pangrams, single_words, singles_contain_answers, anagram_sets_in_this_pangram, answers)
+                        expand_pangrams(expanded_pangrams, single_words, anagram_sets_in_this_pangram, answers)
                         total_pangrams += len(expanded_pangrams)
                         for e in expanded_pangrams:
                            for w in e:
