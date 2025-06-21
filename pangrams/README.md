@@ -111,7 +111,9 @@ An unsuccessful attempt to solve a random archive game using the intermediate da
 
 
 ##### Status
-**Updated 19 June 2025** (views 1740)
+**Updated 20 June 2025** (views 1745)
+
+**Headline:** double and triple checks have passed, counts given below are mostly final (though subject to expected changes in the solutions list). The ranking of words by how many solution-bearing pangrams contain that word is still based on overcounts (this will be fixed eventually).
 
 **Fast Pruning Algorithm**
 
@@ -121,34 +123,26 @@ My son found an amazing optimization of the search by pruning dead ends using a 
 
 Because the slower searcher was so close to finishing its run though, I let it run to completion. But I also added my own implementation of the fast pruning to make a third version of the searcher. Upon checking the slow searcher results against both my and my son's implementation of the new fast-pruner, none of the 3 result sets matched!
 
-However, the difference between my and my son's fast pruners was easy to diagnose as a simple off-by-one error in his version (score one for the old man!) and apart from that they agreed to 99.999989% (6 pangrams missing out of 54.47 million). The slow searcher is a different story...
+However, the difference between my and my son's fast pruners was relatively easy to diagnose as what looked like a simple off-by-one error in his version (score one for the old man!) and apart from that they agreed to 99.999989% (6 pangrams missing out of 54.47 million: postscript - it turned out to be a side effect in an assert, not strictly an off-by-one). The slow searcher was a different story...
 
 **Slow Searcher History and Results**
 
 The final slow search program was run on up to twelve computers, with multiple instances per computer, but I let several of the slowest go idle, thinking I might write improved distributed search management code to reduce the manual tending that took up to an hour each day. But I hit an equilibrium and a pace of progress I could live with (about 1 hour overhead per week and 2% progress) and never did write the fancy search management system.
 
-The earliest version of the slow searcher was written in python, which clearly had some relatively significant flaws (or else the all-too-human operator of that program made mistakes). I think it was bugs in the code though, based on details I won't go into here.
+The earliest version of the slow searcher was written in python, which clearly had some relatively significant flaws (or else the all-too-human operator of that program made mistakes). After finally fixing things up by re-running the entire letter K, it remains a small mystery whether it was a bug in old code or human error that caused the problems in the K-data.
 
-Bottom line is I'm re-running the portion of the search that didn't match the fast pruners, which was in the range of K-P only (i.e. the search results starting from A through J, and Q through Z all matched the fast pruners' results). This will provide a final check that the fast pruner was not TOO aggressive in its pruning of the search space, and should be done in another few days. I don't think this is going to find further errors (famous last words) because the remaining discrepancies are all pangrams missing from the slow searcher results. I believe the only over-aggressive pruning happened back in the oldest slow python searcher.
+Bottom line is that after re-running the portion of the search that didn't match the fast pruners, which was in the range of K-P only (i.e. the search results starting from A through J, and Q through Z all matched the fast pruners' results), all the errors were in fact only in the searches from words starting with K, and the discrepancies in M-P were due to anagram expansions of K-words. All three data sets match after this last correction.
 
-Finally, my post-processing scripts that provide the counts below are mostly dependent on the data format used by the slow searcher, which is just different enough from the fast pruners' output that I haven't re-written them (yet) to work from the better data provided by the fast pruners. Just another reason to get the slow-search data to match results from the fast-pruners.
+Finally, my post-processing scripts that provide the counts below are mostly dependent on the data format used by the slow searcher, which is just different enough from the fast pruners' output that I haven't re-written them (yet) to work from the better data provided by the fast pruners. Just another reason that I wanted to get the slow-search data to match results from the fast-pruners.
 
 ##### Counts
-These are a combination of results from the slow searchers and the fast pruners, **NOT final**.
+- 32,358,870 "base" Wordleable pangrams (without expanding anagrams) were found.
+- 54,470,144 total Wordleable pangrams (with anagrams expanded) were found.
+- 37,421,839 pangrams (68.7%) contain at least one known potential solution.
+- 13,862 of 14,855 valid guesses (93%) appear in these pangrams.
+- 2,225 of 2,326 known potential solutions (95.66%) appear in these pangrams.
 
-- 32,349,989 "base" pangrams (without expanding anagrams) have been found. 
-  + **PROBABLY SLIGHTLY UNDER FINAL COUNT**
-- 54,470,144 total pangrams (with anagrams expanded) have been found. 
-  + **FAST PRUNER CORRECTED TOTAL**
-- **INCORRECT OVERCOUNT so fewer than:** 40,575,749 pangrams (75%) contain at least one known potential solution.
-  + The (**closer to-**)corrected count via a double-checking program is 37,416,787 (69% of total pangrams)
-- 13,862 of 14,855 valid guesses (93%) appear in pangrams found to date. 
-  + **BASED ON INCOMPLETE SLOW SEARCH DATA**
-- 2,224 of 2,325 known potential solutions (95.66%) appear in pangrams found to date. 
-  + **BASED ON INCOMPLETE SLOW SEARCH DATA**
-
-The following 101 known potential solutions (4.34%) are not found in any pangrams. 
-  + **BASED ON INCOMPLETE SLOW SEARCH DATA**
+The following 101 known potential solutions (4.34%) are not found in any pangram.
 ~~~text
 ABASE ABBEY ABUSE AISLE ALLAY
 ALLEY ALLOY AMASS AMISS ANNOY
@@ -180,33 +174,33 @@ TASTE TASTY TATTY TEASE TOAST
 UNION USUAL
 ~~~
 
-Top 25 words occurring in pangrams containing solutions found to date. The list shows the percent (and number) of pangrams containing solutions found to date that contain each word:
-**The absolute numbers shown below are an INCORRECT OVERCOUNT. I won't fix this counting bug in the original stats script, but the relative ranking is probably still in the ballpark so I'm leaving this incorrect list in place until I have accurate data from post-processing after the final triple-check is complete.**
-1. `WAQFS` : 27% (11086975) 
-1. `VOZHD` : 25% (10272975) 
-1. `QUAWK` : 9% (3747417) 
-1. `PHYNX` : 9% (3694401) 
-1. `VIBEX` : 9% (3591374) 
+Top 25 words occurring in pangrams containing solutions. The list shows the percent (and number) of pangrams containing solutions found that contain each word:
+**The absolute numbers shown below are an INCORRECT OVERCOUNT. I won't fix this counting bug in the original stats script, but the relative ranking is probably still in the ballpark so I'm leaving this incorrect list in place until I have accurate data from post-processing now that the final triple-check is complete.**
+1. `WAQFS` : 27% (11091647) 
+1. `VOZHD` : 25% (10274228) 
+1. `QUAWK` : 9% (3747418) 
+1. `PHYNX` : 9% (3694503) 
+1. `VIBEX` : 9% (3592527) 
 1. `FJORD` : 7% (2872084) 
 1. `JUMPY` : 7% (2845176) 
-1. `QUICK` : 7% (2792904) 
-1. `QUACK` : 7% (2719085) 
-1. `JUMBY` : 6% (2460518) 
+1. `QUICK` : 7% (2792910) 
+1. `QUACK` : 7% (2719095) 
+1. `JUMBY` : 6% (2460527) 
 1. `FJELD` : 5% (2128664) 
 1. `FIQHS` : 5% (2026786) 
 1. `JIMPY` : 4% (1766330) 
-1. `VEXED` : 4% (1730712) 
+1. `VEXED` : 4% (1731129) 
 1. `JIVED` : 4% (1685341) 
-1. `QUECK` : 4% (1646150) 
-1. `JUDGY` : 4% (1639016) 
+1. `QUECK` : 4% (1646152) 
+1. `JUDGY` : 4% (1639017) 
 1. `FRITZ` : 4% (1594095) 
-1. `SQUIZ` : 4% (1439120) 
-1. `WALTZ` : 3% (1230203) 
+1. `SQUIZ` : 4% (1439138) 
+1. `WALTZ` : 3% (1230223) 
 1. `BLITZ` : 3% (1186288) 
 1. `GLITZ` : 3% (1183859) 
-1. `VIXEN` : 3% (1157340) 
-1. `BLONX` : 3% (1154275) 
-1. `JOCKY` : 3% (1104606)
+1. `VIXEN` : 3% (1157491) 
+1. `BLONX` : 3% (1154288) 
+1. `JOCKY` : 3% (1104616) 
 
 
 #### Pangrams Comprised of Solutions Only
@@ -229,3 +223,5 @@ See https://rentry.co/wordle-pangrams-solutions-only
 - 02025 May 18 - https://www.nytimes.com/shared/comment/47jvne
 - 02025 Jun 07 - https://www.nytimes.com/shared/comment/482af8
 - 02025 Jun 14 - https://www.nytimes.com/shared/comment/487h4e
+- 02025 Jun 19 - https://www.nytimes.com/shared/comment/48b496
+- 02025 Jun 20 - https://www.nytimes.com/shared/comment/48buh3
