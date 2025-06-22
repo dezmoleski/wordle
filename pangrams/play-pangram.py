@@ -21,20 +21,24 @@ def lines(filepath):
       for line in f:
          yield line.rstrip()
 
+def increment_word_count(d: dict, w: str):
+   d[w] = d.get(w, 0) + 1
+
+def list_top_counts(d: dict, N: int):
+   # Sort the (k,v) tuples in the given dict by value, highest to lowest, and slice off the top N
+   l = sorted(d.items(), key=itemgetter(1), reverse=True)
+   return l[0:N]
+
 class PangramShell(cmd.Cmd):
    intro = 'Welcome to the Wordle pangrams shell.  Type help or ? to list commands.\n'
    prompt = 'pangram> '
    
-   played_words = list()
    ALL_FILE = "./ALL"
    ANSWERS_FILE = "./ANSWERS"
    ALL_PANGRAMS = './SOLUTION-PANGRAMS'
    valid_guesses = None
-   pangrams = list() # pangrams available to play
    answers  = None
-   letters_left = set(ALPHABET_LIST)
-   letters_left_list = ALPHABET_LIST
-   
+
    ##
    ## BASE CLASS OVERRIDES
    ##
@@ -49,6 +53,7 @@ class PangramShell(cmd.Cmd):
       self.answers = WordList.from_file(self.ANSWERS_FILE)
       self.answers.sort()
       print("N =", len(self.answers))
+      self.clear()
       
    def postcmd(self, stop, line):
       return line == 'bye' or line == 'exit' or line == 'quit'
@@ -56,6 +61,12 @@ class PangramShell(cmd.Cmd):
    ##
    ## HELPER MEMBER FUNCTIONS
    ##
+   def clear(self):
+      self.played_words = list()
+      self.pangrams = list() # pangrams available to play
+      self.letters_left = set(ALPHABET_LIST)
+      self.letters_left_list = ALPHABET_LIST
+      
    def n_played(self):
       return len(self.played_words)
 
@@ -67,7 +78,7 @@ class PangramShell(cmd.Cmd):
 
    def played(self, w):
       return w.word in [x.word for x in self.played_words]
-   
+
    ##
    ## DO_something members
    ##
@@ -82,7 +93,59 @@ class PangramShell(cmd.Cmd):
    def do_quit(self, arg):
       """ Quit the program """
       print("Quitting...")
+
+   def do_clear(self, arg):
+      self.clear()
+      self.do_status(None)
       
+   def do_common(self, arg):
+      """ Find the most common unplayed words in the remaining pangrams, or:
+      if given a word as an argument, find the most common unplayed words in pangrams with that word (excluding that word).
+      Scanning for common unplayed words only proceeds when the number of pangrams to scan is 3 million or fewer.
+      """
+      given_word = None
+      if len(arg) > 0:
+         given_word = Word(arg)
+         if not self.valid_guesses.contains_word(given_word):
+            print(f'{given_word} is not Wordleable.')
+            return # PUNCH-OUT
+         n_to_scan = 0
+         for p in self.pangrams:
+            if given_word.word in p:
+               n_to_scan += 1
+      else:
+         n_to_scan = self.pangrams_remaining()
+      
+      if n_to_scan > 3000000:
+         print(f'{n_to_scan} is too many pangrams to scan: "common" requires fewer than 3 million to scan.')
+      else:
+         inner_loop_count = 0
+         skip_words_list = [x.word for x in self.played_words]
+         counts = dict()
+         if given_word is None:
+            print('Finding top 10 common unplayed words in pangrams remaining', end='', flush=True)
+         else:
+            print(f'Finding top 10 common unplayed words in pangrams with {given_word}', end='', flush=True)
+            skip_words_list.append(given_word.word)
+            
+         for p in self.pangrams:
+            if given_word is None or given_word.word in p:
+               words_list = p.split()
+               for word_str in words_list:
+                  inner_loop_count += 1
+                  if inner_loop_count % 100000 == 0:
+                     print('.', end='', flush=True)
+                  w = Word(word_str)
+                  # Ignore words we already played plus the given word, if any
+                  if not w.word in skip_words_list:
+                     increment_word_count(counts, w.word)
+                     
+         print('', flush=True)
+         # Sort the k,v pairs of the counts dict by the values and get the top 10
+         l = list_top_counts(counts, 10) # list of tuples k,v
+         for t in l:
+            print(t[0], t[1])
+            
    def do_echo(self, arg):
       """ Just echo the args """
       print(f'arg = "{arg}"', f'Type of arg is {type(arg)}')
