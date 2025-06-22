@@ -26,7 +26,6 @@ class PangramShell(cmd.Cmd):
    prompt = 'pangram> '
    
    played_words = list()
-   last_played_word = None
    ALL_FILE = "./ALL"
    ANSWERS_FILE = "./ANSWERS"
    ALL_PANGRAMS = './SOLUTION-PANGRAMS'
@@ -80,16 +79,15 @@ class PangramShell(cmd.Cmd):
       """ Just echo the args """
       print(f'arg = "{arg}"', f'Type of arg is {type(arg)}')
 
-   def do_play(self, arg):
+   def play_word(self, w):
       """ Play a word """
-      w = Word(arg)
       # Words given to be played must be in the ALL list, of course.
       if not self.valid_guesses.contains_word(w):
          print(f'{w} is not Wordleable.')
       elif self.played(w):
          print(f'You already played {w}!')
       else:
-         if self.last_played_word is None: # This is the first word played
+         if self.n_played() == 0: # This is the first word played
             # Load each line of the ALL-PANGRAMS file that contains the first word.
             first_word = w.word
             n_lines = 0
@@ -103,21 +101,22 @@ class PangramShell(cmd.Cmd):
             print('')
          else:
             next_word = w.word
-            n_pangrams = 0
-            # Just count how many pangrams we have that contain the next word
             next_pangrams = list()
             for p in self.pangrams:
                if next_word in p:
-                  n_pangrams += 1
                   next_pangrams.append(p)
             self.pangrams = next_pangrams
          
-         self.last_played_word = w
          self.played_words.append(w)
          self.letters_left -= w.letter_set
          self.letters_left_list = list(self.letters_left)
          self.letters_left_list.sort()
-         self.do_status(None)
+
+   def do_play(self, arg):
+      """ Play one or more given words """
+      for word_str in arg.split():
+         self.play_word(Word(word_str))
+      self.do_status(None)
          
    def do_print(self, arg):
       """ With no argument, print all the remaining pangrams if 100 or fewer remain.
