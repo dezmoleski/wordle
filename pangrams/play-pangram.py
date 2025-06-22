@@ -51,7 +51,7 @@ class PangramShell(cmd.Cmd):
       print("N =", len(self.answers))
       
    def postcmd(self, stop, line):
-      return line == 'bye'
+      return line == 'bye' or line == 'exit' or line == 'quit'
 
    ##
    ## HELPER MEMBER FUNCTIONS
@@ -72,8 +72,16 @@ class PangramShell(cmd.Cmd):
    ## DO_something members
    ##
    def do_bye(self, arg):
-      """ Exit the program """
+      """ Say bye (exit the program) """
       print("Byeee!")
+      
+   def do_exit(self, arg):
+      """ Exit the program """
+      print("Exiting...")
+      
+   def do_quit(self, arg):
+      """ Quit the program """
+      print("Quitting...")
       
    def do_echo(self, arg):
       """ Just echo the args """
@@ -143,8 +151,20 @@ class PangramShell(cmd.Cmd):
                   return # PUNCH-OUT
    
    def do_solutions(self, arg):
-      """ Get info about solutions in the remaining pangrams """
-      # Think about qualifying by a given word too: w = Word(arg)
+      """ Get info about solutions in the remaining pangrams.
+      A regular expression pattern can optionally be given.
+      For example .L... matches only solutions with L in slot 2,
+      or .*O.* matches solutions containing an O anywhere.
+      If the number of [matching] solutions is <= 200, they are printed.
+      """
+      pattern = None
+      if len(arg) > 0:
+         try:
+            pattern = re.compile(arg.upper())
+         except:
+            print(f'ERROR: pattern {arg} failed to compile as a regular expression.', flush=True)
+            pattern = None
+            
       pangrams_remaining = self.pangrams_remaining()
       if pangrams_remaining > 5000000:
          print(f'{pangrams_remaining} pangrams remaining is too many to get solution info.')
@@ -160,14 +180,21 @@ class PangramShell(cmd.Cmd):
                   print('.', end='', flush=True)
                w = Word(word_str)
                if w.starred:
-                  answers_left.add(w)
+                  if pattern is None or pattern.fullmatch(w.word):
+                     answers_left.add(w)
          print('')
-         print(f'{len(answers_left)} unique solutions are in the remaining pangrams.')
-         if len(answers_left) < 200:
+         if pattern is None:
+            print(f'{len(answers_left)} unique solutions are in the remaining pangrams.')
+         else:
+            print(f'{len(answers_left)} unique solutions matching {arg} are in the remaining pangrams.')
+         
+         if len(answers_left) <= 200:
             l = list(answers_left)
             l.sort()
+            n_printed = 0
             for w in l:
-               print(w.word, end=' ')
+               n_printed += 1
+               print(w.word, end=' ' if n_printed % 10 > 0 else '\n')
             print('')
             
    def do_status(self, arg):
