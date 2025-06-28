@@ -29,6 +29,8 @@ def list_top_counts(d: dict, N: int):
    l = sorted(d.items(), key=itemgetter(1), reverse=True)
    return l[0:N]
 
+# This WORDS dictionary speeds things up by not re-constructing
+# instances of the Word class over and over again.
 WORDS = dict()
 def get_word(word_str: str):
    word = WORDS.get(word_str, None)
@@ -47,6 +49,12 @@ class PangramShell(cmd.Cmd):
    valid_guesses = None
    answers  = None
 
+   # These data members are reset by clear()
+   played_words: list = None
+   pangrams: list = None
+   letters_left: set = None
+   letters_left_list: list = None
+   
    ##
    ## BASE CLASS OVERRIDES
    ##
@@ -93,7 +101,7 @@ class PangramShell(cmd.Cmd):
       """ Return count of the remaining pangrams """
       if len(self.played_words) > 0:
          return len(self.pangrams)
-      return 54470144
+      return 37421839
 
    def played(self, w):
       return w.word in [x.word for x in self.played_words]
