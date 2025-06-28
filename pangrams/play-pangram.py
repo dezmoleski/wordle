@@ -12,7 +12,7 @@ import datetime
 import json
 import os.path
 import re
-
+import math
 import cmd
 
 # Suggested: use a generator when reading large files
@@ -52,9 +52,10 @@ class PangramShell(cmd.Cmd):
    # These data members are reset by clear()
    played_words: list = None
    pangrams: list = None
+   pangrams_at_step: list = None
    letters_left: set = None
    letters_left_list: list = None
-   
+
    ##
    ## BASE CLASS OVERRIDES
    ##
@@ -90,7 +91,8 @@ class PangramShell(cmd.Cmd):
    ##
    def clear(self):
       self.played_words = list()
-      self.pangrams = list() # pangrams available to play
+      self.pangrams = list() # pangrams remaining available to play
+      self.pangrams_at_step = [None] * 6 # self.pangrams at each step, supports 'do_back'
       self.letters_left = set(ALPHABET_LIST)
       self.letters_left_list = ALPHABET_LIST
       
@@ -103,7 +105,7 @@ class PangramShell(cmd.Cmd):
          return len(self.pangrams)
       return 37421839
 
-   def played(self, w):
+   def already_played(self, w):
       return w.word in [x.word for x in self.played_words]
 
    ##
@@ -370,12 +372,15 @@ class PangramShell(cmd.Cmd):
    def play_word(self, w):
       """ Play a word """
       # Words given to be played must be in the ALL list, of course.
-      if not self.valid_guesses.contains_word(w):
+      step_index = self.n_played()
+      if step_index == 6:
+         print('Only six guesses are allowed!')
+      elif not self.valid_guesses.contains_word(w):
          print(f'{w} is not Wordleable.')
-      elif self.played(w):
+      elif self.already_played(w):
          print(f'You already played {w}!')
       else:
-         if self.n_played() == 0: # This is the first word played
+         if step_index == 0: # This is the first word played
             # Load each line of the ALL-PANGRAMS file that contains the first word.
             first_word = w.word
             n_lines = 0
@@ -394,6 +399,7 @@ class PangramShell(cmd.Cmd):
                if next_word in p:
                   next_pangrams.append(p)
             self.pangrams = next_pangrams
+         self.pangrams_at_step[step_index] = self.pangrams
          
          self.played_words.append(w)
          self.letters_left -= w.letter_set
@@ -481,7 +487,9 @@ class PangramShell(cmd.Cmd):
       """ Print current status info """
       pangrams_remaining = self.pangrams_remaining()
       print(f'There are {pangrams_remaining} pangrams remaining.')
-      print('Played:', self.played_words)
+      print(f'Played {self.n_played()} word{"" if self.n_played() == 1 else "s"}:', self.played_words)
+      print('Pangrams remaining by step:', end=' ')
+      print([len(l) if l is not None else math.nan for l in self.pangrams_at_step])
       print(f'{len(self.letters_left_list)} letters unplayed:', end=' ')
       for l in self.letters_left_list:
          print(l, end=' ')
@@ -499,7 +507,7 @@ class PangramShell(cmd.Cmd):
          if self.n_played() == 0:
             print('Play at least one word to get more information.')
          else:
-            if self.played(w):
+            if self.already_played(w):
                print(f'You already played {w}!')
             else:
                n_pangrams = 0
