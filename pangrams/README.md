@@ -111,7 +111,7 @@ An unsuccessful attempt to solve a random archive game using the intermediate da
 
 
 ##### Status
-**Updated 20 June 2025** (views 1745)
+**Updated 20 June 2025** (views 1754)
 
 **Headline:** double and triple checks have passed, counts given below are mostly final (though subject to expected changes in the solutions list). The ranking of words by how many solution-bearing pangrams contain that word is still based on overcounts (this will be fixed eventually).
 
@@ -248,3 +248,4 @@ See https://rentry.co/wordle-pangrams-solutions-only
 - 02025 Jun 14 - https://www.nytimes.com/shared/comment/487h4e
 - 02025 Jun 19 - https://www.nytimes.com/shared/comment/48b496
 - 02025 Jun 20 - https://www.nytimes.com/shared/comment/48buh3
+- 02025 Jun 27 - https://www.nytimes.com/shared/comment/48gfmf
