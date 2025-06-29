@@ -123,9 +123,33 @@ class PangramShell(cmd.Cmd):
       """ Quit the program """
       print("Quitting...")
 
+   def do_back(self, arg):
+      """ Back up a step, i.e. undo the most recent 'play' """
+      step_index = self.n_played()
+      if step_index > 0:
+         print("Backing up to step", step_index - 1)
+         if step_index == 1:
+            # Just do clear(), we stepped back to the beginning
+            self.clear()
+         else:
+            prev_step = step_index-1
+            self.played_words = self.played_words[0:prev_step]
+            self.pangrams = self.pangrams_at_step[prev_step-1]
+            self.pangrams_at_step[prev_step] = None
+            # Walk the played words to re-set letters left info.
+            self.letters_left = set(ALPHABET_LIST)
+            for w in self.played_words:
+               self.letters_left -= w.letter_set
+            self.letters_left_list = list(self.letters_left)
+            self.letters_left_list.sort()
+         # Print our new status.
+         self.do_status()
+      else:
+         print("Can't back up, no words played.")
+         
    def do_clear(self, arg):
       self.clear()
-      self.do_status(None)
+      self.do_status()
       
    def do_common(self, arg):
       """ Find the most common unplayed words in the remaining pangrams, or:
@@ -410,8 +434,8 @@ class PangramShell(cmd.Cmd):
       """ Play one or more given words """
       for word_str in arg.split():
          self.play_word(get_word(word_str))
-      self.do_status(None)
-         
+      self.do_status()
+   
    def do_print(self, arg):
       """ With no argument, print all the remaining pangrams if 100 or fewer remain.
       Given a word as an argument, print up to 100 remaining pangrams containing that word.
@@ -483,7 +507,7 @@ class PangramShell(cmd.Cmd):
                print(w.word, end=' ' if n_printed % 10 > 0 else '\n')
             print('')
             
-   def do_status(self, arg):
+   def do_status(self, arg=None):
       """ Print current status info """
       pangrams_remaining = self.pangrams_remaining()
       print(f'There are {pangrams_remaining} pangrams remaining.')
